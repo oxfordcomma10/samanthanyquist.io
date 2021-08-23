@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Simple Form Processing</title>
+</head>
+
+<body>
+	<h1>State Fair</h1>
+	<fieldset>
+		<form id="statefair" method="post" action="storingformcode.php">
+				State Fair Availability: <br>
+                    ($13 if order before 8/25, $16 otherwise)<br>
+				<input type="checkbox"
+					value="sf8.31"
+					name="sf1"> Tuesday 8/31<br>
+				<input type="checkbox"
+					value="sf9.1"
+					name="sf2"> Wednesday 9/1<br>
+                <input type="checkbox"
+					value="sf9.2"
+					name="sf3"> Thursday 9/2<br>
+                <input type="checkbox"
+					value="sf9.3"
+					name="sf4"> Friday 9/3<br>
+                <input type="checkbox"
+					value="sf9.4"
+					name="sf5"> Saturday 9/4<br>
+                <input type="checkbox"
+					value="sf9.5"
+					name="sf6"> Sunday 9/5<br>
+                <input type="checkbox"
+					value="sf9.6"
+					name="sf7"> Monday 9/6<br>
+				<br>
+				<br>
+				<input type="submit" value="Submit" name="submit" />
+		</form>
+	</fieldset>
+</body>
+
+</html>
