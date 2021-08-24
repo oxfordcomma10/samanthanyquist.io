@@ -6,9 +6,10 @@
 </head>
 
 <body>
-	<h1>State Fair</h1>
+	<h1>Fall Activity form</h1>
+	*Just fill out the check marks for the activities/days you want/are available to go to, leave unwanted ones empty*
 	<fieldset>
-		<form id="statefair" method="post" action="/storingformcode.php">
+		<form id="fall form" method="post" action="/storingformcode.php">
 				State Fair Availability: <br>
                     ($13 if order before 8/25, $16 otherwise)<br>
 				<input type="checkbox"
@@ -32,11 +33,7 @@
                 <input type="checkbox"
 					value="sf9.6"
 					name="sf7"> Monday 9/6<br>
-		</form>
-	</fieldset>
-	<h1>Renaissance Festival</h1>
-	<fieldset>
-		<form id="renfest" method="post" action="/storingformcode.php">
+				<br>
 				Renaissance Festival Availability:<br>
                     ($23/person)<br>
 				<input type="checkbox"
@@ -75,11 +72,7 @@
                 <input type="checkbox"
 					value="rf10.3"
 					name="rf12"> Monday 10/3<br>
-		</form>
-	</fieldset>
-	<h1>Minnesota Orchestra</h1>
-	<fieldset>
-		<form id="minnorch" method="post" action="/storingformcode.php">
+				<br>
 				Minnesota Orchestra Availability:<br>
                     (Price depends on show, some have not been released yet)<br>
 				<input type="checkbox"
@@ -157,11 +150,7 @@
 				<input type="checkbox"
 					value="mo1.8"
 					name="mo25"> Saturday 1/8 8pm (TBA)<br>
-		</form>
-	</fieldset>
-	<h1>Frozen Musical</h1>
-	<fieldset>
-		<form id="frozen" method="post" action="/storingformcode.php">
+				<br>
 				Frozen Musical Availability: <br>
                     Range from $40, $50 for cheap seats and some at $75, $100 for better view<br>
 				<input type="checkbox"
@@ -236,11 +225,7 @@
 				<input type="checkbox"
 					value="f10.20"
 					name="f24"> Wednesday 10/20 7:30pm<br>
-		</form>
-	</fieldset>
-	<h1>Oklahoma! Musical</h1>
-	<fieldset>
-		<form id="oklahoma" method="post" action="/storingformcode.php">
+				<br>
 				Oklahoma Availability: <br>
 				(Tickets on sale Sep 20 or do student rush)<br>
 				<input type="checkbox"
@@ -267,11 +252,7 @@
 				<input type="checkbox"
 					value="o11.14.2"
 					name="o8"> Sunday 11/14 6:30pm<br>
-		</form>
-	</fieldset>
-	<h1>Fiddler on the Roof Musical</h1>
-	<fieldset>
-		<form id="fiddler" method="post" action="/storingformcode.php">
+				<br>
 				Fiddler on the Roof Availability: <br>
 				($48, $51, $61)<br>
 				<input type="checkbox"
@@ -310,11 +291,7 @@
 				<input type="checkbox"
 					value="fr12.12"
 					name="fr12"> Sunday 12/12 7:30pm<br>
-		</form>
-	</fieldset>	
-	<h1>Anastasia Musical</h1>
-	<fieldset>
-		<form id="anastasia" method="post" action="/storingformcode.php">
+				<br>
 				Anastasia Availability: <br>
 				($40, $65, $80)<br>
 				<input type="checkbox"
@@ -365,12 +342,7 @@
 				<input type="checkbox"
 					value="a12.19.2"
 					name="a15"> Sunday 12/19 (Finals) 6:30pm<br>
-
-		</form>
-	</fieldset>	
-	<h1>Donna Summer Musical</h1>
-	<fieldset>
-		<form id="donna" method="post" action="/storingformcode.php">
+				<br>
 				Donna Summer Availability: <br>
 				($44, $48 or do student rush)<br>
 				<input type="checkbox"
@@ -391,11 +363,7 @@
 				<input type="checkbox"
 					value="ds1.2"
 					name="ds6"> Sunday 1/2 7:30pm<br>
-		</form>
-	</fieldset>
-	<h1>Concets</h1>
-	<fieldset>
-		<form id="concerts" method="post" action="/storingformcode.php">
+				<br>
 				Concert interest: <br>
 				<br>
 				<input type="checkbox"
@@ -416,11 +384,7 @@
 				<input type="checkbox"
 					value="leslie"
 					name="c6"> Leslie Odom Jr Christmas show @ State Theatre Thursday 12/2 7:30pm<br>
-		</form>
-	</fieldset>
-	<h1>Trip to Madison</h1>
-	<fieldset>
-		<form id="madison" method="post" action="/storingformcode.php">
+				<br>
 				Madison Availability: <br>
 				All weekends mentioned are not over UMN home football weekends<br>
 				<input type="checkbox"
@@ -447,11 +411,7 @@
 				<input type="checkbox"
 					value="m1.0"
 					name="m8"> Sometime after Christmas/January<br>
-		</form>
-	</fieldset>
-	<h1>Other trips</h1>
-	<fieldset>
-		<form id="trips" method="post" action="/storingformcode.php">
+				<br>
 				Weekend trip Availability: <br>
 				All weekends mentioned are not over UMN home football weekends<br>
 				<input type="checkbox"
@@ -478,11 +438,7 @@
 				<input type="checkbox"
 					value="ot1.0"
 					name="ot8"> Sometime after Christmas/January<br>
-		</form>
-	</fieldset>
-	<h1>Places</h1>
-	<fieldset>
-		<form id="places" method="post" action="/storingformcode.php">
+				<br>
 				Places to take a weekend trip to: <br>
 				Prices are round trip and show the range of pricing between the weekends listed in previous section<br>
 				<input type="checkbox"
@@ -546,18 +502,16 @@
 				<input type="text"
 					id="otheridea"
 					name="p20"><br>
-		</form>
-	</fieldset>
-<h1>Places</h1>
-	<fieldset>
-		<form id="etc" method="post" action="/storingformcode.php">
+				<br>
 		<label for="otheridea">List other ideas you have:</label><br>
-				<input type="text"
-					id="userother"
-					name="extra"><br>
+				<textarea
+					name="extra"
+					rows ="5"
+					cols ="40"> </textarea><br>
+	 <input type="submit" value="Submit" name="submit"/>
 	</form>
 	</fieldset>
-<form> <input type="submit" value="Submit" name="submit"/> </form>
+
 </body>
 
 </html>
