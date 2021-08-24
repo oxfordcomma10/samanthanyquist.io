@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>State Fair form</title>
+</head>
+
+<body>
+	<legend>State Fair</legend>
+	*Just fill out the check marks for the days you are available to go to, leave unwanted ones empty*
+	<fieldset>
+		<form id="statefair">
+				State Fair Availability: <br>
+                    ($13 if order before 8/25, $16 otherwise)<br>
+				<input type="checkbox"
+					id="sf1"
+					value="sf8.31"
+					name="sf1"> Tuesday 8/31<br>
+				<input type="checkbox"
+					id="sf2"
+					value="sf9.1"
+					name="sf2"> Wednesday 9/1<br>
+                <input type="checkbox"
+					id="sf3"
+					value="sf9.2"
+					name="sf3"> Thursday 9/2<br>
+                <input type="checkbox"
+					id="sf4"
+					value="sf9.3"
+					name="sf4"> Friday 9/3<br>
+                <input type="checkbox"
+					id="sf5"
+					value="sf9.4"
+					name="sf5"> Saturday 9/4<br>
+                <input type="checkbox"
+					id="sf6"
+					value="sf9.5"
+					name="sf6"> Sunday 9/5<br>
+                <input type="checkbox"
+					id="sf7"
+					value="sf9.6"
+					name="sf7"> Monday 9/6<br>
+				<br>
+    <button id="submit_but" type="button">Submit<button/>
+</form>
+</fieldset>
+<!-- <fieldset>
+		<form id="statefair2">
+            Please rank your chosen availability starting from 1 being your first choice and so on.
+            <br>
+            <input type ='text'
+                
+</form>
+</fieldset> -->
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA84vauBhYX2QeG1KlTOz5Ru-_6N5PMqno",
+    authDomain: "fallactivitiessammy.firebaseapp.com",
+    projectId: "fallactivitiessammy",
+    storageBucket: "fallactivitiessammy.appspot.com",
+    messagingSenderId: "927107743428",
+    appId: "1:927107743428:web:4ec43156ed80e241519391",
+    measurementId: "G-D3BVFQBZJ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var push_to_firebase = function(data){
+        alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
+        var db = firebase.firestore();
+
+  var checkboxes = document.querySelectorAll("input[type=checkbox]");
+  var submit = document.getElementById("submit_id");
+
+  function state_fair_check() {
+    var check = [];
+    for (var i = 0; i < checkboxes.length; i++){
+        var checkbox = checkboxes[i];
+        if (checkbox.checked) checked.push(checkbox.value);
+    }
+    return checked;
+  }
+  submit_id.addEventListener("click", function(){
+    var checked = state_fair_check();
+    statefair.style.display = "none"
+    });
+  
+</script>
+
+</html>
