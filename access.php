@@ -24,10 +24,7 @@ if(isset($_POST['page_logout']))
 if($_SESSION['password']=="seafoam")
 {
  ?>
- <h1>password</h1>
- <form method="post" action="" id="logout_form">
-  <input type="submit" name="page_logout" value="LOGOUT">
- </form>
+ <p><a href="formcode.html"> proceed to form </a></p>
  <?php
 }
 else
