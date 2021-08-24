@@ -1,4 +1,5 @@
 <?php
+/*
 if (isset($_POST['submit']))
 {
 	{
@@ -10,13 +11,13 @@ if (isset($_POST['submit']))
         $sf6 = $_POST['sf6'];
         $sf7 = $_POST['sf7'];
 	}
-}
+} */
 if (isset($_POST['submit']))
 	{
 		if(!isset($error))
 		{
-				echo"<h1>INPUT RECEIVED</h1><br>";
-				echo "< $_POST["sf1"]
+				echo "<h1>INPUT RECEIVED</h1><br>";
+				echo " $_POST["sf1"]"
 		}
 	}
 ?>
