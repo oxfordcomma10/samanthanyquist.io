@@ -30,13 +30,7 @@ if($_SESSION['password']=="seafoam")
 else
 {
  ?>
- <form method="post" action="" id="login_form">
-  <h1>LOGIN TO PROCEED</h1>
-  <input type="password" name="pass" placeholder="*******">
-  <input type="submit" name="submit_pass" value="DO SUBMIT">
-  <p>"Password : seafoam"</p>
-  <p><font style="color:red;"><?php echo $error;?></font></p>
- </form>
+ <h1> ERROR </h1>
  <?php	
 }
 ?>
