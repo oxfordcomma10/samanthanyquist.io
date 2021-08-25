@@ -3,9 +3,17 @@
 
 <head>
 	<title>State Fair form</title>
+  <style type="text/css">
+  label{
+    text-align: right;
+    width: 10%;
+  }
+  </style>
 </head>
 
 <body>
+  <p id="debug" style="display:none">ON</p>
+
 	<legend>State Fair</legend>
 	*Just fill out the check marks for the days you are available to go to, leave unwanted ones empty*
 	<fieldset>
@@ -13,45 +21,93 @@
 				State Fair Availability: <br>
                     ($13 if order before 8/25, $16 otherwise)<br>
 				<input type="checkbox"
-					id="sf1"
-					value="sf8.31"
+					id="1"
+					value="1"
 					name="sf1"> Tuesday 8/31<br>
 				<input type="checkbox"
-					id="sf2"
-					value="sf9.1"
+					id="2"
+					value="2"
 					name="sf2"> Wednesday 9/1<br>
-                <input type="checkbox"
-					id="sf3"
-					value="sf9.2"
-					name="sf3"> Thursday 9/2<br>
-                <input type="checkbox"
-					id="sf4"
-					value="sf9.3"
+        <input type="checkbox"
+					id="3"
+					value="3"
+					name="sf3"> Thursday 9/2 (Football)<br>
+        <input type="checkbox"
+					id="4"
+					value="4"
 					name="sf4"> Friday 9/3<br>
-                <input type="checkbox"
-					id="sf5"
-					value="sf9.4"
+        <input type="checkbox"
+					id="5"
+					value="5"
 					name="sf5"> Saturday 9/4<br>
-                <input type="checkbox"
-					id="sf6"
-					value="sf9.5"
+        <input type="checkbox"
+					id="6"
+					value="6"
 					name="sf6"> Sunday 9/5<br>
-                <input type="checkbox"
-					id="sf7"
-					value="sf9.6"
+        <input type="checkbox"
+					id="7"
+					value="7"
 					name="sf7"> Monday 9/6<br>
 				<br>
-    <button id="submit_but" type="button">Submit<button/>
-</form>
+    <button id="submit_but" type="button" onclick="first_submit()">Submit<button/>
+  </form>
 </fieldset>
-<!-- <fieldset>
-		<form id="statefair2">
+      <fieldset>
+		<form id="statefair2" style="display:none">
             Please rank your chosen availability starting from 1 being your first choice and so on.
             <br>
-            <input type ='text'
-                
-</form>
-</fieldset> -->
+        <label id = "1.2.2" for="1.2" style="display:none">Tuesday 8/31</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="1.2"
+					name="sf1.2">
+        <br>
+        <label id="2.2.2" for="2.2" style="display:none">Wednesday 9/1</label>
+				<input type="text"
+          style="display:none"
+          size="1"
+					id="2.2"
+					name="sf2.2"> 
+        <br>
+        <label id="3.2.2" for="3.2" style="display:none">Thursday 9/2 (Football)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="3.2"
+					name="sf3.2"> 
+        <br>
+        <label id="4.2.2" for="4.2" style="display:none">Friday 9/3</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="4.2"
+					name="sf4.2"> 
+        <br>
+        <label id="5.2.2" for="5.2" style="display:none">Saturday 9/4</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="5.2"
+					name="sf5.2"> 
+        <br>
+        <label id="6.2.2" for= "6.2" style="display:none">Sunday 9/5</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="6.2"
+					name="sf6.2"> 
+        <br>
+        <label id="7.2.2" for="7.2" style="display:none">Monday 9/6</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="7.2"
+					name="sf7.2"> 
+        <br>
+      <button id="submit_but2" type="button" onclick="second_submit()">Submit<button/>        
+  </form>
+</fieldset>
 
 </body>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -77,22 +133,52 @@
         alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
         var db = firebase.firestore();
 
-  var checkboxes = document.querySelectorAll("input[type=checkbox]");
-  var submit = document.getElementById("submit_id");
-
-  function state_fair_check() {
-    var check = [];
-    for (var i = 0; i < checkboxes.length; i++){
-        var checkbox = checkboxes[i];
-        if (checkbox.checked) checked.push(checkbox.value);
-    }
-    return checked;
+        db.collection("statefair").add({
+          aug31: data['1.2'],
+          sep1: data['2.2'],
+          sep2: data['3.2'],
+          sep3: data["4.2"],
+          sep4: data["5.2"],
+          sep5: data["6.2"],
+          sep6: data["7.2"]
+        })
   }
-  submit_id.addEventListener("click", function(){
-    var checked = state_fair_check();
-    statefair.style.display = "none"
-    });
-  
+  function first_submit(){
+    var statefair = document.getElementById("statefair");
+    var statefair2 = document.getElementById("statefair2");
+    statefair.style.display = "none";
+    statefair2.style.display="block";
+    const check = [];
+    for (var j = 1; j < 8; j++){
+      var checkBox = document.getElementById(j.toString());
+      if (checkBox.checked == true){
+        check.push(checkBox.value);
+      }
+    }
+    for (var i = 0; i < check.length; i ++){
+      var checking = check[i] + ".2";
+      var second = document.getElementById(checking);
+      var name_text = document.getElementById(checking+".2");
+      name_text.style.display = "inline-block";
+      second.style.display = "inline-block";
+    }
+  }
+  function second_submit(){
+    var data = {};
+    var debug = document.getElementById("debug");
+    var statefair2 = document.getElementById("statefair2");
+    statefair2.style.display="none";
+    for (var k = 1.2; k < 8.2; k+=1){
+      var ranking = document.getElementById(k.toString());
+      if (ranking.style.display == "none"){
+        data[ranking] = "X";
+      }
+      else {
+        data[ranking] = ranking.value;
+      }
+    }
+    push_to_firebase(data)
+  }
 </script>
 
 </html>
