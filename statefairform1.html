@@ -12,8 +12,6 @@
 </head>
 
 <body>
-  <p id="debug" style="display:none">ON</p>
-
 	<legend>State Fair</legend>
 	*Just fill out the check marks for the days you are available to go to, leave unwanted ones empty*
 	<fieldset>
@@ -105,6 +103,11 @@
 					id="7.2"
 					name="sf7.2"> 
         <br>
+      <label id = "name" for="name">Your Name:</label>
+      <input type="text"
+        id ="name"
+        name = "user">
+<br>
       <button id="submit_but2" type="button" onclick="second_submit()">Submit<button/>        
   </form>
 </fieldset>
@@ -134,6 +137,7 @@
         var db = firebase.firestore();
 
         db.collection("statefair").add({
+          name: data["name"],
           aug31: data['1.2'],
           sep1: data['2.2'],
           sep2: data['3.2'],
@@ -165,7 +169,6 @@
   }
   function second_submit(){
     var data = {};
-    var debug = document.getElementById("debug");
     var statefair2 = document.getElementById("statefair2");
     statefair2.style.display="none";
     for (var k = 1.2; k < 8.2; k+=1){
@@ -177,6 +180,9 @@
         data[ranking] = ranking.value;
       }
     }
+    var user_name = document.getElementById("name");
+    data["name"] = user_name.value;
+
     push_to_firebase(data)
   }
 </script>
