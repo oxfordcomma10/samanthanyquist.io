@@ -191,8 +191,7 @@
   var push_to_firebase = function(data){
         alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
         var db = firebase.firestore();
-
-        db.collection("renfest").document(data["name"]).add({
+        let data_dict = {
           name: data["name"],
           sep4: data['1.2'],
           sep5: data['2.2'],
@@ -206,7 +205,8 @@
           oct1: data['10.2'],
           oct2: data["11.2"],
           oct3: data["12.2"]
-        })
+        }
+        db.collection("renfest").document(data["name"]).set(data_dict);
   }
   function first_submit(){
     var debug = document.getElementById("debug");

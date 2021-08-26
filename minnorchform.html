@@ -331,8 +331,7 @@
   var push_to_firebase = function(data){
         alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
         var db = firebase.firestore();
-
-        db.collection("minnorch").document(data["name"]).add({
+        let data_dic = {
           name: data["name"],
           sep23: data['1.2'],
           sep24: data['2.2'],
@@ -359,7 +358,8 @@
           dec18: data["23.2"],
           jan7: data["24.2"],
           jan8: data["25.2"]
-        })
+        }
+      db.collection("minnorch").document(data["name"]).set(data_dic);
   }
   function first_submit(){
     var debug = document.getElementById("debug");

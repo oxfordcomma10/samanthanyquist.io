@@ -135,8 +135,7 @@
   var push_to_firebase = function(data){
         alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
         var db = firebase.firestore();
-
-        db.collection("statefair").document(data["name"]).add({
+        let data_dict = {
           name: data["name"],
           aug31: data['1.2'],
           sep1: data['2.2'],
@@ -145,8 +144,9 @@
           sep4: data["5.2"],
           sep5: data["6.2"],
           sep6: data["7.2"]
-        })
-  }
+        }
+    db.collection("statefair").document(data["name"]).set(data_dic);
+  }     
   function first_submit(){
     var statefair = document.getElementById("statefair");
     var statefair2 = document.getElementById("statefair2");
