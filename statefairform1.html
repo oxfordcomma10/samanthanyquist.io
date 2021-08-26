@@ -136,7 +136,7 @@
         alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
         var db = firebase.firestore();
 
-        db.collection("statefair").add({
+        db.collection("statefair").document(data["name"]).add({
           name: data["name"],
           aug31: data['1.2'],
           sep1: data['2.2'],
