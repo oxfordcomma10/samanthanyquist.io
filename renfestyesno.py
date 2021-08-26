@@ -20,6 +20,6 @@
 <body>
     <h4>Are you interested in going to the State Fair?</h4>
     <a href = statefairform1.html>YES</a>
-    <a href = renfestyesno.html>NO</a>
+    <a href = renfestform.html>NO</a>
 </body>
 </html>
