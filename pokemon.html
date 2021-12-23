@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50.0%;
+  padding: 5px;
+}
+.column2 {
+  flex: 50.0%;
+  padding: 5px;
+}
+#header {
+    text-align: center;
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+/* Clearfix (clear floats) */
+
+body {background-color: rgb(241, 218, 247);}
+</style>
+    <title>Pokemon Type Quiz</title>
+    <link rel="icon" type="image/png" href="./icon.png">
+</head>
+<body>
+
+<div id=header>What Pokemon type are you?</div>
+<h1>Which Phineas and Ferb Character do you relate to most?</h1>
+<div class="row">
+    <div class="column" id="ferb">
+        <a href = "javascript:ferbButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/c/ca/Profile_-_Ferb_Fletcher.PNG/revision/latest?cb=20200401182236" alt="Ferb" style="width:100%">
+        </a>
+    </div>
+    <div class="column" id="isabella">
+        <a href="javascript:isabellaButton();" >
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/8/8c/Profile_-_Isabella_Garcia-Shapiro.PNG/revision/latest/top-crop/width/360/height/450?cb=20200401182003" alt="Isabella" style="width:100%">
+        </a>
+     </div>
+    <div class="column" id="phineas">
+        <a href = "javascript:phineasButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/e/ea/Profile_-_Phineas_Flynn.PNG/revision/latest?cb=20200401182458" alt="Phineas" style="width:100%">
+        </a>
+    </div>
+    <div class="column" id="perry">
+        <a href = "javascript:perryButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/6/66/Profile_-_Perry_the_Platypus.PNG/revision/latest?cb=20200401182751" alt="Perry" style="width:100%">
+        </a>
+    </div>
+    <div class="column" id="candace">
+        <a href = "javascript:candaceButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/1/18/Profile_-_Candace_Flynn.png/revision/latest?cb=20200401181755" alt="Candace" style="width:100%">
+        </a>
+    </div>
+    <div class="column" id="buford">
+        <a href = "javascript:bufordButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/b/bd/Profile_-_Buford_Van_Stomm.PNG/revision/latest/top-crop/width/360/height/360?cb=20200401192847" alt="Buford" style="width:100%">
+        </a>
+    </div>
+    <div class="column" id="baljeet">
+        <a href = "javascript:baljeetButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/9/98/Baljeet.JPG/revision/latest?cb=20170806211609" alt="Baljeet" style="width:100%">
+        </a>
+    </div>
+</div>
+<h1> Which is Pitbull's best song? </h1>
+<div class="row">
+    <div class="column2" id="ferb">
+        <a href = "javascript:ferbButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/c/ca/Profile_-_Ferb_Fletcher.PNG/revision/latest?cb=20200401182236" alt="Ferb" style="width:100%">
+        </a>
+    </div>
+    <div class="column2" id="isabella">
+        <a href="javascript:isabellaButton();" >
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/8/8c/Profile_-_Isabella_Garcia-Shapiro.PNG/revision/latest/top-crop/width/360/height/450?cb=20200401182003" alt="Isabella" style="width:100%">
+        </a>
+     </div>
+    <div class="column2" id="phineas">
+        <a href = "javascript:phineasButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/e/ea/Profile_-_Phineas_Flynn.PNG/revision/latest?cb=20200401182458" alt="Phineas" style="width:100%">
+        </a>
+    </div>
+    <div class="column2" id="perry">
+        <a href = "javascript:perryButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/6/66/Profile_-_Perry_the_Platypus.PNG/revision/latest?cb=20200401182751" alt="Perry" style="width:100%">
+        </a>
+    </div>
+    <div class="column2" id="candace">
+        <a href = "javascript:candaceButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/1/18/Profile_-_Candace_Flynn.png/revision/latest?cb=20200401181755" alt="Candace" style="width:100%">
+        </a>
+    </div>
+    <div class="column2" id="buford">
+        <a href = "javascript:bufordButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/b/bd/Profile_-_Buford_Van_Stomm.PNG/revision/latest/top-crop/width/360/height/360?cb=20200401192847" alt="Buford" style="width:100%">
+        </a>
+    </div>
+    <div class="column2" id="baljeet">
+        <a href = "javascript:baljeetButton();">
+            <img src="https://static.wikia.nocookie.net/phineasandferb/images/9/98/Baljeet.JPG/revision/latest?cb=20170806211609" alt="Baljeet" style="width:100%">
+        </a>
+    </div>
+</div>
+<script>
+function ferbButton(){
+    document.getElementById("ferb").style.opacity = 0.3;
+    document.getElementById("perry").style.opacity = 1;
+    document.getElementById("isabella").style.opacity = 1;
+    document.getElementById("phineas").style.opacity = 1;
+    document.getElementById("candace").style.opacity = 1;
+    document.getElementById("buford").style.opacity = 1;
+    document.getElementById("baljeet").style.opacity = 1;
+}
+function isabellaButton(){
+    document.getElementById("isabella").style.opacity = 0.3;
+    document.getElementById("phineas").style.opacity = 1;
+    document.getElementById("perry").style.opacity = 1;
+    document.getElementById("ferb").style.opacity = 1;
+    document.getElementById("candace").style.opacity = 1;
+    document.getElementById("buford").style.opacity = 1;
+    document.getElementById("baljeet").style.opacity = 1;
+}
+function phineasButton(){
+    document.getElementById("phineas").style.opacity = 0.3;
+    document.getElementById("perry").style.opacity = 1;
+    document.getElementById("ferb").style.opacity = 1;
+    document.getElementById("isabella").style.opacity = 1;
+    document.getElementById("candace").style.opacity = 1;
+    document.getElementById("buford").style.opacity = 1;
+    document.getElementById("baljeet").style.opacity = 1;
+}
+function perryButton(){
+    document.getElementById("perry").style.opacity = 0.3;
+    document.getElementById("ferb").style.opacity = 1;
+    document.getElementById("isabella").style.opacity = 1;
+    document.getElementById("phineas").style.opacity = 1;
+    document.getElementById("candace").style.opacity = 1;
+    document.getElementById("buford").style.opacity = 1;
+    document.getElementById("baljeet").style.opacity = 1;
+
+}
+function candaceButton(){
+    document.getElementById("candace").style.opacity = 0.3;
+    document.getElementById("perry").style.opacity = 1;
+    document.getElementById("ferb").style.opacity = 1;
+    document.getElementById("isabella").style.opacity = 1;
+    document.getElementById("phineas").style.opacity = 1;
+    document.getElementById("buford").style.opacity = 1;
+    document.getElementById("baljeet").style.opacity = 1;
+}
+function bufordButton(){
+    document.getElementById("buford").style.opacity = 0.3;
+    document.getElementById("candace").style.opacity = 1;
+    document.getElementById("perry").style.opacity = 1;
+    document.getElementById("ferb").style.opacity = 1;
+    document.getElementById("isabella").style.opacity = 1;
+    document.getElementById("phineas").style.opacity = 1;
+    document.getElementById("baljeet").style.opacity = 1;
+}
+function baljeetButton(){
+    document.getElementById("baljeet").style.opacity = 0.3;
+    document.getElementById("candace").style.opacity = 1;
+    document.getElementById("perry").style.opacity = 1;
+    document.getElementById("ferb").style.opacity = 1;
+    document.getElementById("isabella").style.opacity = 1;
+    document.getElementById("phineas").style.opacity = 1;
+    document.getElementById("buford").style.opacity = 1;
+}
+
+</script>
+
+</body>
+</html>

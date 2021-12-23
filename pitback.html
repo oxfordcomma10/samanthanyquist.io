@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50.0%;
+  padding: 5px;
+}
+#header {
+    text-align: center;
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+/* Clearfix (clear floats) */
+
+body {background-color: darkkhaki;}
+</style>
+</head>
+<body>
+
+<div id=header>Pick One</div>
+
+<div class="row">
+  <div class="column" id="pitbull">
+<a href = "javascript:pitbullButton();">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/61WHhsyhStL._AC_SL1000_.jpg" alt="Mr.Worldwide" style="width:100%">
+</a>
+ </div>
+  <div class="column" id="nickelback">
+<a href="javascript:nickelbackButton();" >
+    <img src="https://thumb.spokesman.com/Ig6Ns63EZOKxODK5yg8yl_FjZ1w=/1200x0/media.spokesman.com/photos/2017/08/24/LIVE_NATION_NICKELBACK_TOUR.JPG.jpg" alt="Nickelback" style="width:100%">
+</div>
+</a>
+</div>
+
+<script>
+function pitbullButton(){
+    document.getElementById("nickelback").innerHTML = 'good choice';
+    document.getElementById("header").style.display = 'none';
+}
+function nickelbackButton(){
+    document.getElementById("pitbull").innerHTML = 'yikes';
+    document.getElementById("header").style.display = 'none';
+    
+}
+
+</script>
+
+</body>
+</html>
