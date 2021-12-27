@@ -12,6 +12,26 @@
   flex: 50.0%;
   padding: 5px;
 }
+.topnav {
+  background-color: rgb(17, 17, 17);
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: rgb(255, 253, 253);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #fca2e5;
+  color: black;
+}
+.topnav a.active {
+  background-color: #a71a83;
+  color: white;
+}
 #header {
     text-align: center;
     font-size: 300%;
@@ -23,7 +43,12 @@ body {background-color: rgb(166, 124, 170);}
 </style>
 </head>
 <body>
-
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="pokemon.html">Quizes</a>
+  <a href="blog.html">Blog</a>
+</div>
+<br>
 <div id=header>You are Ghost Type</div>
 
 <div >

@@ -25,6 +25,26 @@
     font-size: 300%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.topnav {
+  background-color: rgb(17, 17, 17);
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: rgb(255, 253, 253);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #fca2e5;
+  color: black;
+}
+.topnav a.active {
+  background-color: #a71a83;
+  color: white;
+}
 .button {
   display: flex;
   justify-content: center;
@@ -40,7 +60,11 @@ body {background-color: rgb(241, 218, 247);}
     <link rel="icon" type="image/png" href="./icon.png">
 </head>
 <body>
-
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="pokemon.html">Quizes</a>
+  <a href="blog.html">Blog</a>
+</div>
 <div id=header>What Pokemon type are you?</div>
 <h1>Which Phineas and Ferb Character do you relate to most?</h1>
 <div class="row">
