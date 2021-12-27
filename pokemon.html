@@ -16,11 +16,22 @@
   flex: 50.0%;
   padding: 5px;
 }
+.column3 {
+  flex: 50.0%;
+  padding: 5px;
+}
 #header {
     text-align: center;
     font-size: 300%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(241, 218, 247);
+}
 /* Clearfix (clear floats) */
 
 body {background-color: rgb(241, 218, 247);}
@@ -71,43 +82,173 @@ body {background-color: rgb(241, 218, 247);}
 </div>
 <h1> Which is Pitbull's best song? </h1>
 <div class="row">
-    <div class="column2" id="ferb">
-        <a href = "javascript:ferbButton();">
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/c/ca/Profile_-_Ferb_Fletcher.PNG/revision/latest?cb=20200401182236" alt="Ferb" style="width:100%">
+    <div class="column2" id="fireball">
+        <a href = "javascript:fireballButton();">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Pitbull_-_Fireball_%28feat._John_Ryan%29.png" alt="Fireball" style="width:100%">
         </a>
     </div>
-    <div class="column2" id="isabella">
-        <a href="javascript:isabellaButton();" >
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/8/8c/Profile_-_Isabella_Garcia-Shapiro.PNG/revision/latest/top-crop/width/360/height/450?cb=20200401182003" alt="Isabella" style="width:100%">
+    <div class="column2" id="give">
+        <a href="javascript:giveButton();" >
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/06/Pitbull_-_Give_Me_Everything.jpg" alt="Give" style="width:100%">
         </a>
      </div>
-    <div class="column2" id="phineas">
-        <a href = "javascript:phineasButton();">
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/e/ea/Profile_-_Phineas_Flynn.PNG/revision/latest?cb=20200401182458" alt="Phineas" style="width:100%">
+    <div class="column2" id="shake">
+        <a href = "javascript:shakeButton();">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Shake_Senora.jpg/220px-Shake_Senora.jpg" alt="Shake" style="width:100%">
         </a>
     </div>
-    <div class="column2" id="perry">
-        <a href = "javascript:perryButton();">
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/6/66/Profile_-_Perry_the_Platypus.PNG/revision/latest?cb=20200401182751" alt="Perry" style="width:100%">
+    <div class="column2" id="time">
+        <a href = "javascript:timeButton();">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/Pitbull_and_Ne-Yo_-_Time_of_Our_Lives.png" alt="Time" style="width:100%">
         </a>
     </div>
-    <div class="column2" id="candace">
-        <a href = "javascript:candaceButton();">
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/1/18/Profile_-_Candace_Flynn.png/revision/latest?cb=20200401181755" alt="Candace" style="width:100%">
+    <div class="column2" id="hotel">
+        <a href = "javascript:hotelButton();">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Pitbull_-_Hotel_Room_Service_%28Single_Cover%29M-E.png" alt="Hotel" style="width:100%">
         </a>
     </div>
-    <div class="column2" id="buford">
-        <a href = "javascript:bufordButton();">
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/b/bd/Profile_-_Buford_Van_Stomm.PNG/revision/latest/top-crop/width/360/height/360?cb=20200401192847" alt="Buford" style="width:100%">
-        </a>
-    </div>
-    <div class="column2" id="baljeet">
-        <a href = "javascript:baljeetButton();">
-            <img src="https://static.wikia.nocookie.net/phineasandferb/images/9/98/Baljeet.JPG/revision/latest?cb=20170806211609" alt="Baljeet" style="width:100%">
+    <div class="column2" id="nickelback">
+        <a href = "javascript:nickelbackButton();">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Nickelback_-_How_You_Remind_Me_-_CD_cover.jpg" alt="Nickelback" style="width:100%">
         </a>
     </div>
 </div>
+<h1> Which movie makes you feel like a Girlboss? </h1>
+<div class="row">
+    <div class="column3" id="pitch">
+        <a href = "javascript:pitchButton();">
+            <img src="https://m.media-amazon.com/images/I/91bAKJ3lMVL._SL1500_.jpg" alt="Pitch" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="mulan">
+        <a href="javascript:mulanButton();" >
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81mbLAxqn9L.jpg" alt="Mulan" style="width:100%">
+        </a>
+     </div>
+    <div class="column3" id="hunger">
+        <a href = "javascript:hungerButton();">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjA4NDg3NzYxMF5BMl5BanBnXkFtZTcwNTgyNzkyNw@@._V1_FMjpg_UX1000_.jpg" alt="Hunger" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="legally">
+        <a href = "javascript:legallyButton();">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTEyNjUwMTkxMV5BMl5BanBnXkFtZTcwNjk0NDk0NA@@._V1_.jpg" alt="Legally" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="harry">
+        <a href = "javascript:harryButton();">
+            <img src="https://m.media-amazon.com/images/I/A12o-S9zoFL._SY445_.jpg" alt="Harry" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="captain">
+        <a href = "javascript:captainButton();">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_.jpg" alt="Captain" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="bring">
+        <a href = "javascript:bringButton();">
+            <img src="https://www.uphe.com/sites/default/files/styles/scale__344w_/public/2015/05/025192289170_DVD_WS_2D.jpg" alt="Bring" style="width:100%">
+        </a>
+    </div>
+</div>
+<h1> Which is the best Spider-man? </h1>
+<div class="row">
+    <div class="column3" id="tom">
+        <a href = "javascript:tomButton();">
+            <img src="https://cdn.vox-cdn.com/thumbor/bZmLbVehfpl14KXLTPE8mezTcsE=/0x0:2050x1080/1200x800/filters:focal(861x376:1189x704)/cdn.vox-cdn.com/uploads/chorus_image/image/65376921/spider_man_far_from_home_peter_parker_1562394390.0.jpg" alt="Tom" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="andrew">
+        <a href="javascript:andrewButton();" >
+            <img src="https://images.hindustantimes.com/img/2021/12/26/550x309/The-Amazing-Spider-Man_1640516745672_1640516757407.jpg" alt="andrew" style="width:100%">
+        </a>
+     </div>
+    <div class="column3" id="tobey">
+        <a href = "javascript:tobeyButton();">
+            <img src="https://stylecaster.com/wp-content/uploads/2021/12/Spider-Man-2.jpg?w=670" alt="Tobey" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="miles">
+        <a href = "javascript:milesButton();">
+            <img src="https://www.cnet.com/a/img/D2JfV89ICHcUb3j6HBXWYIpgQEo=/940x0/2019/05/07/31f16274-0281-4f80-9e4b-e76ba3b137f9/7-spider-man-into-the-spider-verse-b5ucxe.jpg" alt="Miles" style="width:100%">
+        </a>
+    </div>
+    <div class="column3" id="who">
+        <a href = "javascript:whoButton();">
+            <img src="https://i2.wp.com/iantruscott.com/wp-content/uploads/2014/11/PageImage-524254-4726797-8505067251_c6721f5c18_o.jpg?fit=800%2C800&ssl=1" alt="Who" style="width:75%">
+        </a>
+    </div>
+</div>
+<h1> Which (sort of) niche historical person(s) would you like to meet? </h1>
+<form>
+    <input type="radio" id="virgin" name="historical" value="virgin">
+    <label for="virgin" style="font-size:3vw">The Virgin Mary</label><br>
+    <input type="radio" id="robert" name="historical" value="robert">
+    <label for="robert" style="font-size:3vw">Robert Kennedy</label><br>
+    <input type="radio" id="chinggis" name="historical" value="chinggis">
+    <label for="chinggis" style="font-size:3vw">Chinggis Khaan</label><br>
+    <input type="radio" id="alan" name="historical" value="alan">
+    <label for="alan" style="font-size:3vw">Alan Rickman</label><br>
+    <input type="radio" id="frida" name="historical" value="frida">
+    <label for="frida" style="font-size:3vw">Frida Kahlo</label><br>
+    <input type="radio" id="catherine" name="historical" value="catherine">
+    <label for="catherine" style="font-size:3vw">Catherine the Great's Lovers</label>
+</form>
+<div class="button">
+    <a href = "javascript:submitted()">
+        <button id="submit">Get Results</button>
+    </a>
+</div><br><br><br>
 <script>
+function fireballButton(){
+    document.getElementById("fireball").style.opacity = 0.3;
+    document.getElementById("give").style.opacity = 1;
+    document.getElementById("shake").style.opacity = 1;
+    document.getElementById("time").style.opacity = 1;
+    document.getElementById("hotel").style.opacity = 1;
+    document.getElementById("nickelback").style.opacity = 1;
+}
+function giveButton(){
+    document.getElementById("give").style.opacity = 0.3;
+    document.getElementById("fireball").style.opacity = 1;
+    document.getElementById("shake").style.opacity = 1;
+    document.getElementById("time").style.opacity = 1;
+    document.getElementById("hotel").style.opacity = 1;
+    document.getElementById("nickelback").style.opacity = 1;
+}
+function shakeButton(){
+    document.getElementById("shake").style.opacity = 0.3;
+    document.getElementById("fireball").style.opacity = 1;
+    document.getElementById("give").style.opacity = 1;
+    document.getElementById("time").style.opacity = 1;
+    document.getElementById("hotel").style.opacity = 1;
+    document.getElementById("nickelback").style.opacity = 1;
+}
+function timeButton(){
+    document.getElementById("time").style.opacity = 0.3;
+    document.getElementById("fireball").style.opacity = 1;
+    document.getElementById("give").style.opacity = 1;
+    document.getElementById("shake").style.opacity = 1;
+    document.getElementById("hotel").style.opacity = 1;
+    document.getElementById("nickelback").style.opacity = 1;
+}
+function hotelButton(){
+    document.getElementById("hotel").style.opacity = 0.3;
+    document.getElementById("fireball").style.opacity = 1;
+    document.getElementById("give").style.opacity = 1;
+    document.getElementById("shake").style.opacity = 1;
+    document.getElementById("time").style.opacity = 1;
+    document.getElementById("nickelback").style.opacity = 1;
+}
+function nickelbackButton(){
+    document.getElementById("nickelback").style.opacity = 0.3;
+    document.getElementById("fireball").style.opacity = 1;
+    document.getElementById("give").style.opacity = 1;
+    document.getElementById("shake").style.opacity = 1;
+    document.getElementById("time").style.opacity = 1;
+    document.getElementById("hotel").style.opacity = 1;
+
+}
 function ferbButton(){
     document.getElementById("ferb").style.opacity = 0.3;
     document.getElementById("perry").style.opacity = 1;
@@ -143,7 +284,6 @@ function perryButton(){
     document.getElementById("candace").style.opacity = 1;
     document.getElementById("buford").style.opacity = 1;
     document.getElementById("baljeet").style.opacity = 1;
-
 }
 function candaceButton(){
     document.getElementById("candace").style.opacity = 0.3;
@@ -172,6 +312,285 @@ function baljeetButton(){
     document.getElementById("phineas").style.opacity = 1;
     document.getElementById("buford").style.opacity = 1;
 }
+//Movies
+function pitchButton(){
+    document.getElementById("pitch").style.opacity = 0.3;
+    document.getElementById("mulan").style.opacity = 1;
+    document.getElementById("hunger").style.opacity = 1;
+    document.getElementById("legally").style.opacity = 1;
+    document.getElementById("harry").style.opacity = 1;
+    document.getElementById("captain").style.opacity = 1;
+    document.getElementById("bring").style.opacity = 1;
+}
+function mulanButton(){
+    document.getElementById("mulan").style.opacity = 0.3;
+    document.getElementById("pitch").style.opacity = 1;
+    document.getElementById("hunger").style.opacity = 1;
+    document.getElementById("legally").style.opacity = 1;
+    document.getElementById("harry").style.opacity = 1;
+    document.getElementById("captain").style.opacity = 1;
+    document.getElementById("bring").style.opacity = 1;
+}
+function hungerButton(){
+    document.getElementById("hunger").style.opacity = 0.3;
+    document.getElementById("pitch").style.opacity = 1;
+    document.getElementById("mulan").style.opacity = 1;
+    document.getElementById("legally").style.opacity = 1;
+    document.getElementById("harry").style.opacity = 1;
+    document.getElementById("captain").style.opacity = 1;
+    document.getElementById("bring").style.opacity = 1;
+}
+function legallyButton(){
+    document.getElementById("legally").style.opacity = 0.3;
+    document.getElementById("pitch").style.opacity = 1;
+    document.getElementById("mulan").style.opacity = 1;
+    document.getElementById("hunger").style.opacity = 1;
+    document.getElementById("harry").style.opacity = 1;
+    document.getElementById("captain").style.opacity = 1;
+    document.getElementById("bring").style.opacity = 1;
+
+}
+function harryButton(){
+    document.getElementById("harry").style.opacity = 0.3;
+    document.getElementById("pitch").style.opacity = 1;
+    document.getElementById("mulan").style.opacity = 1;
+    document.getElementById("hunger").style.opacity = 1;
+    document.getElementById("legally").style.opacity = 1;
+    document.getElementById("captain").style.opacity = 1;
+    document.getElementById("bring").style.opacity = 1;
+}
+function captainButton(){
+    document.getElementById("captain").style.opacity = 0.3;
+    document.getElementById("pitch").style.opacity = 1;
+    document.getElementById("mulan").style.opacity = 1;
+    document.getElementById("hunger").style.opacity = 1;
+    document.getElementById("legally").style.opacity = 1;
+    document.getElementById("harry").style.opacity = 1;
+    document.getElementById("bring").style.opacity = 1;
+}
+function bringButton(){
+    document.getElementById("bring").style.opacity = 0.3;
+    document.getElementById("pitch").style.opacity = 1;
+    document.getElementById("mulan").style.opacity = 1;
+    document.getElementById("hunger").style.opacity = 1;
+    document.getElementById("legally").style.opacity = 1;
+    document.getElementById("harry").style.opacity = 1;
+    document.getElementById("captain").style.opacity = 1;
+}
+// SPIDERMEN
+function tomButton(){
+    document.getElementById("tom").style.opacity = 0.3;
+    document.getElementById("andrew").style.opacity = 1;
+    document.getElementById("tobey").style.opacity = 1;
+    document.getElementById("miles").style.opacity = 1;
+    document.getElementById("who").style.opacity = 1;
+}
+function andrewButton(){
+    document.getElementById("andrew").style.opacity = 0.3;
+    document.getElementById("tom").style.opacity = 1;
+    document.getElementById("tobey").style.opacity = 1;
+    document.getElementById("miles").style.opacity = 1;
+    document.getElementById("who").style.opacity = 1;
+}
+function tobeyButton(){
+    document.getElementById("tobey").style.opacity = 0.3;
+    document.getElementById("tom").style.opacity = 1;
+    document.getElementById("andrew").style.opacity = 1;
+    document.getElementById("miles").style.opacity = 1;
+    document.getElementById("who").style.opacity = 1;
+}
+function milesButton(){
+    document.getElementById("miles").style.opacity = 0.3;
+    document.getElementById("tom").style.opacity = 1;
+    document.getElementById("andrew").style.opacity = 1;
+    document.getElementById("tobey").style.opacity = 1;
+    document.getElementById("who").style.opacity = 1;
+}
+function whoButton(){
+    document.getElementById("who").style.opacity = 0.3;
+    document.getElementById("tom").style.opacity = 1;
+    document.getElementById("andrew").style.opacity = 1;
+    document.getElementById("tobey").style.opacity = 1;
+    document.getElementById("miles").style.opacity = 1;
+}
+function submitted(){
+    document.getElementById("submit").style.backgroundColor = "white";
+    let normal = 0;
+    let fire = 0;
+    let water = 0;
+    let grass = 0;
+    let electric = 0;
+    let ice = 0;
+    let fighting = 0;
+    let poison = 0;
+    let ground = 0;
+    let flying = 0;
+    let psychic = 0;
+    let bug = 0;
+    let rock = 0;
+    let ghost = 0;
+    let dark = 0;
+    let dragon = 0;
+    let steel = 0;
+    let fairy = 0;
+
+    const things = ["ferb", "phineas", "perry", "candace", "buford", "isabella","baljeet", "give","time","hotel","shake","fireball","nickelback", "harry","captain","legally","mulan", "pitch","bring","hunger","tom","tobey","andrew","miles","who", "chinggis", "catherine", "alan", "frida", "virgin", "robert"];
+    let types_arr = [
+        ["phineas", "give", "harry", "tom", "chinggis"], //normal 0
+        ["phineas", "time", "captain", "miles", "catherine"], //fire 1   
+        ["perry", "hotel", "legally", "andrew", "virgin"], //water 2
+        ["phineas", "give", "mulan", "tobey", "robert"], //grass 3
+        ["perry", "shake", "pitch", "andrew", "frida"], //electric4
+        ["candace", "shake", "bring", "miles", "alan"], //ice5
+        ["candace", "fireball", "mulan", "tom", "chinggis"], //fighting6
+        ["nickelback"], //poison7
+        ["buford", "give", "hunger", "who", "chinggis"], //ground8
+        ["isabella", "shake", "harry", "tobey", "catherine"], //flying9
+        ["ferb", "time", "legally", "andrew", "alan"], //psychic10
+        ["baljeet", "hotel", "harry", "tobey", "frida"], //bug11
+        ["buford", "fireball", "bring", "andrew", "chinggis"], //rock12
+        ["ferb", "hotel", "hunger", "tom", "robert"], //ghost13
+        ["buford", "give", "mulan", "tom", "frida"], //dark14
+        ["ferb", "hotel", "captain", "miles", "virgin"], //dragon15
+        ["baljeet", "give", "hunger", "tobey", "alan"], //steel16
+        ["isabella", "shake", "legally", "who", "catherine"] //fairy17
+    ];
+
+        for (let thing in things){
+            //document.getElementByClass("button").style.backgroundColor = "red";
+            if (document.getElementById(things[thing]).style.opacity == 0.3 || document.getElementById(things[thing]).checked){
+                if(things[thing] == "nickelback"){
+                    //document.getElementByClass("button").style.backgroundColor = "blue";
+                    poison += 1000;
+                }
+                else{
+                    for (let type in types_arr){
+                        //document.getElementByClass("button").style.backgroundColor = "green";
+                        for (let i = 0; i < 5; i++){
+                            if(types_arr[type][i] == things[thing]){
+                                if(type == 0){
+                                    normal += 1;
+                                }
+                                else if(type == 1){
+                                    fire += 1;
+                                }
+                                else if(type == 2){
+                                    water += 1;
+                                }
+                                else if(type == 3){
+                                    grass += 1;
+                                }
+                                else if(type == 4){
+                                    electric += 1;
+                                }
+                                else if(type == 5){
+                                    ice += 1;
+                                }
+                                else if(type == 6){
+                                    fighting += 1;
+                                }
+                                else if(type == 8){
+                                    ground += 1;
+                                }
+                                else if(type == 9){
+                                    flying += 1;
+                                }
+                                else if(type == 10){
+                                    psychic += 1;
+                                }
+                                else if(type == 11){
+                                    bug += 1;
+                                }
+                                else if(type == 12){
+                                    rock += 1;
+                                }
+                                else if(type == 13){
+                                    ghost += 1;
+                                }
+                                else if(type == 14){
+                                    dark += 1;
+                                }
+                                else if(type == 15){
+                                    dragon += 1;
+                                }
+                                else if(type == 16){
+                                    steel += 1;
+                                }
+                                else if(type == 17){
+                                    fairy += 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        const calculations = [normal, fire, water, grass, electric, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dark, dragon, steel, fairy];
+        let max = calculations[0];
+        for (let ty in calculations){
+            if(calculations[ty] > max){
+                max = calculations[ty];
+            }
+        }
+        if(max == calculations[0]){
+            window.location.href = "normal_type.html";
+        }
+        else if(max == calculations[1]){
+            window.location.href = "fire_type.html";
+        }
+        else if(max == calculations[2]){
+            window.location.href = "water_type.html";
+        }
+        else if(max == calculations[3]){
+            window.location.href = "grass_type.html";
+        }
+        else if(max == calculations[4]){
+            window.location.href = "electric_type.html";
+        }
+        else if(max == calculations[5]){
+            window.location.href = "ice_type.html";
+        }
+        else if(max == calculations[6]){
+            window.location.href = "fighting_type.html";
+        }
+        else if(max == calculations[7]){
+            window.location.href = "poison_type.html";
+        }
+        else if(max == calculations[8]){
+            window.location.href = "ground_type.html";
+        }
+        else if(max == calculations[9]){
+            window.location.href = "flying_type.html";
+        }
+        else if(max == calculations[10]){
+            window.location.href = "psychic_type.html";
+        }
+        else if(max == calculations[11]){
+            window.location.href = "bug_type.html";
+        }
+        else if(max == calculations[12]){
+            window.location.href = "rock_type.html";
+        }
+        else if(max == calculations[13]){
+            window.location.href = "ghost_type.html";
+        }
+        else if(max == calculations[14]){
+            window.location.href = "dark_type.html";
+        }
+        else if(max == calculations[15]){
+            window.location.href = "dragon_type.html";
+        }
+        else if(max == calculations[16]){
+            window.location.href = "steel_type.html";
+        }
+        else if(max == calculations[17]){
+            window.location.href = "fairy_type.html";
+        }
+        else{
+            window.location.href = "inconclusive_type.html";
+        }
+}
+
 
 </script>
 
