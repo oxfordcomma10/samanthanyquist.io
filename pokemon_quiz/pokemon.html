@@ -61,9 +61,9 @@ body {background-color: rgb(241, 218, 247);}
 </head>
 <body>
 <div class="topnav">
-  <a href="index.html">Home</a>
-  <a class="active" href="pokemon.html">Quizes</a>
-  <a href="blog.html">Blog</a>
+  <a href="../index.html">Home</a>
+  <a href="../quizzes.html">Quizzes</a>
+  <a href="../blog.html">Blog</a>
 </div>
 <div id=header>What Pokemon type are you?</div>
 <h1>Which Phineas and Ferb Character do you relate to most?</h1>
@@ -206,17 +206,23 @@ body {background-color: rgb(241, 218, 247);}
 <h1> Which (sort of) niche historical person(s) would you like to meet? </h1>
 <form>
     <input type="radio" id="virgin" name="historical" value="virgin">
-    <label for="virgin" style="font-size:3vw">The Virgin Mary</label><br>
+    <label for="virgin" style="font-size:3vw">The Virgin Mary</label>
+    <a href= ./pokemon_additional_info/mary.html target="_blank">additional information</a><br>
     <input type="radio" id="robert" name="historical" value="robert">
-    <label for="robert" style="font-size:3vw">Robert Kennedy</label><br>
+    <label for="robert" style="font-size:3vw">Robert Kennedy</label>
+    <a href= ./pokemon_additional_info/robert_kennedy.html target="_blank">additional information</a><br>
     <input type="radio" id="chinggis" name="historical" value="chinggis">
-    <label for="chinggis" style="font-size:3vw">Chinggis Khaan</label><br>
+    <label for="chinggis" style="font-size:3vw">Chinggis Khaan (Genghis Khan)</label>
+    <a href= ./pokemon_additional_info/chinggis_khaan.html target="_blank">additional information</a><br>
     <input type="radio" id="alan" name="historical" value="alan">
-    <label for="alan" style="font-size:3vw">Alan Rickman</label><br>
+    <label for="alan" style="font-size:3vw">Alan Rickman</label>
+    <a href= ./pokemon_additional_info/alan_rickman.html target="_blank">additional information</a><br>
     <input type="radio" id="frida" name="historical" value="frida">
-    <label for="frida" style="font-size:3vw">Frida Kahlo</label><br>
+    <label for="frida" style="font-size:3vw">Frida Kahlo</label>
+    <a href= ./pokemon_additional_info/frida_kahlo.html target="_blank">additional information</a><br>
     <input type="radio" id="catherine" name="historical" value="catherine">
     <label for="catherine" style="font-size:3vw">Catherine the Great's Lovers</label>
+    <a href= ./pokemon_additional_info/catherine_lovers.html target="_blank">additional information</a><br>
 </form>
 <div class="button">
     <a href = "javascript:submitted()">
@@ -552,63 +558,69 @@ function submitted(){
             if(calculations[ty] > max){
                 max = calculations[ty];
             }
+            else if(calculations[ty] == max){
+                let chance = Math.random();
+                if (chance > 0.5){
+                    max = calculations[ty];
+                }
+            }
         }
         if(max == calculations[0]){
-            window.location.href = "normal_type.html";
+            window.location.href = "./pokemon_results/normal_type.html";
         }
         else if(max == calculations[1]){
-            window.location.href = "fire_type.html";
+            window.location.href = "./pokemon_results/fire_type.html";
         }
         else if(max == calculations[2]){
-            window.location.href = "water_type.html";
+            window.location.href = "./pokemon_results/water_type.html";
         }
         else if(max == calculations[3]){
-            window.location.href = "grass_type.html";
+            window.location.href = "./pokemon_results/grass_type.html";
         }
         else if(max == calculations[4]){
-            window.location.href = "electric_type.html";
+            window.location.href = "./pokemon_results/electric_type.html";
         }
         else if(max == calculations[5]){
-            window.location.href = "ice_type.html";
+            window.location.href = "./pokemon_results/ice_type.html";
         }
         else if(max == calculations[6]){
-            window.location.href = "fighting_type.html";
+            window.location.href = "./pokemon_results/fighting_type.html";
         }
         else if(max == calculations[7]){
-            window.location.href = "poison_type.html";
+            window.location.href = "./pokemon_results/poison_type.html";
         }
         else if(max == calculations[8]){
-            window.location.href = "ground_type.html";
+            window.location.href = "./pokemon_results/ground_type.html";
         }
         else if(max == calculations[9]){
-            window.location.href = "flying_type.html";
+            window.location.href = "./pokemon_results/flying_type.html";
         }
         else if(max == calculations[10]){
-            window.location.href = "psychic_type.html";
+            window.location.href = "./pokemon_results/psychic_type.html";
         }
         else if(max == calculations[11]){
-            window.location.href = "bug_type.html";
+            window.location.href = "./pokemon_results/bug_type.html";
         }
         else if(max == calculations[12]){
-            window.location.href = "rock_type.html";
+            window.location.href = "./pokemon_results/rock_type.html";
         }
         else if(max == calculations[13]){
-            window.location.href = "ghost_type.html";
+            window.location.href = "./pokemon_results/ghost_type.html";
         }
         else if(max == calculations[14]){
-            window.location.href = "dark_type.html";
+            window.location.href = "./pokemon_results/dark_type.html";
         }
         else if(max == calculations[15]){
-            window.location.href = "dragon_type.html";
+            window.location.href = "./pokemon_results/dragon_type.html";
         }
         else if(max == calculations[16]){
-            window.location.href = "steel_type.html";
+            window.location.href = "./pokemon_results/steel_type.html";
         }
         else if(max == calculations[17]){
-            window.location.href = "fairy_type.html";
+            window.location.href = "./pokemon_results/fairy_type.html";
         }
         else{
-            window.location.href = "inconclusive_type.html";
+            window.location.href = "./pokemon_results/inconclusive_type.html";
         }
 }
 
