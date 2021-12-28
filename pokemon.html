@@ -481,15 +481,12 @@ function submitted(){
     ];
 
         for (let thing in things){
-            //document.getElementByClass("button").style.backgroundColor = "red";
             if (document.getElementById(things[thing]).style.opacity == 0.3 || document.getElementById(things[thing]).checked){
                 if(things[thing] == "nickelback"){
-                    //document.getElementByClass("button").style.backgroundColor = "blue";
                     poison += 1000;
                 }
                 else{
                     for (let type in types_arr){
-                        //document.getElementByClass("button").style.backgroundColor = "green";
                         for (let i = 0; i < 5; i++){
                             if(types_arr[type][i] == things[thing]){
                                 if(type == 0){
