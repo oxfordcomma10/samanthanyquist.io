@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
+<head>
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
 <style>
 body{
-  text-align: center;
-    font-size: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    background-color: pink;
+    background-color: #f3dddf;
 }
 .topnav {
-  background-color: rgb(17, 17, 17);
+  font-family: "Playfair Display";
+  text-align: left;
   overflow: hidden;
 }
 .topnav a {
-  float: left;
-  color: rgb(255, 253, 253);
+  float: right;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  gap: 1rem;
   font-size: 17px;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
 }
 .topnav a:hover {
-  background-color: #fca2e5;
-  color: black;
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
 }
 .topnav a.active {
-  background-color: #a71a83;
-  color: white;
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 20px; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 #button {
   display: flex;
@@ -33,19 +44,146 @@ body{
   align-items: center;
   height: 100%;
 }
+.row{
+  display: flex;
+  padding: 0px;
+}  
+.picture{
+  display: flex;
+  margin-left : 50px;
+  float: left;
+  align-self: center;
+  height: 50%;
+  width: 50%;
+  background-color: transparent;
+}
+.name{
+  font-family: "Playfair Display";
+  font-size: 25px;
+  float: left;
+  text-align: left;
+  margin-left: 5px;
+  padding: 1px;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name h1{
+  font-size: 120px;
+}
+.projects{
+  font-family: "Playfair Display";
+  font-size: 25px;
+  float: left;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+.projects a {
+  float: right;
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.projects a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
+}
+.project_pics{
+  border: 6px;
+  border-style: solid;
+  border-color: #7c1932;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  margin: 30px;
+  margin-left: 20px;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project_pics img{
+  width: 100%;
+  border: #7c1932 solid 4px;
+}
+.project_pics h6{
+  font-family: "Playfair Display";
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding-bottom: 1px;
+  margin: 2px;
+}
+.project_pics p{
+  font-family: "Playfair Display";
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  padding-top: 5px;
+  margin: 2px;
+}
+.project_pics a{
+  text-decoration: none;
+}
+
 </style>
-<title>Menu</title>
+</head>
+<title>Home</title>
 <link rel="icon" type="image/png" href="./icon.png">
 <body>
 <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="quizzes.html">Quizzes</a>
-  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+  <div class="logo">
+    <a href="index.html"">samantha nyquist</a>
+  </div>
 </div>
 <br>
-  <h1>Welcome to Sammy's version of Buzzfeed!</h1>
-<p> We got quizzes and blog posts, maybe<br>
-Enjoy the mess and a half that is this :)</p>
+<div class="row">
+  <div class="picture">
+   <img src="./jumping.png" style="width:50%" text-align="left">
+  </div>
+  <div class="name">
+    <h1>Samantha<br>Nyquist</h1>
+  	<p>A soon-to-be frontend and backend programmer just trying to find her place in the world of coding.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="projects">
+    <h1>Latest projects:
+      <a href="projects.html">See all</a>
+    </h1>
+  </div>
+</div>  
+
+<div class="row">
+  <div class="project_pics" style="margin-left: 100px;">
+    <a href="./spain/spain_plans.html">
+      <img src="./spain/IMG-5877.jpg"><br>
+      <h6>Follow along my semester in Spain!</h6>
+      <p>Based in Madrid, I have the wonderful opportunity to experience the Spanish life and hopefully better my Spanish speaking skills.</p>
+    </a>
+  </div>
+  <div class="project_pics">
+    <a href="./pokemon_quiz/pokemon.html">
+      <img src="https://miro.medium.com/max/400/1*MUlYzSPoM9i_yzdXH9Fk9Q.png"><br>
+      <h6>What Pokémon type are you?</h6>
+      <p>I started teaching myself web design after taking a quiz online with a similar name and felt that the results were not accurate, so I 
+      decided to just create my own. I taught myself how to create the quiz and eventually the website you see today. I would like 
+      to add a disclaimer: I do not know much about Pokémon, I just went off vibes.</p>
+    </a>
+  </div>
+</div>
+
+  
+
 
 <br>
 <br>

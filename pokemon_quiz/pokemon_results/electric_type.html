@@ -13,24 +13,40 @@
   padding: 5px;
 }
 .topnav {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(255, 251, 4);
+  overflow: hidden;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
   overflow: hidden;
 }
 .topnav a {
-  float: left;
-  color: rgb(255, 253, 253);
+  float: right;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  gap: 1rem;
   font-size: 17px;
+  text-shadow: -.30px -.30px 0 rgb(255, 251, 4), 
+                .30px .30px rgb(255, 251, 4);
 }
 .topnav a:hover {
-  background-color: #fca2e5;
-  color: black;
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
 }
 .topnav a.active {
-  background-color: #a71a83;
-  color: white;
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 20px; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 #header {
     text-align: center;
@@ -58,6 +74,7 @@
   padding-right: 1%;
   padding-left: 1%;
   margin-top: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Clearfix (clear floats) */
 
@@ -66,9 +83,13 @@ body {background-color: rgba(255, 251, 4, 0.651);}
 </head>
 <body>
 <div class="topnav">
+  <a href="../../contact.html">Contact</a>
+  <a href="../../projects.html">Projects</a>
+  <a href="../../about.html">About</a>
   <a href="../../index.html">Home</a>
-  <a href="../../quizzes.html">Quizzes</a>
-  <a href="../../blog.html">Blog</a>
+  <div class="logo">
+    <a href="../../index.html"">samantha nyquist</a>
+  </div>
 </div>
 <br>
 <div class=words>

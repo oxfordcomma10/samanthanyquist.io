@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<style>
+body{
+    background-color: #f3dddf;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 17px;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+  transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 20px; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.row{
+  display: flex;
+  float: right;
+}
+* {box-sizing: border-box}
+.tab {
+  float: left;
+  border: 5px solid goldenrod;
+  width: 20%;
+  margin-top: 20px;
+  margin-left: 170px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  font-family: "Playfair Display";
+  font-size: 25px;
+  background-color: inherit;
+  color: black;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.springbreak{
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+  background-color: #7c1932;
+}
+.row {
+  display: flex;
+}
+.places{
+  position: relative;
+  text-align: center;
+  color: #7c1932;
+  float:right;
+  margin-top: 20px;
+}
+.sevilla{
+  position: absolute;
+  left: 194px;
+  top: 294px;
+}
+.granada{
+  position: absolute;
+  left: 280px;
+  top: 303px;
+}
+.malaga{
+  position: absolute;
+  left: 247px;
+  top: 320px;
+}
+.cadiz{
+  position: absolute;
+  left: 168px;
+  top: 326px;
+}
+.cordoba{
+  position: absolute;
+  left: 243px;
+  top: 276px;
+}
+.melilla{
+  position: absolute;
+  left: 305px;
+  top: 385px;
+}
+.mallorca{
+  position: absolute;
+  left: 502px;
+  top: 188px;
+}
+.ibiza{
+  position: absolute;
+  left: 459px;
+  top: 222px;
+}
+.madrid{
+  position: absolute;
+  left: 282px;
+  top: 173px;
+}
+.salamanca{
+  position: absolute;
+  left: 201px;
+  top: 136px;
+}
+.segovia{
+  position: absolute;
+  left: 267px;
+  top: 126px;
+}
+.barcelona{
+  position: absolute;
+  left: 429px;
+  top: 147px;
+}
+.santiago{
+  position: absolute;
+  left: 117px;
+  top: 43px;
+}
+.bilbao{
+  position: absolute;
+  left: 300px;
+  top: 32px;
+}
+.valencia{
+  position: absolute;
+  left: 390px;
+  top: 202px;
+}
+.tenerife{
+  position: absolute;
+  left: 48px;
+  top: 354px;
+}
+.toledo{
+  position: absolute;
+  left: 262px;
+  top: 193px;
+}
+.tabcontent {
+  font-family: "Playfair Display";
+  float: left;
+  width: 55%;
+  padding: 20px;
+  margin: 50px;
+  margin-top: 20px;
+  border: 3px solid #7c1932;
+  transition: 0.3s;
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+</head>
+<title>Spain Plans</title>
+<link rel="icon" type="image/png" href="./icon.png">
+<body>
+<div class="topnav">
+  <a href="../contact.html">Contact</a>
+  <a href="../projects.html">Projects</a>
+  <a href="../about.html">About</a>
+  <a href="../index.html">Home</a>
+  <div class="logo">
+    <a href="../index.html">samantha nyquist</a>
+  </div>
+  <p style="text-align: center; font-size: 40px;">Sammy's semester in Spain!</p>
+</div>
+<br>
+<div class="places" id="places">
+    <img src="./spain_outline_img.png" style="width:570px; height:398px; padding-top: 5px; margin-right: 100px;">
+    <div class= "sevilla" id="sevilla">&#8226;Sevilla</div>
+    <div class= "granada" id= "granada">&#8226;Granada</div>
+    <div class= "malaga" id = "malaga">&#8226;Málaga</div>
+    <div class= "cadiz" id= "cadiz">&#8226;Cádiz</div>
+    <div class= "cordoba" id= "cordoba">&#8226;Córdoba</div>
+    <div class= "melilla" id= "melilla">&#8226;Melilla</div>
+    <div class= "mallorca" id = "mallorca">&#8226;Mallorca</div>
+    <div class= "ibiza" id = "ibiza">&#8226;Ibiza</div>
+    <div class= "madrid" id = "madrid">&#8226;Madrid</div>
+    <div class= "salamanca" id = "salamanca">&#8226;Salamanca</div>
+    <div class= "segovia" id = "segovia">&#8226;Segovia</div>
+    <div class= "barcelona" id = "barcelona">&#8226;Barcelona</div>
+    <div class= "santiago" id = "santiago">&#8226;Santiago de Compestela</div>
+    <div class= "bilbao" id = "bilbao">&#8226;Bilbao</div>
+    <div class= "valencia" id = "valencia">&#8226;Valencia</div>
+    <div class= "tenerife" id ="tenerife">&#8226;Tenerife</div>
+    <div class= "toledo" id ="toledo">&#8226;Toledo</div>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="goBack()" style="font-size: 30px;">Spain</button>
+  <button class="tablinks" onclick="openCity(event, 'Madrid')" onmouseover="mouseOverm()" onmouseout="mouseOutm()">Madrid</button>
+  <button class="tablinks" onclick="openCity(event, 'Salamanca')" onmouseover="mouseOversl()" onmouseout="mouseOutsl()">Salamanca</button>
+  <button class="tablinks" onclick="openCity(event, 'Segovia')" onmouseover="mouseOvers()" onmouseout="mouseOuts()">Segovia</button>
+  <button class="tablinks" onclick="openCity(event, 'Toledo')" onmouseover="mouseOvert()" onmouseout="mouseOutt()">Toledo</button>
+  <button class="tablinks" onclick="openCity(event, 'Tenerife')" onmouseover="mouseOvert()" onmouseout="mouseOutt()">Tenerife</button>
+  <button class="tablinks" onclick="openCity(event, 'Barcelona')" onmouseover="mouseOverb()" onmouseout="mouseOutb()">Barcelona</button>
+  <button class="tablinks" onclick="openCity(event, 'Valencia')" onmouseover="mouseOverv()" onmouseout="mouseOutv()">Valencia</button>
+  <button class="tablinks" onclick="openCity(event, 'Springbreak')" onmouseover="mouseOversp()" onmouseout="mouseOutsp()">Spring Break</button>
+
+</div>
+
+<div id="Madrid" class="tabcontent">
+  <h3>Madrid</h3>
+  <p>The city in which my "homebase" for the semester is! <br>
+  My apartment is in the neighborhood called Lavapiés which is just South of the famous Puerta del Sol area. I have 7 roommates, 6 of which are 
+  from different countries in the EU. I attend classes a 10 minute walk from where I live, however the public transportation system is amazing.
+  The classes I am currently taking are Spanish 
+  Civilization; Spanish Conversation; World Relgions; and Culture, Globalization, and the Media, since it is my last semester of undergrad my
+  course load is light and a lot different than the computer science classes I had been taking, a refreshing and thought-provoking change in pace.
+  A typical week of my study abroad experience includes going to class each day and grabbing a café con leche in between class or after, or getting
+  a glass of tinto de verano with salty tapas and talk. I then go home and grab dinner at the grocery store, Carrefour, across the street, and do 
+  homework or watch a movie with friends to round out the night. Once a week I attend an incredible Flamenco class. On the weekends I usually eat 
+  out or get coffee with friends and then spend the night at a club or bar, if I am not on a weekend trip.<br>
+  The list of highlights continues to grow each day as I try new cafés, bars, shops, and parks, but some of my favorites so far:<br>
+  Getting coffee at Azura bar, shopping near Puerta del Sol, sitting on rooftops on Gran Vía, walking around Plaza de España and watching the 
+  sunset near Templo de Debod, getting drinks in the Moncloa area, and trying out new restaurants around the city.  </p>
+  <div class="row">
+    <img src="./madridpictures/IMG-4419.jpg" alt="firstmadrid" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./madridpictures/IMG-5017.jpg" alt="secondmadrid" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./madridpictures/IMG-6473.jpg" alt="thirdmadrid" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./madridpictures/IMG-6049.jpg" alt="fourthmadrid" style="display: flex;width: 25%; padding: 1px;" >
+  </div>
+</div>
+
+<div id="Salamanca" class="tabcontent">
+  <h3>Salamanca</h3>
+  <p>Spent a weekend here and stayed at an VRBO right next to the Plaza Mayor, a central spot in the city. <br>
+  Highlights included: Daniel's 
+  Chupiteria, the Roman Bridge, and the small town feeling of the beautiful town.</p>
+  <div class="row">
+    <img src="./salamancapictures/IMG-4513.jpg" alt="firstsalamanca" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./salamancapictures/IMG-4798.jpg" alt="secondsalamanca" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./salamancapictures/IMG-4815.jpg" alt="thirdsalamanca" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./salamancapictures/IMG-4830.jpg" alt="fourthsalamanca" style="display: flex;width: 25%; padding: 1px;" >
+  </div>
+</div>
+
+<div id="Segovia" class="tabcontent">
+  <h3>Segovia</h3>
+  <p>Spent a free Friday with about 13 other students from the program in Segovia! I mere 1 hour bus ride away passing through the breathtaking
+  mountains that separate Madrid from Segovia, the city proved to be a glorious medieval snapshot. While updated to the times, historical 
+  artifacts like the Aqueducts and the Alcázar de Segovia were absolutely incredible. It was amazing to see things that I had only read about in 
+  books or seen pictures of in real life.</p>
+  <div class="row">
+    <img src="./segoviapictures/IMG-5473.jpg" alt="firstsegovia" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./segoviapictures/IMG-5448.jpg" alt="secondsegovia" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./segoviapictures/IMG-5413.jpg" alt="thirdsegovia" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./segoviapictures/IMG-5213.jpg" alt="fourthsegovia" style="display: flex;width: 25%; padding: 1px;" >
+  </div>
+</div>
+
+<div id="Toledo" class="tabcontent">
+  <h3>Toledo</h3>
+  <p>The first class trip for our program was a day trip to stunning Toledo. Known as the city of three religions, our program teachers gave
+  us a tour of various sites around the city including Mosques, Synagogues, and Churches, some of which had been repurposed as different religions 
+  ruled the city. Since the city is a located in a hilly area, the views looking towards the city and from the city beyond where spectacular. I 
+  could spend an entire day admiring the views. I hope to return to Toledo later in the semester.</p>
+  <div class="row">
+    <img src="./toledopictures/IMG-6095.jpg" alt="firsttoledo" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./toledopictures/IMG-6231.jpg" alt="secondtoledo" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./toledopictures/IMG-6250.jpg" alt="thirdtoledo" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./toledopictures/IMG-6305.jpg" alt="fourthtoledo" style="display: flex;width: 25%; padding: 1px;" >
+  </div>
+</div>
+
+<div id="Tenerife" class="tabcontent">
+  <h3>Tenerife</h3>
+  <p>Planning on exploring this gorgeous island off the coast of Morocco and Western Sahara. Tenerife is part of the Canary Islands, a communidad
+  of Spain. I am traveling with my best friend from Minnesota, Cayla. We are staying in an Airbnb near Puerto de la Cruz in the north central
+  part of the island. We hope to spend days in the sun on the beach, on the pool, explore the island, and hopefully hike the inactive Volcano in 
+  the center of the island. I will update this post after the trip!</p>
+</div>
+
+<div id="Springbreak" class="tabcontent">
+  <h1>Spring Break</h1>
+  <p>My ideas for spending spring break in southern Spain:<br><br>
+  <img src="./break_calendar.png" style="width: 100%;"> <br></p>
+
+  <h2>April 8, 2022</h2>
+  <p>7:40am-8:50am<br>
+  Madrid->Sevilla<br>
+  via Plane, 47<br></p>
+  <h3>Sleeping (4/8-4/10)</h3>
+
+  <h2>April 10, 2022</h2>
+  <p>9:25am-10:08pm<br>
+  Sevilla->Córdoba<br>
+  via Train, 13<br></p>
+  <h3>Sleeping (4/10-4/11)</h3>
+  <p></p>
+
+  <h2>April 11, 2022</h2>
+  <p>9:19am-10:54am <br>
+  Córdoba->Granada<br>
+  via Train, 26<br></p>
+
+  <h2>April 11, 2022</h2>
+  <p>4:55pm-5:45pm <br>
+  Granada->Melilla<br>
+  via Plane, 60<br></p>
+  <h3>Sleeping (4/11-4/12)</h3>
+  </p>
+
+  <h2>April 12, 2022</h2>
+  <p>3:30pm-4:25pm<br>
+  Melilla->Granada<br>
+  via Plane, 58<br></p>
+  <h3>Sleeping (4/12-4/13)</h3>
+  <p></p>
+
+  <h2>April 13, 2022</h2>
+  <p>12:00pm-1:45pm<br>
+  Granada->Málaga<br>
+  via Bus, 12<br></p>
+  <h3>Sleeping (4/13-4/14)</h3>
+  <p></p>
+
+  <h2>April 14, 2022</h2>
+  <p>8:00pm-9:25pm<br>
+  Málaga->Mallorca<br>
+  via Plane, 12<br></p>
+  <h3>Sleeping (4/14-4/18)</h3>
+  <p></p>
+
+  <h2>April 17, 2022</h2>
+  <p>9:55pm-11:20pm<br>
+  Mallorca->Madrid<br>
+  via Plane, 61<br></p>
+
+  <h2>Total for transportation: 277</h2>
+
+</div>
+
+<div id="Barcelona" class="tabcontent">
+<h3>Barcelona</h3>
+<p>Still planning!</p>
+</div>
+
+<div id="Valencia" class="tabcontent">
+<h3>Valencia</h3>
+<p>Still planning!</p>
+</div>
+
+<script>
+
+function mouseOversp() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("sevilla").style.color = "goldenrod";
+  document.getElementById("granada").style.color = "goldenrod";
+  document.getElementById("cordoba").style.color = "goldenrod";
+  document.getElementById("malaga").style.color = "goldenrod";
+  document.getElementById("cadiz").style.color = "goldenrod";
+  document.getElementById("melilla").style.color = "goldenrod";
+  document.getElementById("ibiza").style.color = "goldenrod";
+  document.getElementById("mallorca").style.color = "goldenrod";
+}
+
+function mouseOutsp() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("sevilla").style.color = "#7c1932";
+  document.getElementById("granada").style.color = "#7c1932";
+  document.getElementById("cordoba").style.color = "#7c1932";
+  document.getElementById("malaga").style.color = "#7c1932";
+  document.getElementById("cadiz").style.color = "#7c1932";
+  document.getElementById("melilla").style.color = "#7c1932";
+  document.getElementById("ibiza").style.color = "#7c1932";
+  document.getElementById("mallorca").style.color = "#7c1932";
+}
+
+function mouseOvert() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("tenerife").style.color = "goldenrod";
+}
+
+function mouseOutt() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("tenerife").style.color = "#7c1932";
+}
+
+function mouseOverm() {
+  document.getElementById("madrid").style.color = "goldenrod";
+}
+
+function mouseOutm() {
+  document.getElementById("madrid").style.color = "#7c1932";
+}
+
+function mouseOverb() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("barcelona").style.color = "goldenrod";
+}
+
+function mouseOutb() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("barcelona").style.color = "#7c1932";
+}
+
+function mouseOvers() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("segovia").style.color = "goldenrod";
+}
+
+function mouseOuts() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("segovia").style.color = "#7c1932";
+}
+
+function mouseOversl() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("salamanca").style.color = "goldenrod";
+}
+
+function mouseOutsl() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("salamanca").style.color = "#7c1932";
+}
+
+function mouseOvert() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("toledo").style.color = "goldenrod";
+}
+
+function mouseOutt() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("toledo").style.color = "#7c1932";
+}
+
+function mouseOverv() {
+  document.getElementById("madrid").style.color = "goldenrod";
+  document.getElementById("valencia").style.color = "goldenrod";
+}
+
+function mouseOutv() {
+  document.getElementById("madrid").style.color = "#7c1932";
+  document.getElementById("valencia").style.color = "#7c1932";
+}
+
+function goBack(){
+    var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById("places").style.display = "block";
+}
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  document.getElementById("places").style.display = "none";
+
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
