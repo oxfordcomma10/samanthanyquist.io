@@ -38,12 +38,20 @@ body{
   border-color:#7c1932;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
+.shine{
+  width: 25px;
+  margin-left: 170px;
+  opacity: 1;
+}
+.shine img{
+  width: 100%;
+}
 .paragraph{
   font-family: "Playfair Display";
   font-size: 23px;
-  padding-left: 170px;
-  padding-right: 200px;
-  padding-top: 30px;
+  margin: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 .paragraph a {
   color: goldenrod;
@@ -52,7 +60,7 @@ body{
 </head>
 <title>About</title>
 <link rel="icon" type="image/png" href="./icon.png">
-<body>
+<body onload="sparkleon()">
 <div class="topnav">
   <a href="contact.html">Contact</a>
   <a href="projects.html">Projects</a>
@@ -63,6 +71,9 @@ body{
   </div>
 </div>
 <div class = "paragraph">
+  <div class="shine" id="leftshine">
+    <img src="./manyshiny.png" alt="sparkle">
+  </div>
   <p1>Hi! My name is Samantha Nyquist, but most people call me Sammy. I am currently finishing up my Bachelor’s degree through the 
   University of Minnesota-Twin Cities and spending my last semester in Madrid, Spain for a study abroad program! 
   <br> <br>
@@ -80,9 +91,25 @@ body{
   When I am not coding, one can find me ballroom dancing, traveling, watching musicals, or trying out new restaurants. As I grow as a 
   programmer, I hope to inspire more women and people of color to learn to code and make it more accessible to everyone.
   <br><br>
-  Check out my <a href="https://www.linkedin.com/in/samantha-nyquist-3b3009141/" target="_blank">Linkedin</a> and
- <a href="https://github.com/oxfordcomma10" target="_blank">Github</a>. 
+  Check out my <a href="https://www.linkedin.com/in/samantha-nyquist-3b3009141/" target="_blank">Linkedin</a>,
+  <a href="https://github.com/oxfordcomma10" target="_blank">Github</a>, and <a href="./SamanthaNyquistResume.pdf" target="_blank">resume</a>. 
+  <div class="shine" id="rightshine" style="width: 40px;">
+    <img src="./manyshiny.png" alt="sparkle2" style="margin-left: 500px;">
+  </div>
   </p1>
 </div>
+
+<script>
+
+function sparkleon(){
+  document.getElementById("leftshine").style.transitionDuration="2s";
+  document.getElementById("leftshine").style.opacity=Math.random();
+  document.getElementById("rightshine").style.transitionDuration="2s";
+  document.getElementById("rightshine").style.opacity=Math.random();
+  setTimeout(sparkleon, 3782);
+}
+
+
+</script>
 </body>
 </html>
