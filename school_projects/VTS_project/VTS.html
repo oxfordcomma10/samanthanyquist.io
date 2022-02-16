@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<style>
+body{
+    background-color: #f3dddf;
+}
+.row{
+  display: flex;
+  padding: 0px;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 17px;
+  text-shadow: -.30px -.30px 0 transparent, 
+                .30px .30px transparent;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+  transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 20px; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.vts{
+  font-family: "Playfair Display";
+  font-size: 23px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border:goldenrod solid 4px;
+  text-align: left;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.vts a {
+  color: goldenrod;
+}
+.vts p{
+  text-align: left;
+  font-size: 20px;
+}
+.vts code{
+  font-size: 15px;
+}
+</style>
+</head>
+<title>Projects</title>
+<link rel="icon" type="image/png" href="../../icon.png">
+<body>
+<div class="topnav">
+  <a href="../../contact.html">Contact</a>
+  <a href="../../projects.html">Projects</a>
+  <a href="../../about.html">About</a>
+  <a href="../../index.html">Home</a>
+  <div class="logo">
+    <a href="../../index.html"">samantha nyquist</a>
+  </div>
+</div>
+
+<div class = "vts">
+  <h2>Visual Transit Simulator</h2>
+  <p>This project was part of my senior year computer science capstone course. The professor provided the Javascript code and my teammates and 
+  I did most of the Java code which can be found in the <code>src/main/java/edu/umn/cs/csci3081w/project/</code> folder. The objective of the code was to 
+  create the backend code to run a virtual transit simulator of the bus and train routes on the University of Minnesota-Twin Cities campus.
+  The white circles represent stops on the lines, hovering over the circles represents the number of people waiting at the stop at that given 
+  moment. The moving colored elipses represent the transportation vehicles. Hovering over these will show the number of people on the vehicle, 
+  the maximum number of people that can be on the vehicle, and the CO2 impact. One can adjust the simulation via the controls on the left of the 
+  page. The operation system simulator keeps track of each step in the simulation. Follow the steps below to run the simulation.</p>
+  
+  <h4>Running the VTS software</h4>
+  <p><a href="./samantha_nyquist_vts_project.zip" style="margin-left: 50px;">samantha_nyquist_vts_project.zip</a><br><br>
+  To run the VTS software, you have to first start the simulator module and then start the visualization module. To start the simulator module,
+  run <code>./gradlew appRun</code>. To start the visualization module, open a browser and paste this link 
+  <a href="http://localhost:7777/project/web_graphics/project.html">http://localhost:7777/project/web_graphics/project.html</a> in its search bar. 
+  To stop the simulator module,
+  press the enter/return key in the terminal where you started the module. To stop the visualization module, close the tab of 
+  browser where you started the module. In rare occasions, you might experience some issues in starting the simulator module because a 
+  previous instance of the module is still running. To kill old instances, run <code>ps aux | grep gretty | awk '{print $2}' | xargs -L 1 kill</code> 
+  and this command will terminate previous instances.</p>
+
+
+</div>
+
+</body>
+</html>
