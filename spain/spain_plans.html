@@ -116,11 +116,6 @@ body{
   left: 502px;
   top: 188px;
 }
-.ibiza{
-  position: absolute;
-  left: 459px;
-  top: 222px;
-}
 .madrid{
   position: absolute;
   left: 282px;
@@ -141,10 +136,10 @@ body{
   left: 429px;
   top: 147px;
 }
-.santiago{
+.sansebastian{
   position: absolute;
-  left: 117px;
-  top: 43px;
+  left: 350px;
+  top: 40px;
 }
 .bilbao{
   position: absolute;
@@ -212,19 +207,21 @@ body{
 <br>
 <div class="places" id="places">
     <img src="./spain_outline_img.png" style="width:570px; height:398px; padding-top: 5px; margin-right: 100px;">
-    <div class= "sevilla" id="sevilla">&#8226;Sevilla</div>
-    <div class= "malaga" id = "malaga">&#8226;Málaga</div>
-    <div class= "mallorca" id = "mallorca">&#8226;Mallorca</div>
-    <div class= "madrid" id = "madrid">&#8226;Madrid</div>
-    <div class= "salamanca" id = "salamanca">&#8226;Salamanca</div>
-    <div class= "segovia" id = "segovia">&#8226;Segovia</div>
-    <div class= "barcelona" id = "barcelona">&#8226;Barcelona</div>
-    <div class= "bilbao" id = "bilbao">&#8226;Bilbao</div>
-    <div class= "valencia" id = "valencia">&#8226;Valencia</div>
-    <div class= "tenerife" id ="tenerife">&#8226;Tenerife</div>
-    <div class= "toledo" id ="toledo">&#8226;Toledo</div>
-    <div class= "caceres" id = "caceres">Cáceres&#8226;</div>
-    <div class= "trujillo" id ="trujillo">&#8226;Trujillo</div>
+    <div class= "sevilla" id="sevilla" onclick="openCity(event, 'Springbreak')" onmouseover="mouseOversp()" onmouseout="mouseOutsp()">&#8226;Sevilla</div>
+    <div class= "malaga" id = "malaga" onclick="openCity(event, 'Springbreak')" onmouseover="mouseOversp()" onmouseout="mouseOutsp()">&#8226;Málaga</div>
+    <div class= "mallorca" id = "mallorca" onclick="openCity(event, 'Springbreak')" onmouseover="mouseOversp()" onmouseout="mouseOutsp()">&#8226;Mallorca</div>
+    <div class= "madrid" id = "madrid" onclick="openCity(event, 'Madrid')" onmouseover="mouseOverm()" onmouseout="mouseOutm()">&#8226;Madrid</div>
+    <div class= "salamanca" id = "salamanca" onclick="openCity(event, 'Salamanca')" onmouseover="mouseOversl()" onmouseout="mouseOutsl()">&#8226;Salamanca</div>
+    <div class= "segovia" id = "segovia" onclick="openCity(event, 'Segovia')" onmouseover="mouseOvers()" onmouseout="mouseOuts()">&#8226;Segovia</div>
+    <div class= "barcelona" id = "barcelona" onclick="openCity(event, 'Barcelona')" onmouseover="mouseOverb()" onmouseout="mouseOutb()">&#8226;Barcelona</div>
+    <div class= "bilbao" id = "bilbao" onclick="openCity(event, 'Paisvasco')" onmouseover="mouseOverpv()" onmouseout="mouseOutpv()">&#8226;Bilbao</div>
+    <div class= "sansebastian" id = "sansebastian" onclick="openCity(event, 'Paisvasco')" onmouseover="mouseOverpv()" onmouseout="mouseOutpv()">&#8226;San Sebastian</div>
+    <div class= "valencia" id = "valencia" onclick="openCity(event, 'Valencia')" onmouseover="mouseOverv()" onmouseout="mouseOutv()">&#8226;Valencia</div>
+    <div class= "tenerife" id ="tenerife"  onclick="openCity(event, 'Tenerife')" onmouseover="mouseOverte()" onmouseout="mouseOutte()">&#8226;Tenerife</div>
+    <div class= "toledo" id ="toledo" onclick="openCity(event, 'Toledo')" onmouseover="mouseOvert()" onmouseout="mouseOutt()">&#8226;Toledo</div>
+    <div class= "caceres" id = "caceres" onclick="openCity(event, 'Extremadura')" onmouseover="mouseOvere()" onmouseout="mouseOute()">Cáceres&#8226;</div>
+    <div class= "trujillo" id ="trujillo" onclick="openCity(event, 'Extremadura')" onmouseover="mouseOvere()" onmouseout="mouseOute()">&#8226;Trujillo</div>
+    <div class= "merida" id ="merida" onclick="openCity(event, 'Extremadura')" onmouseover="mouseOvere()" onmouseout="mouseOute()">&#8226;Merida</div>
 </div>
 <div class="tab">
   <button class="tablinks" onclick="goBack()" style="font-size: 30px;">Spain</button>
@@ -234,9 +231,11 @@ body{
   <button class="tablinks" onclick="openCity(event, 'Toledo')" onmouseover="mouseOvert()" onmouseout="mouseOutt()">Toledo</button>
   <button class="tablinks" onclick="openCity(event, 'Tenerife')" onmouseover="mouseOverte()" onmouseout="mouseOutte()">Tenerife</button>
   <button class="tablinks" onclick="openCity(event, 'Extremadura')" onmouseover="mouseOvere()" onmouseout="mouseOute()">Extremadura</button>
-   <button class="tablinks" onclick="openCity(event, 'Valencia')" onmouseover="mouseOverv()" onmouseout="mouseOutv()">Valencia</button>
+  <button class="tablinks" onclick="openCity(event, 'Valencia')" onmouseover="mouseOverv()" onmouseout="mouseOutv()">Valencia</button>
   <button class="tablinks" onclick="openCity(event, 'Barcelona')" onmouseover="mouseOverb()" onmouseout="mouseOutb()">Barcelona</button>
   <button class="tablinks" onclick="openCity(event, 'Springbreak')" onmouseover="mouseOversp()" onmouseout="mouseOutsp()">Spring Break</button>
+  <button class="tablinks" onclick="openCity(event, 'Paisvasco')" onmouseover="mouseOverpv()" onmouseout="mouseOutpv()">País Vasco</button>
+
 
 </div>
 
@@ -426,6 +425,27 @@ the rest of Spain, for many historical reasons that has been fun to learn about,
   </div>
 </div>
 
+<div id="Paisvasco" class="tabcontent">
+<h3>País Vasco</h3>
+<p>As one of the final trips in my study abroad journey in Spain, my closest program friends and I took a two day trip up to 
+northern Spain, specifically Bilbao and San Sebastián. We took the most beautiful bus ride up on a Friday morning, through 
+various mountain ranges and valleys, some with snow, others with the most luscious greenery I have ever experienced. We arrived 
+in Bilbao, checked into our Airbnb, and took another bus to San Sebastián for the day. San Sebastián might be my favorite city in 
+Spain. It had stunning beaches touching the Cantabrian Sea/Atlantic Ocean, beautiful architecture unlike anywhere else in Spain, 
+and off in the distance was the peak of "Green Spain," tall mountain ranges fully covered in green. I finally went on a hike 
+with my friends up a nearby hill that had a fort and Rio de Janiero-like Jesus statue looking over the city. It had the most magical
+cemetary with moss and beautiful headstones. A couple of my friends ran into the freezing cold, wavy water, I opted for just 
+putting my feet in. I absolutely loved San Sebastián and I hope to return someday. The next day we walked in the rain around Bilbao, 
+the main city of Basque country (País Vasco). Bilbo hugs the Estuary of Bilbao so we walked along the water to see some of the 
+beautiful museums and popular destinations of the city. We took a flight back to Madrid that lasted literally 45 minutes, just 
+went up to go down, it was very nice. I am glad I was able to make it up to the north before I head back to the U.S. </p>
+  <div class="row">
+    <img src="./paisvascopictures/IMG-6327.jpg" alt="firstvasco" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./paisvascopictures/IMG-6363.jpg" alt="secondvasco" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./paisvascopictures/IMG-6460.jpg" alt="thirdvasco" style="display: flex;width: 25%; padding: 1px;">
+    <img src="./paisvascopictures/IMG-6519.jpg" alt="fourthvasco" style="display: flex;width: 25%; padding: 1px;">
+  </div>
+</div>
 
 <script>
 
@@ -507,6 +527,16 @@ function mouseOute() {
   document.getElementById("caceres").style.color = "#7c1932";
   document.getElementById("merida").style.color = "#7c1932";
   document.getElementById("trujillo").style.color = "#7c1932";
+}
+
+function mouseOverpv() {
+  document.getElementById("bilbao").style.color = "goldenrod";
+  document.getElementById("sansebastian").style.color = "goldenrod";
+}
+
+function mouseOutpv() {
+  document.getElementById("bilbao").style.color = "#7c1932";
+  document.getElementById("sansebastian").style.color = "#7c1932";
 }
 
 function goBack(){
