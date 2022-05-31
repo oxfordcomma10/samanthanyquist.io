@@ -552,25 +552,27 @@ function submit(){
   ];
     for (let thing in things){
         for (let t in all_things){
-            for (let i = 0; i < 6; i++){
-                if(all_things[t][i] == things[thing]){
-                    if(type == 0){
-                        simon += 1;
-                    }
-                    else if(type == 1){
-                        anthony += 1;
-                    }
-                    else if(type == 2){
-                        benedict += 1;
-                    }
-                    else if(type == 3){
-                        colin += 1;
-                    }
-                    else if(type == 4){
-                        prince += 1;
+            if (document.getElementById(t).style.opacity == 0.3){                                                                                   
+                for (let i = 0; i < 6; i++){                                                                               
+                    if(all_things[t] == things[thing][i]){
+                        if(thing == 0){
+                            simon += 1;
+                        }
+                        else if(thing == 1){
+                            anthony += 1;
+                        }
+                        else if(thing == 2){
+                            benedict += 1;
+                        }
+                        else if(thing == 3){
+                            colin += 1;
+                        }
+                        else if(thing == 4){
+                            prince += 1;
+                        }
                     }
                 }
-            }
+            }                                                                                  
         }
     }
     const calculations = [simon, anthony, benedict, colin, prince];
