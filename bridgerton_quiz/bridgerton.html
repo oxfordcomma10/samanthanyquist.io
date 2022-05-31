@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    background-color: #ddf0f3;
+}
+.row{
+  display: flex;
+  padding: 0px;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 17px;
+  text-shadow: -.30px -.30px 0 transparent, 
+                .30px .30px transparent;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+  transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 20px; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.projects{
+  font-family: "Playfair Display";
+  font-size: 25px;
+  float: center;
+  text-align: center;
+  margin-left: 50px;
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+.projects a {
+  float: right;
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.projects a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
+}
+.project_pics{
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  margin-left: 70px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.project_pics img{
+  width:80%;
+  border: #7c1932 solid 4px;
+  float: left;
+  object-fit: contain;
+  margin-right: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project_pics h6{
+  font-family: "Playfair Display";
+  font-size: 40px;
+  color: black;
+  text-align: left;
+  padding-bottom: 1px;
+  margin: 2px;
+}
+.project_pics p{
+  font-family: "Playfair Display";
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  padding-top: 5px;
+  margin: 2px;
+}
+.project_pics a{
+  text-decoration: none;
+}
+.question {
+    font-family: "Playfair Display";
+    margin-top: 30px;
+    font-size: 30px;
+    color: black;
+    margin-left: 100px;
+}
+.questionandans{
+    background-color: #ddf0f3;
+}
+.submit {
+  float:right;
+  font-size: 30px; 
+  margin-right: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border:3px;
+  border-style:solid;
+  background-color: #8dd4e2;
+  border-color:#31c8e6;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+</style>
+</head>
+<title>Bridgerton Quiz</title>
+<link rel="icon" type="image/png" href="../browser.png">
+<body>
+<div class="topnav">
+  <a href="../contact.html">Contact</a>
+  <a href="../projects.html">Projects</a>
+  <a href="../about.html">About</a>
+  <a href="../index.html">Home</a>
+  <div class="logo">
+    <a href="../index.html"">samantha nyquist</a>
+  </div>
+</div>
+
+<div class="row"></div>
+  <div class="projects" id="topquestion">
+    <h1>Which Bridgerton man should you court?
+    </h1>
+  </div>
+</div> 
+
+
+<div class = "questionandans" id="flower">
+    <div class = "question">Which flower would you choose?</div>
+    <div class="row">
+        <div class="project_pics" id="whiterose">
+            <img src="https://h2.commercev3.net/cdn.brecks.com/images/800/95582.jpg" alt="white rose">
+        </div>
+        <div class="project_pics" id="tulip">
+            <img src="https://static.educalingo.com/img/en/800/tulip.jpg" alt="tulip">
+        </div>
+        <div class="project_pics" id="babysbreath">
+            <img src="https://h2.commercev3.net/cdn.brecks.com/images/800/71225.jpg" alt="baby's breath">
+        </div>
+    </div>
+    <div class="row">
+        <div class="project_pics" id="orchid">
+            <img src="https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_white-orchid_variant_x-small_bryant_blush.jpg?v=1649219017" alt="orchid">
+        </div>
+        <div class="project_pics" id="aster">
+            <img src="https://www.lysaflores.com/blog/wp-content/uploads/2019/06/Aster.jpg" alt="aster">
+        </div>
+        <div class="project_pics" id="ladyslipper">
+            <img src="https://www.thespruce.com/thmb/DFKpEy5nCckqQSUsHpNKcD_-PgE=/1883x1412/smart/filters:no_upscale()/Cypripediumreginae-0bf9816c47f840fa9dbb6d9c7c7b3c5a.jpg" alt="ladyslipper">
+        </div>
+    </div>
+</div>
+
+<div class = "questionandans" id="art">
+    <div class = "question">Pick an iconic work of art</div>
+    <div class="row">
+        <div class="project_pics" id="lastsupper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/The-Last-Supper-Restored-Da-Vinci_32x16.jpg/640px-The-Last-Supper-Restored-Da-Vinci_32x16.jpg" alt="the last supper">
+        </div>
+        <div class="project_pics" id="pearlearring">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Johannes_Vermeer_%281632-1675%29_-_The_Girl_With_The_Pearl_Earring_%281665%29.jpg/1200px-Johannes_Vermeer_%281632-1675%29_-_The_Girl_With_The_Pearl_Earring_%281665%29.jpg" alt="girl with a pearl earring">
+        </div>
+        <div class="project_pics" id="lasmeninas">
+            <img src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/9f/9fdc/9fdc7800-9ade-48b0-ab8b-edee94ea877f/41866afd-6396-45e7-bd26-944263cf92f7.jpg" alt="las meninas">
+        </div>
+    </div>
+    <div class="row">
+        <div class="project_pics" id="frida">
+            <img src="https://assets.vogue.com/photos/589181cffb0604bf1f5c3924/master/pass/frida-kahlo-self-portrait-painting.jpg" alt="frida kahlo">
+        </div>
+        <div class="project_pics"id="sunday">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/1200px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg" alt="a sunday on la grande jatte">
+        </div>
+        <div class="project_pics" id="wave">
+            <img src="https://m.media-amazon.com/images/I/81EZn5FzBIL._AC_SL1500_.jpg" alt="the great wave">
+        </div>
+    </div>
+</div>
+
+<div class = "questionandans" id="animalcrossing">
+    <div class = "question">Which is your favorite Animal Crossing New Horizons furniture style?</div>
+    <div class="row">
+        <div class="project_pics" id="mushroom">
+            <img src="https://www.belltreeforums.com/attachments/screenshot_20200516-203133_instagram-jpg.259399/" alt="mushroom">
+        </div>
+        <div class="project_pics" id="diner">
+            <img src="https://cangetit.net/wp-content/uploads/2021/01/animal-crossing-furniture-clothing-sets-diner-items.jpg" alt="diner">
+        </div>
+        <div class="project_pics" id="antique">
+            <img src="https://pbs.twimg.com/media/EbMu_SkWoAER-2k.jpg" alt="antique">
+        </div>
+    </div>
+    <div class="row">
+        <div class="project_pics" id="cute">
+            <img src="https://i.etsystatic.com/27135264/r/il/2dc8cd/2925558741/il_794xN.2925558741_k17w.jpg" alt="cute">
+        </div>
+        <div class="project_pics" id="fruit">
+            <img src="https://img.game8.co/3245479/02e61067cb3099b5d5a57097c7153eec.png/original" alt="fruit">
+        </div>
+        <div class="project_pics" id="ironwood">
+            <img src="https://preview.redd.it/3j96ni0dipq41.png?auto=webp&s=d2e81c31ef9d967c762e4258f99d5b9099f0e8c8" alt="ironwood">
+        </div>
+    </div>
+</div>
+
+<div class = "questionandans" id="landform">
+    <div class = "question">Which is your favorite landform?</div>
+    <div class="row">
+        <div class="project_pics" id="isthmus">
+            <img src="http://www.nasa.gov/sites/default/files/images/150520main_image_feature_595_ys_full.jpg" alt="isthmus">
+        </div>
+        <div class="project_pics" id="jungle">
+            <img src="https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2018/02/thumb_720_450_Jungledreamstime_l_56902828.jpg" alt="jungle">
+        </div>
+        <div class="project_pics" id="glacier">
+            <img src="https://media.cntraveler.com/photos/61e9e5fafe18edcbd885cafa/master/pass/Greenland_GettyImages-1215958673.jpg" alt="glacier">
+        </div>
+    </div>
+    <div class="row">
+        <div class="project_pics" id="cave">
+            <img src="https://www.zmescience.com/mrf4u/statics/i/ps/cdn.zmescience.com/wp-content/uploads/2016/06/Homo_floresiensis_cave.jpg?width=1200&enable=upscale" alt="cave">
+        </div>
+        <div class="project_pics" id="mountain">
+            <img src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg" alt="mountain">
+        </div>
+        <div class="project_pics" id="volcano">
+            <img src="https://cdn.britannica.com/34/231234-050-5B2280BB/volcanic-eruption-Antigua-Guatemala-volcano.jpg" alt="volcano">
+        </div>
+    </div>
+</div>
+
+<div class = "questionandans" id="cellphone">
+    <div class = "question">Which is the best old cell phone?</div>
+    <div class="row">
+        <div class="project_pics" id="nokia">
+            <img src="https://media.architecturaldigest.com/photos/5dcb1a918059880008621526/master/w_1600%2Cc_limit/GettyImages-90739545.jpg" alt="nokia">
+        </div>
+        <div class="project_pics" id="big">
+            <img src="https://www.webdesignerdepot.com/cdn-origin/uploads/cellphone_design/dkmb86g_487pr55s2hc_b.jpg" alt="bigcell">
+        </div>
+        <div class="project_pics" id="slide">
+            <img src="https://www.cellularcountry.com/cache/scaled/Samsung_Stratosphere_Android_WHITE_4G_LTE_Phone_Verizon_24089_w425_h380.jpg" alt="slide">
+        </div>
+    </div>
+    <div class="row">
+        <div class="project_pics" id="rhinestone">
+            <img src="https://mtv.mtvnimages.com/uri/mgid:ao:image:mtv.com:72000?quality=0.8&format=jpg" alt="rhinestone">
+        </div>
+        <div class="project_pics" id="iphone3">
+            <img src="https://i.ebayimg.com/images/g/TVUAAOSwzbxaZFc6/s-l600.jpg" alt="iphone3">
+        </div>
+        <div class="project_pics" id="blackberry">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE3BIN8ECV89AEs0lCAxkWDaGfkgLe6y-yMA&usqp=CAU" alt="blackberry">
+        </div>
+    </div>
+</div>
+
+<div class = "questionandans" id="pasta">
+    <div class = "question">Pick a pasta shape.</div>
+    <div class="row">
+        <div class="project_pics" id="spiral">
+            <img src="https://www.jessicagavin.com/wp-content/uploads/2020/07/how-to-cook-pasta-3-1200-500x375.jpg" alt="spiral">
+        </div>
+        <div class="project_pics" id="macaroni">
+            <img src="https://i.insider.com/5e5fe829a9f40c0ce86fde02?width=750&format=jpeg&auto=webp" alt="macaroni">
+        </div>
+        <div class="project_pics" id="linguine">
+            <img src="https://scm-assets.constant.co/scm/ahold/9a888e72fca371869e751ab34491d024/1be4d8a4-1f38-4014-9810-a9e46a31c063.jpg" alt="linguine">
+        </div>
+    </div>
+    <div class="row">
+        <div class="project_pics" id="spaghetti">
+            <img src="https://www.alphafoodie.com/wp-content/uploads/2020/04/Vegan-Pasta-square-photo.jpeg" alt="spaghetti">
+        </div>
+        <div class="project_pics" id="bowtie">
+            <img src="https://homecookworld.com/wp-content/uploads/2020/12/chewy-pasta-undercooked-overcooked.jpg?ezimgfmt=ng%3Awebp%2Fngcb121%2Frs%3Adevice%2Frscb121-2" alt="bowtie">
+        </div>
+        <div class="project_pics" id="cavattapi">
+            <img src="https://foodwithfeeling.com/wp-content/uploads/2021/08/cavattapi-pasta-1-680x1020.jpg" alt="cavattapi">
+        </div>
+    </div>
+</div>
+
+<div class="submit" id="submit">
+    <p>Submit</p>
+</div>
+<br><br><br><br>
+<script>
+
+
+//flower
+document.getElementById("whiterose").addEventListener("click", function() {
+  choice_flower("whiterose");
+});
+
+document.getElementById("tulip").addEventListener("click", function() {
+  choice_flower("tulip");
+});
+
+document.getElementById("babysbreath").addEventListener("click", function() {
+  choice_flower("babysbreath");
+});
+
+document.getElementById("orchid").addEventListener("click", function() {
+  choice_flower("orchid");
+});
+
+document.getElementById("aster").addEventListener("click", function() {
+  choice_flower("aster");
+});
+
+document.getElementById("ladyslipper").addEventListener("click", function() {
+  choice_flower("ladyslipper");
+});
+
+//art
+document.getElementById("lastsupper").addEventListener("click", function() {
+  choice_art("lastsupper");
+});
+
+document.getElementById("pearlearring").addEventListener("click", function() {
+  choice_art("pearlearring");
+});
+
+document.getElementById("lasmeninas").addEventListener("click", function() {
+  choice_art("lasmeninas");
+});
+
+document.getElementById("frida").addEventListener("click", function() {
+  choice_art("frida");
+});
+
+document.getElementById("sunday").addEventListener("click", function() {
+  choice_art("sunday");
+});
+
+document.getElementById("wave").addEventListener("click", function() {
+  choice_art("wave");
+});
+
+//landforms
+document.getElementById("glacier").addEventListener("click", function() {
+  choice_land("glacier");
+});
+
+document.getElementById("cave").addEventListener("click", function() {
+  choice_land("cave");
+});
+
+document.getElementById("volcano").addEventListener("click", function() {
+  choice_land("volcano");
+});
+
+document.getElementById("isthmus").addEventListener("click", function() {
+  choice_land("isthmus");
+});
+
+document.getElementById("jungle").addEventListener("click", function() {
+  choice_land("jungle");
+});
+
+document.getElementById("mountain").addEventListener("click", function() {
+  choice_land("mountain");
+});
+
+//animal crossing
+document.getElementById("mushroom").addEventListener("click", function() {
+  choice_ac("mushroom");
+});
+
+document.getElementById("diner").addEventListener("click", function() {
+  choice_ac("diner");
+});
+
+document.getElementById("antique").addEventListener("click", function() {
+  choice_ac("antique");
+});
+
+document.getElementById("cute").addEventListener("click", function() {
+  choice_ac("cute");
+});
+
+document.getElementById("fruit").addEventListener("click", function() {
+  choice_ac("fruit");
+});
+
+document.getElementById("ironwood").addEventListener("click", function() {
+  choice_ac("ironwood");
+});
+
+//cell phones
+document.getElementById("nokia").addEventListener("click", function() {
+  choice_cp("nokia");
+});
+
+document.getElementById("big").addEventListener("click", function() {
+  choice_cp("big");
+});
+
+document.getElementById("slide").addEventListener("click", function() {
+  choice_cp("slide");
+});
+
+document.getElementById("rhinestone").addEventListener("click", function() {
+  choice_cp("rhinestone");
+});
+
+document.getElementById("iphone3").addEventListener("click", function() {
+  choice_cp("iphone3");
+});
+
+document.getElementById("blackberry").addEventListener("click", function() {
+  choice_cp("blackberry");
+});
+
+//pasta
+document.getElementById("spiral").addEventListener("click", function() {
+  choice_pasta("spiral");
+});
+
+document.getElementById("macaroni").addEventListener("click", function() {
+  choice_pasta("macaroni");
+});
+
+document.getElementById("linguine").addEventListener("click", function() {
+  choice_pasta("linguine");
+});
+
+document.getElementById("spaghetti").addEventListener("click", function() {
+  choice_pasta("spaghetti");
+});
+
+document.getElementById("bowtie").addEventListener("click", function() {
+  choice_pasta("bowtie", pasta);
+});
+
+document.getElementById("cavattapi").addEventListener("click", function() {
+  choice_pasta("cavattapi");
+});
+
+document.getElementById("submit").addEventListener("click", function() {
+  submit();
+});
+
+let flowers = ["whiterose", "tulip", "babysbreath", "orchid", "aster", "ladyslipper"];
+let arts = ["lastsupper", "pearlearring", "lasmeninas", "frida", "sunday", "wave"];
+let landforms = ["isthmus", "glacier", "cave", "jungle", "mountain", "volcano"];
+let animalcrossings = ["mushroom", "cute", "diner", "antique", "fruit", "ironwood"];
+let cellphones = ["nokia", "big", "slide", "rhinestone", "iphone3", "blackberry"];
+let pastas = ["spiral", "macaroni", "linguine", "spaghetti", "bowtie", "cavattapi"];
+
+function choice_flower(eleid){
+    for (let flow in flowers){
+        document.getElementById(flowers[flow]).style.opacity = 1;
+    }
+    document.getElementById(eleid).style.opacity = 0.3; 
+}
+
+function choice_art(eleid){
+    for (let art in arts){
+        document.getElementById(arts[art]).style.opacity = 1;
+    }
+    document.getElementById(eleid).style.opacity = 0.3; 
+}
+
+function choice_ac(eleid){
+    for (let ac in animalcrossings){
+        document.getElementById(animalcrossings[ac]).style.opacity = 1;
+    }
+    document.getElementById(eleid).style.opacity = 0.3; 
+}
+
+function choice_land(eleid){
+    for (let lands in landforms){
+        document.getElementById(landforms[lands]).style.opacity = 1;
+    }
+    document.getElementById(eleid).style.opacity = 0.3; 
+}
+
+function choice_cp(eleid){
+    for (let cp in cellphones){
+        document.getElementById(cellphones[cp]).style.opacity = 1;
+    }
+    document.getElementById(eleid).style.opacity = 0.3; 
+}
+
+function choice_pasta(eleid){
+    for (let pasta in pastas){
+        document.getElementById(pastas[pasta]).style.opacity = 1;
+    }
+    document.getElementById(eleid).style.opacity = 0.3; 
+}
+
+function submit(){
+  var i, questionandans;
+
+  let simon = 0;
+  let anthony = 0;
+  let benedict = 0;
+  let colin = 0;
+  let prince = 0;
+
+  questionandans = document.getElementsByClassName("questionandans");
+
+  for (i = 0; i < questionandans.length; i++) {
+    questionandans[i].style.display = "none";
+  }
+  document.getElementById("submit").style.display = "none"; 
+  document.getElementById("topquestion").style.display = "none";
+  
+  let all_things = ["whiterose", "tulip", "babysbreath", "orchid", "aster", "ladyslipper",
+        "lastsupper", "pearlearring", "lasmeninas", "frida", "sunday", "wave",
+        "isthmus", "glacier", "cave", "jungle", "mountain", "volcano",
+        "mushroom", "cute", "diner", "antique", "fruit", "ironwood",
+        "nokia", "big", "slide", "rhinestone", "iphone3", "blackberry",
+        "spiral", "macaroni", "linguine", "spaghetti", "bowtie", "cavattapi"
+  ];
+  let things = [
+    ["ladyslipper", "wave", "diner", "glacier", "iphone3", "nokia", "linguine"], //simon
+    ["babysbreath", "aster", "sunday", "ironwood", "volcano", "blackberry", "bowtie", "spiral"], //anthony
+    ["tulip", "lasmeninas", "frida", "fruit", "cave", "rhinestone", "macaroni"], //benedict
+    ["orchid", "pearlearring", "cute", "mushroom", "jungle", "slide", "cavattapi"], //colin
+    ["whiterose", "lastsupper", "antique", "mountain", "isthmus", "slide", "spaghetti"] //prince
+  ];
+    for (let thing in things){
+        for (let t in all_things){
+            for (let i = 0; i < 6; i++){
+                if(all_things[t][i] == things[thing]){
+                    if(type == 0){
+                        simon += 1;
+                    }
+                    else if(type == 1){
+                        anthony += 1;
+                    }
+                    else if(type == 2){
+                        benedict += 1;
+                    }
+                    else if(type == 3){
+                        colin += 1;
+                    }
+                    else if(type == 4){
+                        prince += 1;
+                    }
+                }
+            }
+        }
+    }
+    const calculations = [simon, anthony, benedict, colin, prince];
+    let max = calculations[0];
+    for (let ty in calculations){
+        if(calculations[ty] > max){
+            max = calculations[ty];
+        }
+        else if(calculations[ty] == max){
+            let chance = Math.random();
+            if (chance > 0.5){
+                max = calculations[ty];
+            }
+        }
+    }
+    if(max == calculations[0]){
+        window.location.href = "./results/simon.html";
+    }
+    else if(max == calculations[1]){
+        window.location.href = "./results/anthony.html";
+    }
+    else if(max == calculations[2]){
+        window.location.href = "./results/benedict.html";
+    }
+    else if(max == calculations[3]){
+        window.location.href = "./results/colin.html";
+    }
+    else if(max == calculations[4]){
+        window.location.href = "./results/prince.html";
+    }
+    else{
+        let num = Math.random();
+        let new_int = int(num*10);
+        if (new_int > 4){
+            new_int = new_int-5;
+        }
+        if(new_int == 0){
+            window.location.href = "./results/simon.html";
+        }
+        else if(new_int == 1){
+            window.location.href = "./results/anthony.html";
+        }
+        else if (new_int == 2){
+            window.location.href = "./results/benedict.html";
+        }
+        else if (new_int == 3){
+            window.location.href = "./results/colin.html";
+        }
+        else if (new_int == 4){
+            window.location.href = "./results/prince.html";
+        }
+        else{
+            window.location.href = "./results/anthony.html";
+        }
+    }
+
+}
+
+
+
+</script>
+</body>
+</html>
