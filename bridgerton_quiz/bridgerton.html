@@ -536,7 +536,7 @@ function submit(){
   document.getElementById("submit").style.display = "none"; 
   document.getElementById("topquestion").style.display = "none";
   
-  let all_things = ["whiterose", "tulip", "babysbreath", "orchid", "aster", "ladyslipper",
+  const all_things = ["whiterose", "tulip", "babysbreath", "orchid", "aster", "ladyslipper",
         "lastsupper", "pearlearring", "lasmeninas", "frida", "sunday", "wave",
         "isthmus", "glacier", "cave", "jungle", "mountain", "volcano",
         "mushroom", "cute", "diner", "antique", "fruit", "ironwood",
@@ -544,34 +544,36 @@ function submit(){
         "spiral", "macaroni", "linguine", "spaghetti", "bowtie", "cavattapi"
   ];
   let things = [
-    ["ladyslipper", "wave", "diner", "glacier", "iphone3", "nokia", "linguine"], //simon
+    ["ladyslipper", "wave", "diner", "glacier", "iphone3", "nokia", "linguine",""], //simon
     ["babysbreath", "aster", "sunday", "ironwood", "volcano", "blackberry", "bowtie", "spiral"], //anthony
-    ["tulip", "lasmeninas", "frida", "fruit", "cave", "rhinestone", "macaroni"], //benedict
-    ["orchid", "pearlearring", "cute", "mushroom", "jungle", "slide", "cavattapi"], //colin
-    ["whiterose", "lastsupper", "antique", "mountain", "isthmus", "slide", "spaghetti"] //prince
+    ["tulip", "lasmeninas", "frida", "fruit", "cave", "rhinestone", "macaroni",""], //benedict
+    ["orchid", "pearlearring", "cute", "mushroom", "jungle", "slide", "cavattapi",""], //colin
+    ["whiterose", "lastsupper", "antique", "mountain", "isthmus", "slide", "spaghetti",""] //prince
   ];
-    for (let thing in things){
-        for (let t in all_things){
-            for (let i = 0; i < 6; i++){
-                if(all_things[t][i] == things[thing]){
-                    if(type == 0){
+    for (let thing in all_things){
+      if (document.getElementById(all_things[thing]).style.opacity == 0.3){
+        for (let t in things){
+            for (let i = 0; i < 8; i++){
+                if(all_things[thing] == things[t][i]){
+                    if(t == 0){
                         simon += 1;
                     }
-                    else if(type == 1){
+                    else if(t == 1){
                         anthony += 1;
                     }
-                    else if(type == 2){
+                    else if(t == 2){
                         benedict += 1;
                     }
-                    else if(type == 3){
+                    else if(t == 3){
                         colin += 1;
                     }
-                    else if(type == 4){
+                    else if(t == 4){
                         prince += 1;
                     }
                 }
             }
         }
+      }
     }
     const calculations = [simon, anthony, benedict, colin, prince];
     let max = calculations[0];
