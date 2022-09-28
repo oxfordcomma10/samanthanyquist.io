@@ -2,39 +2,670 @@
 <html>
 
 <head>
-	<title>Simple Form Processing</title>
+	<title>Fall activity form</title>
 </head>
 
 <body>
-	<h1>State Fair</h1>
+	<h1>Fall Activity form</h1>
+	*Just fill out the check marks for the activities/days you want/are available to go to, leave unwanted ones empty*
 	<fieldset>
-		<form id="statefair" method="post" action="storingformcode.php">
+		<form id="fall form">
 				State Fair Availability: <br>
                     ($13 if order before 8/25, $16 otherwise)<br>
 				<input type="checkbox"
+					id="sf1"
 					value="sf8.31"
 					name="sf1"> Tuesday 8/31<br>
 				<input type="checkbox"
+					id="sf2"
 					value="sf9.1"
 					name="sf2"> Wednesday 9/1<br>
                 <input type="checkbox"
+					id="sf3"
 					value="sf9.2"
 					name="sf3"> Thursday 9/2<br>
                 <input type="checkbox"
+					id="sf4"
 					value="sf9.3"
 					name="sf4"> Friday 9/3<br>
                 <input type="checkbox"
+					id="sf5"
 					value="sf9.4"
 					name="sf5"> Saturday 9/4<br>
                 <input type="checkbox"
+					id="sf6"
 					value="sf9.5"
 					name="sf6"> Sunday 9/5<br>
                 <input type="checkbox"
+					id="sf7"
 					value="sf9.6"
 					name="sf7"> Monday 9/6<br>
 				<br>
+				Renaissance Festival Availability:<br>
+                    ($23/person)<br>
+				<input type="checkbox"
+					id="rf1"
+					value="rf9.4"
+					name="rf1"> Saturday 9/4<br>
+				<input type="checkbox"
+					id="rf2"
+					value="rf9.5"
+					name="rf2"> Sunday 9/5<br>
+                <input type="checkbox"
+					id="rf3"
+					value="rf9.6"
+					name="rf3"> Monday 9/6<br>
+                <input type="checkbox"
+					id="rf4"
+					value="rf9.11"
+					name="rf4"> Saturday 9/11 (Football)<br>
+                <input type="checkbox"
+					id="rf5"
+					value="rf9.12"
+					name="rf5"> Sunday 9/12<br>
+                <input type="checkbox"
+					id="rf6"
+					value="rf9.18"
+					name="rf6"> Saturday 9/18 (Football)<br>
+                <input type="checkbox"
+					id="rf7"
+					value="rf9.19"
+					name="rf7"> Sunday 9/19<br>
+				<input type="checkbox"
+					id="rf8"
+					value="rf9.25"
+					name="rf8"> Saturday 9/25 (Football)<br>
+                <input type="checkbox"
+					id="rf9"
+					value="rf9.26"
+					name="rf9"> Sunday 9/26<br>
+                <input type="checkbox"
+					id="rf10"
+					value="rf10.1"
+					name="rf10"> Saturday 10/1<br>
+                <input type="checkbox"
+					id="rf11"
+					value="rf10.2"
+					name="rf11"> Sunday 10/2<br>
+                <input type="checkbox"
+					id="rf12"
+					value="rf10.3"
+					name="rf12"> Monday 10/3<br>
 				<br>
+				Minnesota Orchestra Availability:<br>
+                (Price depends on show, some have not been released yet)<br>
+				<input type="checkbox"
+					id="mo1"
+					value="mo9.23"
+					name="mo1"> Thursday 9/23 7:30pm ($50, $65, $80)<br>
+				<input type="checkbox"
+					id="mo2"
+					value="mo9.24"
+					name="mo2"> Friday 9/24 8pm ($50, $65, $80)<br>
+                <input type="checkbox"
+					id="mo3"
+					value="mo10.1"
+					name="mo3"> Friday 10/1 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="mo4"
+					value="mo10.2"
+					name="mo4"> Saturday 10/2 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="mo5"
+					value="mo10.15"
+					name="mo5"> Friday 10/15 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="mo6"
+					value="mo10.22"
+					name="mo6"> Friday 10/22 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="mo7"
+					value="mo10.29"
+					name="mo7"> Friday 10/29 8pm ($30, $50, $66)<br>
+				<input type="checkbox"
+					id="mo8"
+					value="mo10.30"
+					name="mo8"> Saturday 10/30 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="mo9"
+					value="mo11.5"
+					name="mo9"> Friday 11/5 8pm - Black Panther ($49, $59, $74)<br>
+                <input type="checkbox"
+					id="mo10"
+					value="mo11.6"
+					name="mo10"> Saturday 11/6 8pm - Black Panther ($49, $59, $74)<br>
+                <input type="checkbox"
+					id="mo11"
+					value="mo11.12"
+					name="mo11"> Friday 11/12 8pm ($30, $50, $66)<br>
+                <input type="checkbox"	
+					id="mo12"
+					value="mo11.13"
+					name="mo12"> Saturday 11/13 8pm ($30, $50, $66)<br>
+				<input type="checkbox"
+					id="mo13"
+					value="mo11.19"
+					name="mo13"> Friday 11/19 8pm ($30, $50, $66)<br>
+				<input type="checkbox"
+					id="mo14"
+					value="mo11.20"
+					name="mo14"> Saturday 11/20 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="mo15"
+					value="mo11.27"
+					name="mo15"> Saturday 11/27 2pm - Toy Story (Football) ($36, $51, $61)<br>
+                <input type="checkbox"
+					id="mo16"
+					value="mo11.28"
+					name="mo16"> Sunday 11/28 2pm - Toy Story ($36, $51, $61)<br>
+                <input type="checkbox"
+					id="mo17"
+					value="mo12.3"
+					name="mo17"> Friday 12/3 8pm (TBA)<br>
+                <input type="checkbox"
+					id="mo18"
+					value="mo12.4"
+					name="mo18"> Saturday 12/4 8pm (TBA)<br>
+				<input type="checkbox"
+					id="mo19"
+					value="mo12.10"
+					name="mo19"> Friday 12/10 8pm (TBA)<br>
+                <input type="checkbox"
+					id="mo20"
+					value="mo12.11"
+					name="mo20"> Saturday 12/11 8pm (TBA)<br>
+				<input type="checkbox"
+					id="mo21"
+					value="mo12.12"
+					name="mo21"> Sunday 12/12 2pm - Christmas (TBA)<br>
+                <input type="checkbox"
+					id="mo22"
+					value="mo12.17"
+					name="mo22"> Friday 12/17 8pm (Finals) (TBA)<br>
+				<input type="checkbox"
+					id="mo23"
+					value="mo12.18"
+					name="mo23"> Saturday 12/18 8pm (Finals) (TBA)<br>
+				<input type="checkbox"
+					id="mo24"
+					value="mo1.7"
+					name="mo24"> Friday 1/7 8pm (TBA)<br>
+				<input type="checkbox"
+					id="mo25"
+					value="mo1.8"
+					name="mo25"> Saturday 1/8 8pm (TBA)<br>
+				<br>
+				Frozen Musical Availability: <br>
+                    Range from $40, $50 for cheap seats and some at $75, $100 for better view<br>
+				<input type="checkbox"
+					id="f1"
+					value="f9.30"
+					name="f1"> Thursday 9/30 7:30pm<br>
+				<input type="checkbox"
+					id="f2"
+					value="f10.1"
+					name="f2"> Friday 10/1 8pm<br>
+                <input type="checkbox"
+					id="f3"
+					value="f10.2"
+					name="f3"> Saturday 10/2 2pm<br>
+                <input type="checkbox"
+					id="f4"
+					value="f10.2.2"
+					name="f4"> Saturday 10/2 8pm<br>
+                <input type="checkbox"
+					id="f5"
+					value="f10.3"
+					name="f5"> Sunday 10/3 1pm<br>
+                <input type="checkbox"
+					id="f6"
+					value="f10.3.2"
+					name="f6"> Sunday 10/3 6:30pm<br>
+                <input type="checkbox"
+					id="f7"
+					value="f10.5"
+					name="f7"> Tuesday 10/5 7:30pm<br>
+				<input type="checkbox"
+					id="f8"
+					value="f10.6"
+					name="f8"> Wednesday 10/6 7:30pm<br>
+                <input type="checkbox"
+					id="f9"
+					value="f10.7"
+					name="f9"> Thursday 10/7 7:30pm<br>
+                <input type="checkbox"
+					id="f10"
+					value="f10.8"
+					name="f10"> Friday 10/8 8pm<br>
+                <input type="checkbox"
+					id="f11"
+					value="f10.9"
+					name="f11"> Saturday 10/9 2pm<br>
+                <input type="checkbox"
+					id="f12"
+					value="f10.9.2"
+					name="f12"> Saturday 10/9 8pm<br>
+				<input type="checkbox"
+					id="f13"
+					value="f10.10"
+					name="f13"> Sunday 10/10 1pm<br>
+                <input type="checkbox"
+					id="f14"
+					value="f10.10.2"
+					name="f14"> Sunday 10/10 6:30pm<br>
+                <input type="checkbox"
+					id="f15"
+					value="f10.12"
+					name="f15"> Tuesday 10/12 7:30pm<br>
+				<input type="checkbox"
+					id="f16"
+					value="f10.13"
+					name="f16"> Wednesday 10/13 7:30pm<br>
+                <input type="checkbox"
+					id="f17"
+					value="f10.14"
+					name="f17"> Thursday 10/14 7:30pm<br>
+                <input type="checkbox"
+					id="f18"
+					value="f10.15"
+					name="f18"> Friday 10/15 8pm<br>
+                <input type="checkbox"
+					id="f19"
+					value="f10.16"
+					name="f19"> Saturday 10/16 2pm (Football)<br>
+                <input type="checkbox"
+					id="f20"
+					value="f10.16.2"
+					name="f20"> Saturday 10/16 8pm (Football)<br>
+				<input type="checkbox"
+					id="f21"
+					value="f10.17"
+					name="f21"> Sunday 10/17 1pm<br>
+                <input type="checkbox"
+					id="f22"
+					value="f10.17.2"
+					name="f22"> Sunday 10/17 6:30pm<br>
+                <input type="checkbox"
+					id="f23"
+					value="f10.19"
+					name="f23"> Tuesday 10/19 7:30pm<br>
+				<input type="checkbox"
+					id="f24"
+					value="f10.20"
+					name="f24"> Wednesday 10/20 7:30pm<br>
+				<br>
+<<<<<<< HEAD
 		</form>
+=======
+				Oklahoma Availability: <br>
+				(Tickets on sale Sep 20 or do student rush)<br>
+				<input type="checkbox"
+					id="o1"
+					value="o11.9"
+					name="o1"> Tuesday 11/9 7:30pm<br>
+				<input type="checkbox"
+					id="o2"
+					value="o11.10"
+					name="o2"> Wednesday 11/10 7:30pm<br>
+				<input type="checkbox"
+					id="o3"
+					value="o11.11"
+					name="o3"> Thursday 11/11 7:30pm<br>
+				<input type="checkbox"
+					id="o4"
+					value="o11.12"
+					name="o4"> Friday 11/12 8pm<br>
+				<input type="checkbox"
+					id="o5"
+					value="o11.13"
+					name="o5"> Saturday 11/13 2pm<br>
+				<input type="checkbox"
+					id="o6"
+					value="o11.13.2"
+					name="o6"> Saturday 11/13 8pm<br>
+				<input type="checkbox"
+					id="o7"
+					value="o11.14"
+					name="o7"> Sunday 11/14 1pm<br>
+				<input type="checkbox"
+					id="o8"
+					value="o11.14.2"
+					name="o8"> Sunday 11/14 6:30pm<br>
+				<br>
+				Fiddler on the Roof Availability: <br>
+				($48, $51, $61)<br>
+				<input type="checkbox"
+					id="fr1"
+					value="fr11.30"
+					name="fr1"> Tuesday 11/30 7:30pm<br>
+				<input type="checkbox"
+					id="fr2"
+					value="fr12.1"
+					name="fr2"> Wednesday 12/1 7:30pm<br>
+				<input type="checkbox"
+					id="fr3"
+					value="fr12.2"
+					name="fr3"> Thursday 12/2 7:30pm<br>
+				<input type="checkbox"
+					id="fr4"
+					value="fr12.3"
+					name="fr4"> Friday 12/3 7:30pm<br>
+				<input type="checkbox"
+					id="fr5"
+					value="fr12.4"
+					name="fr5"> Saturday 12/4 7:30pm<br>
+				<input type="checkbox"
+					id="fr6"
+					value="fr12.5"
+					name="fr6"> Sunday 12/5 7:30pm<br>
+				<input type="checkbox"
+					id="fr7"
+					value="fr12.7"
+					name="fr7"> Tuesday 12/7 7:30pm<br>
+				<input type="checkbox"
+					id="fr8"
+					value="fr12.8"
+					name="fr8"> Wednesday 12/8 7:30pm<br>
+				<input type="checkbox"
+					id="fr9"
+					value="fr12.9"
+					name="fr9"> Thursday 12/9 7:30pm<br>
+				<input type="checkbox"
+					id="fr10"
+					value="fr12.10"
+					name="fr10"> Friday 12/10 7:30pm<br>
+				<input type="checkbox"
+					id="fr11"
+					value="fr12.11"
+					name="fr11"> Saturday 12/11 7:30pm<br>
+				<input type="checkbox"
+					id="fr12"
+					value="fr12.12"
+					name="fr12"> Sunday 12/12 7:30pm<br>
+				<br>
+				Anastasia Availability: <br>
+				($40, $65, $80)<br>
+				<input type="checkbox"
+					id="a1"
+					value="a12.7"
+					name="a1"> Tuesday 12/7 7:30pm<br>
+				<input type="checkbox"
+					id="a2"
+					value="a12.8"
+					name="a2"> Wednesday 12/8 7:30pm<br>
+				<input type="checkbox"
+					id="a3"
+					value="a12.9"
+					name="a3"> Thursday 12/9 7:30pm<br>
+				<input type="checkbox"
+					id="a4"
+					value="a12.10"
+					name="a4"> Friday 12/10 8pm<br>
+				<input type="checkbox"
+					id="a5"
+					value="a12.11"
+					name="a5"> Saturday 12/11 2pm<br>
+				<input type="checkbox"
+					id="a6"
+					value="fr12.11.2"
+					name="a6"> Saturday 12/11 8pm<br>
+				<input type="checkbox"
+					id="a7"
+					value="a12.12"
+					name="a7"> Sunday 12/12 1pm<br>
+				<input type="checkbox"
+					id="a8"
+					value="a12.12"
+					name="a8"> Sunday 12/12 6:30pm<br>
+				<input type="checkbox"
+					id="a9"
+					value="a12.14"
+					name="a9"> Tuesday 12/14 7:30pm<br>
+				<input type="checkbox"
+					id="a10"
+					value="a12.15"
+					name="a10"> Wednesday 12/15 7:30pm<br>
+				<input type="checkbox"
+					id="a11"
+					value="a12.16"
+					name="a11"> Thursday 12/16 (Finals) 7:30pm<br>
+				<input type="checkbox"
+					id="a12"
+					value="a12.17"
+					name="a12"> Friday 12/17 (Finals) 8pm<br>
+				<input type="checkbox"
+					id="a13"
+					value="a12.18"
+					name="a13"> Saturday 12/18 (Finals) 2pm<br>
+				<input type="checkbox"
+					id="a14"
+					value="a12.18.2"
+					name="a14"> Saturday 12/18 (Finals) 8pm<br>
+				<input type="checkbox"
+					id="a15"
+					value="a12.19"
+					name="a15"> Sunday 12/19 (Finals) 1pm<br>
+				<input type="checkbox"
+					id="a16"
+					value="a12.19.2"
+					name="a16"> Sunday 12/19 (Finals) 6:30pm<br>
+				<br>
+				Donna Summer Availability: <br>
+				($44, $48 or do student rush)<br>
+				<input type="checkbox"
+					id="ds1"
+					value="ds12.28"
+					name="ds1"> Tuesday 12/28 7:30pm<br>
+				<input type="checkbox"
+					id="ds2"
+					value="ds12.29"
+					name="ds2"> Wednesday 12/29 7:30pm<br>
+				<input type="checkbox"
+					id="ds3"
+					value="ds12.30"
+					name="ds3"> Thursday 12/30 7:30pm<br>
+				<input type="checkbox"
+					id="ds4"
+					value="ds12.31"
+					name="ds4"> Friday 12/31 7:30pm<br>
+				<input type="checkbox"
+					id="ds5"
+					value="ds1.1"
+					name="ds5"> Saturday 1/1 7:30pm<br>
+				<input type="checkbox"
+					id="ds6"
+					value="ds1.2"
+					name="ds6"> Sunday 1/2 7:30pm<br>
+				<br>
+				Concert interest: <br>
+				<br>
+				<input type="checkbox"
+					id="c1"
+					value="kesha"
+					name="c1"> Kesha @ Armory Sunday 9/12 8pm<br>
+				<input type="checkbox"
+					id="c2"
+					value="hasan1"
+					name="c2"> Hasan Minhaj Thursday 9/30 7pm<br>
+				<input type="checkbox"
+					id="c3"
+					value="hasan2"
+					name="c3"> Hasan Minhaj Thursday 9/30 10pm<br>
+				<input type="checkbox"
+					id="c4"
+					value="frankie"
+					name="c4"> Franki Vali & the Four Seasons Thursday 9/30 8pm<br>
+				<input type="checkbox"
+					id="c5"
+					value="nelly"
+					name="c5"> Nelly @ Mankato Sunday 10/24 7pm<br>
+				<input type="checkbox"
+					id="c6"
+					value="leslie"
+					name="c6"> Leslie Odom Jr Christmas show @ State Theatre Thursday 12/2 7:30pm<br>
+				<br>
+				Madison Availability: <br>
+				All weekends mentioned are not over UMN home football weekends<br>
+				<input type="checkbox"
+					id="m1"
+					value="m9.17"
+					name="m1"> September 17-19<br>
+				<input type="checkbox"
+					id="m2"
+					value="m10.1"
+					name="m2"> October 1-3 (Wisconsin Football game)<br>
+				<input type="checkbox"
+					id="m3"
+					value="m10.8"
+					name="m3"> October 8-10<br>
+				<input type="checkbox"
+					id="m4"
+					value="m11.12"
+					name="m4"> November 12-14 (Wisconsin Football game)<br>
+				<input type="checkbox"
+					id="m5"
+					value="m11.19"
+					name="m5"> November 19-21 (Wisconsin Football game)<br>
+				<input type="checkbox"
+					id="m6"
+					value="m12.3"
+					name="m6"> December 3-5<br>
+				<input type="checkbox"
+					id="m7"
+					value="m12.10"
+					name="m7"> December 10-12<br>
+				<input type="checkbox"
+					id="m8"
+					value="m1.0"
+					name="m8"> Sometime after Christmas/January<br>
+				<br>
+				Weekend trip Availability: <br>
+				All weekends mentioned are not over UMN home football weekends<br>
+				<input type="checkbox"
+					id="ot1"
+					value="ot9.17"
+					name="ot1"> September 17-19<br>
+				<input type="checkbox"
+					id="ot2"
+					value="ot10.1"
+					name="ot2"> October 1-3<br>
+				<input type="checkbox"
+					id="ot3"
+					value="ot10.8"
+					name="ot3"> October 8-10<br>
+				<input type="checkbox"
+					id="ot4"
+					value="ot11.12"
+					name="ot4"> November 12-14<br>
+				<input type="checkbox"
+					id="ot5"
+					value="ot11.19"
+					name="ot5"> November 19-21<br>
+				<input type="checkbox"
+					id="ot6"
+					value="ot12.3"
+					name="ot6"> December 3-5<br>
+				<input type="checkbox"
+					id="ot7"
+					value="ot12.10"
+					name="ot7"> December 10-12<br>
+				<input type="checkbox"
+					id="ot8"
+					value="ot1.0"
+					name="ot8"> Sometime after Christmas/January<br>
+				<br>
+				Places to take a weekend trip to: <br>
+				Prices are round trip and show the range of pricing between the weekends listed in previous section<br>
+				<input type="checkbox"
+					id="p1"
+					value="chicago"
+					name="p1"> Chicago - Drive (6 hours)<br>
+				<input type="checkbox"
+					id="p2"
+					value="stlouis"
+					name="p2"> St. Louis - Drive (9 hours) - Flights ($133-$210)<br>
+				<input type="checkbox"
+					id="p3"
+					value="miami"
+					name="p3"> Miami - Flights ($45-$123)<br>
+				<input type="checkbox"
+					id="p4"
+					value="orlando"
+					name="p4"> Orlando - Flights ($51-$165)<br>
+				<input type="checkbox"
+					id="p5"
+					value="neworleans"
+					name="p5"> New Orleans - Flights ($79-$264)<br>
+				<input type="checkbox"
+					id="p6"
+					value="dallas"
+					name="p6"> Dallas - Flights ($109-$179)<br>
+				<input type="checkbox"
+					id="p7"
+					value="denver"
+					name="p7"> Denver - Flights ($60-$124)<br>
+				<input type="checkbox"
+					id="p8"
+					value="losangeles"
+					name="p8"> Los Angeles - Flights ($123-$219)<br>
+				<input type="checkbox"
+					id="p9"
+					value="seattle"
+					name="p9"> Seattle - Flights ($130-$212)<br>
+				<input type="checkbox"
+					id="p10"
+					value="phoenix"
+					name="p10"> Phoenix - Flights ($96-$218)<br>
+				<input type="checkbox"
+					id="p11"
+					value="nashville"
+					name="p11"> Nashville - Drive (13 hours) - Flights ($120-$267)<br>
+				<input type="checkbox"
+					id="p12"
+					value="washingtondc"
+					name="p12"> Washington DC - Flights ($111-$137)<br>
+				<input type="checkbox"
+					id="p13"
+					value="newyork"
+					name="p13"> New York - Flights ($75-$159)<br>
+				<input type="checkbox"
+					id="p14"
+					value="boston"
+					name="p14"> Boston - Flights ($120-$222)<br>
+				<input type="checkbox"
+					id="p15"
+					value="sanfran"
+					name="p15"> San Francisco - Flights ($178-$239)<br>
+				<input type="checkbox"
+					id="p16"
+					value="sandiego"
+					name="p16"> San Diego - Flights ($187-$277)<br>
+				<input type="checkbox"
+					id="p17"
+					value="omaha"
+					name="p17"> Omaha - Drive (6 hours)<br>
+				<input type="checkbox"
+					id="p18"
+					value="kansascity"
+					name="p18"> Kansas City - Drive (7 hours)<br>
+				<input type="checkbox"
+					id="p19"
+					value="thunderbay"
+					name="p19"> Thunder Bay (Ontario, Canada) - Drive (6 hours)<br>
+				<label for="p20">List other places you want to consider:</label><br>
+				<input type="text"
+					id="p20"
+					name="p20"><br>
+				<br>
+		<label for="otheridea">List other ideas you have:</label><br>
+				<textarea
+					id="ta1"
+					name="extra"
+					rows ="5"
+					cols ="40"> </textarea><br>
+	 <button id="submit_but" type="button">Submit<button/>
+	</form>
+>>>>>>> 4287cffb41e47328aebd530dbfa928baa76a3c96
 	</fieldset>
 	<h1>Renaissance Festival</h1>
 	<fieldset>
@@ -383,5 +1014,24 @@
 	</fieldset>	
 <form <input type="submit" value="Submit" name="submit"/> /form >
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA84vauBhYX2QeG1KlTOz5Ru-_6N5PMqno",
+    authDomain: "fallactivitiessammy.firebaseapp.com",
+    projectId: "fallactivitiessammy",
+    storageBucket: "fallactivitiessammy.appspot.com",
+    messagingSenderId: "927107743428",
+    appId: "1:927107743428:web:4ec43156ed80e241519391",
+    measurementId: "G-D3BVFQBZJ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
 </html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Minn Orch form</title>
+  <style type="text/css">
+  label{
+    text-align: right;
+    width: 10%;
+  }
+  </style>
+</head>
+
+<body>
+  <p style=display:none id='debug' style=color:rgb(196,46,46)>DEBUG ON</p>
+	<legend>Minnesota Orchestra</legend>
+	*Just fill out the check marks for the days you are available to go to, leave unwanted ones empty*
+	<fieldset>
+		<form id="minnorch">
+				Minnesota Orchestra Availability: <br>
+          (Price depends on show, some have not been released yet)<br>
+					<input type="checkbox"
+					id="1"
+					value="1"
+					name="rf1"> Thursday 9/23 7:30pm ($50, $65, $80)<br>
+				<input type="checkbox"
+					id="2"
+					value="2"
+					name="rf2"> Friday 9/24 8pm ($50, $65, $80)<br>
+                <input type="checkbox"
+					id="3"
+					value="3"
+					name="rf3"> Friday 10/1 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="4"
+					value="4"
+					name="rf4"> Saturday 10/2 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="5"
+					value="5"
+					name="rf5"> Friday 10/15 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="6"
+					value="6"
+					name="rf6"> Friday 10/22 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="7"
+					value="7"
+					name="rf7"> Friday 10/29 8pm ($30, $50, $66)<br>
+				<input type="checkbox"
+					id="8"
+					value="8"
+					name="rf8"> Saturday 10/30 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="9"
+					value="9"
+					name="rf9"> Friday 11/5 8pm - Black Panther ($49, $59, $74)<br>
+                <input type="checkbox"
+					id="10"
+					value="10"
+					name="rf10"> Saturday 11/6 8pm - Black Panther ($49, $59, $74)<br>
+                <input type="checkbox"
+					id="11"
+					value="11"
+					name="rf11"> Friday 11/12 8pm ($30, $50, $66)<br>
+                <input type="checkbox"
+					id="12"
+					value="12"
+					name="rf12"> Saturday 11/13 8pm ($30, $50, $66)<br>
+         <input type="checkbox"
+					id="13"
+					value="13"
+					name="rf13"> Friday 11/19 8pm ($30, $50, $66)<br>
+        <input type="checkbox"
+					id="14"
+					value="14"
+					name="rf14"> Saturday 11/20 8pm ($30, $50, $66)<br>
+          <input type="checkbox"
+					id="15"
+					value="15"
+					name="rf15"> Saturday 11/27 2pm - Toy Story (Football) ($36, $51, $61)<br>
+                <input type="checkbox"
+					id="16"
+					value="16"
+					name="rf16"> Sunday 11/28 2pm - Toy Story ($36, $51, $61)<br>
+         <input type="checkbox"
+					id="17"
+					value="17"
+					name="rf17"> Friday 12/3 8pm (TBA)<br>
+        <input type="checkbox"
+					id="18"
+					value="18"
+					name="rf18"> Saturday 12/4 8pm (TBA)<br>
+          <input type="checkbox"
+					id="19"
+					value="19"
+					name="rf19">Friday 12/10 8pm (TBA)<br>
+          <input type="checkbox"
+					id="20"
+					value="20"
+					name="rf20"> Saturday 12/11 8pm (TBA)<br>
+         <input type="checkbox"
+					id="21"
+					value="21"
+					name="rf21"> Sunday 12/12 2pm - Christmas (TBA)<br>
+        <input type="checkbox"
+					id="22"
+					value="22"
+					name="rf22"> Friday 12/17 8pm (Finals) (TBA)<br>
+        <input type="checkbox"
+					id="23"
+					value="23"
+					name="rf23"> Saturday 12/18 8pm (Finals) (TBA)<br>
+          <input type="checkbox"
+					id="24"
+					value="24"
+					name="rf24">Friday 1/7 8pm (TBA)<br>
+          <input type="checkbox"
+					id="25"
+					value="25"
+					name="rf25"> Saturday 1/8 8pm (TBA)<br>
+				<br>
+    <button id="submit_but" type="button" onclick="first_submit()">Submit<button/>
+  </form>
+</fieldset>
+      <fieldset>
+		<form id="minnorch2" style="display:none">
+            Please rank your chosen availability starting from 1 being your first choice and so on.
+            <br>
+        <label id = "1.2.2" for="1.2" style="display:none">Thursday 9/23 7:30pm ($50, $65, $80)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="1.2"
+					name="rf1.2">
+        <br>
+        <label id="2.2.2" for="2.2" style="display:none">Friday 9/24 8pm ($50, $65, $80)</label>
+				<input type="text"
+          style="display:none"
+          size="1"
+					id="2.2"
+					name="sf2.2"> 
+        <br>
+        <label id="3.2.2" for="3.2" style="display:none">Friday 10/1 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+			id="3.2"
+					name="sf3.2"> 
+        <br>
+        <label id="4.2.2" for="4.2" style="display:none">Saturday 10/2 8pm ($30, $50, $66)</label>
+        <input type="text"
+            style="display:none"
+            size="1"
+			id="4.2"
+			name="rf4.2"> 
+        <br>
+        <label id="5.2.2" for="5.2" style="display:none">Friday 10/15 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="5.2"
+					name="sf5.2"> 
+        <br>
+        <label id="6.2.2" for= "6.2" style="display:none">Friday 10/22 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="6.2"
+					name="sf6.2"> 
+        <br>
+        <label id="7.2.2" for="7.2" style="display:none">Friday 10/29 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="7.2"
+					name="sf7.2"> 
+        <br>
+        <label id="8.2.2" for="8.2" style="display:none">Saturday 10/30 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="8.2"
+					name="sf8.2"> 
+        <br>
+        <label id="9.2.2" for="9.2" style="display:none"> Friday 11/5 8pm - Black Panther ($49, $59, $74)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="9.2"
+					name="sf9.2"> 
+        <br>
+        <label id="10.2.2" for="10.2" style="display:none">Saturday 11/6 8pm - Black Panther ($49, $59, $74)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="10.2"
+					name="sf10.2"> 
+        <br>
+        <label id="11.2.2" for="11.2" style="display:none">Friday 11/12 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="11.2"
+					name="sf11.2"> 
+        <br>
+        <label id="12.2.2" for="12.2" style="display:none">Saturday 11/13 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="12.2"
+					name="sf12.2"> 
+        <label id="13.2.2" for="13.2" style="display:none">Friday 11/19 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="13.2"
+					name="sf13.2"> 
+        <br>
+        <label id="14.2.2" for="14.2" style="display:none">Saturday 11/20 8pm ($30, $50, $66)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="14.2"
+					name="sf14.2"> 
+        <br>
+        <label id="15.2.2" for="15.2" style="display:none">Saturday 11/27 2pm - Toy Story (Football) ($36, $51, $61)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="15.2"
+					name="sf15.2"> 
+        <br>
+        <label id="16.2.2" for="16.2" style="display:none">Sunday 11/28 2pm - Toy Story ($36, $51, $61)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="16.2"
+					name="sf16.2"> 
+        <label id="17.2.2" for="17.2" style="display:none">Friday 12/3 8pm (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="17.2"
+					name="sf17.2"> 
+        <br>
+        <label id="18.2.2" for="18.2" style="display:none">Saturday 12/4 8pm (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="18.2"
+					name="sf18.2"> 
+        <br>
+        <label id="19.2.2" for="19.2" style="display:none">Friday 12/10 8pm (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="19.2"
+					name="sf19.2"> 
+        <br>
+        <label id="20.2.2" for="20.2" style="display:none">Saturday 12/11 8pm (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="20.2"
+					name="sf20.2"> 
+        <label id="21.2.2" for="21.2" style="display:none">Sunday 12/12 2pm - Christmas (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="21.2"
+					name="sf21.2"> 
+        <br>
+        <label id="22.2.2" for="22.2" style="display:none">Friday 12/17 8pm (Finals) (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="22.2"
+					name="sf22.2"> 
+        <br>
+        <label id="23.2.2" for="23.2" style="display:none">Saturday 12/18 8pm (Finals) (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="23.2"
+					name="sf23.2"> 
+        <br>
+      <label id="24.2.2" for="24.2" style="display:none">Friday 1/7 8pm (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="24.2"
+					name="sf24.2"> 
+        <br>
+        <label id="25.2.2" for="25.2" style="display:none">Saturday 1/8 8pm (TBA)</label>
+        <input type="text"
+          style="display:none"
+          size="1"
+					id="25.2"
+					name="sf25.2"> 
+        <br>
+      <label id = "name" for="name">Your Name:</label>
+      <input type="text"
+        id ="name"
+        name = "user">
+<br>
+      <button id="submit_but2" type="button" onclick="second_submit()">Submit<button/>        
+  </form>
+</fieldset>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA84vauBhYX2QeG1KlTOz5Ru-_6N5PMqno",
+    authDomain: "fallactivitiessammy.firebaseapp.com",
+    projectId: "fallactivitiessammy",
+    storageBucket: "fallactivitiessammy.appspot.com",
+    messagingSenderId: "927107743428",
+    appId: "1:927107743428:web:4ec43156ed80e241519391",
+    measurementId: "G-D3BVFQBZJ5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var push_to_firebase = function(data){
+        alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
+        var db = firebase.firestore();
+        let data_dic = {
+          name: data["name"],
+          sep23: data['1.2'],
+          sep24: data['2.2'],
+          oct1: data['3.2'],
+          oct2: data["4.2"],
+          oct15: data["5.2"],
+          oct22: data["6.2"],
+          oct29: data["7.2"],
+          oct30: data['8.2'],
+          nov5: data['9.2'],
+          nov6: data['10.2'],
+          nov12: data["11.2"],
+          nov13: data["12.2"],
+          nov19: data["13.2"],
+          nov20: data["14.2"],
+          nov27: data["15.2"],
+          nov28: data['16.2'],
+          dec3: data['17.2'],
+          dec4: data['18.2'],
+          dec10: data["19.2"],
+          dec11: data["20.2"],
+          dec12: data["21.2"],
+          dec17: data["22.2"],
+          dec18: data["23.2"],
+          jan7: data["24.2"],
+          jan8: data["25.2"]
+        }
+      db.collection("minnorch").document(data["name"]).set(data_dic);
+  }
+  function first_submit(){
+    var debug = document.getElementById("debug");
+    var minnorch = document.getElementById("minnorch");
+    var minnorch2 = document.getElementById("minnorch2");
+    minnorch.style.display = "none";
+    minnorch2.style.display="block";
+    const check = [];
+    const color_array = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Brown", "Gray", "DarkKhaki", "DarkSeaGreen", "Maroon"]
+    for (var j = 1; j < 26; j++){
+        var checkBox = document.getElementById(j.toString());
+        if (checkBox.checked == true){
+            check.push(checkBox.value);
+        }
+        //debug.style.color = color_array[j]
+    }  
+    for (var i = 0; i < check.length; i ++){
+        var checking = check[i] + ".2";
+        var second = document.getElementById(checking);
+        var name_text = document.getElementById(checking+".2");
+        name_text.style.display = "inline-block";
+        second.style.display = "inline-block";
+    }
+  }
+  function second_submit(){
+    var data = {};
+    var minnorch2 = document.getElementById("minnorch2");
+    minnorch2.style.display="none";
+    for (var k = 1.2; k < 26.2; k+=1){
+        var ranking = document.getElementById(k.toString());
+        if (ranking.style.display == "none"){
+            data[ranking] = "X";
+        }
+        else {
+            data[ranking] = ranking.value;
+        }
+    }
+    var user_name = document.getElementById("name");
+    data["name"] = user_name.value;
+
+    push_to_firebase(data);
+    debug.style.display="block"
+    window.location.href = "frozenyesno.html";
+  }
+</script>
+
+</html>

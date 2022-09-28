@@ -16,8 +16,13 @@ if (isset($_POST['submit']))
 	{
 		if(!isset($error))
 		{
+<<<<<<< HEAD
 				echo "<h1>INPUT RECEIVED</h1><br>";
 				echo " $_POST["sf1"]"
+=======
+			echo"<h1>INPUT RECEIVED</h1><br>";
+>>>>>>> 4287cffb41e47328aebd530dbfa928baa76a3c96
 		}
-	}
+	} */
+echo "<h1> Got to php </h1>";
 ?>
