@@ -50,13 +50,30 @@ body{
 * {box-sizing: border-box}
 .tab {
   float: left;
+  font-family: "Playfair Display";
   display: block;
   border: 5px solid goldenrod;
-  width: 20%;
-  margin-top: 20px;
-  margin-left: 170px;
-  margin-bottom: 50px;
+  margin-top: 1%;
+  margin-left: 15%;
+  text-align: center;
+  padding: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tab input{
+  background-color: #f3dddf;
+  font-size: 75px;
+  color: #7c1932;
+  border: 0px solid;
+}
+.dollar{
+  font-size: 75px;
+  color: #7c1932;
+}
+.text{
+  font-family: "Playfair Display";
+  font-size: 50px;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 </style>
 </head>
@@ -70,4 +87,12 @@ body{
   <a href="../index.html">Home</a>
   <div class="logo">
     <a href="../index.html">samantha nyquist</a>
+</div>
+
+<div class="text">Enter your total amount:</div>
+
+<div class="tab" id="output">
+  <div class="dollar">$
+  <input type="text" id="total_num" name="total_num" size="4"> 
   </div>
+</div>
