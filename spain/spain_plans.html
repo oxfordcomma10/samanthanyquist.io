@@ -19,21 +19,21 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   gap: 1rem;
-  font-size: 17px;
+  font-size: 2vw;
   text-shadow: -.30px -.30px 0 #f3dddf, 
                 .30px .30px #f3dddf;
 }
 .topnav a:hover {
   text-shadow: -.30px -.30px 0 black, 
                 .30px .30px black;
-  transition: 0.3s;
+    transition: 0.3s;
 }
 .topnav a.active {
   font-weight: 200;
 }
 .logo {
   float:left;
-  font-size: 20px; 
+  font-size: 2vw; 
   border:3px;
   border-style:solid;
   border-color:#7c1932;
@@ -44,39 +44,64 @@ body{
   float: right;
 }
 * {box-sizing: border-box}
-.tab {
-  float: left;
-  display: block;
-  border: 5px solid goldenrod;
-  width: 20%;
-  margin-top: 20px;
-  margin-left: 170px;
-  margin-bottom: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media only screen and (min-width: 1200px) {
+  .tab {
+    float: left;
+    display: block;
+    border: 5px solid goldenrod;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
-
 /* Style the buttons that are used to open the tab content */
-.tab button {
-  display: block;
-  font-family: "Playfair Display";
-  font-size: 20px;
-  background-color: inherit;
-  color: black;
-  width: 100%;
-  padding: 10px 10px;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  text-shadow: -.30px -.30px 0 #f3dddf, 
-                .30px .30px #f3dddf;
+@media only screen and (min-width: 1200px) {
+  .tab button {
+    display: block;
+    font-family: "Playfair Display";
+    font-size: 1.5vw;
+    background-color: inherit;
+    color: black;
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: -.30px -.30px 0 #f3dddf, 
+                  .30px .30px #f3dddf;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tab {
+  display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tab button{
+  display: none;
+  }
 }
 .springbreak{
   text-shadow: -.30px -.30px 0 black, 
                 .30px .30px black;
   background-color: #7c1932;
 }
+.projects{
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  float: left;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+
 .row {
   display: flex;
 }
@@ -85,7 +110,7 @@ body{
   text-align: center;
   color: #7c1932;
   float:right;
-  margin-top: 20px;
+  margin-top: 1%;
   cursor: pointer;
 }
 .sevilla{
@@ -199,8 +224,9 @@ body{
   float: left;
   width: 55%;
   padding: 20px;
-  margin: 50px;
-  margin-top: 20px;
+  margin: 5%;
+  margin-top: 1%;
+  margin-bottom: 5%;
   border: 3px solid #7c1932;
   transition: 0.3s;
   display: none;
@@ -219,7 +245,9 @@ body{
   <div class="logo">
     <a href="../index.html">samantha nyquist</a>
   </div>
-  <p style="text-align: center; font-size: 40px;">Sammy's semester in Spain!</p>
+</div>
+<div class="project">
+  <p style="text-align: center; font-size: 4vw;">Sammy's semester in Spain!</p>
 </div>
 <br>
 <div class="places" id="places">
