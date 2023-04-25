@@ -63,7 +63,10 @@ body{
   padding: 1%;
   padding-bottom: 4%;
   padding-right: 2%;
-  margin: 2%;
+  padding-right: 2%;
+  margin-right: 2%;
+  margin-top: 0.5%;
+  margin-left: 5%;
   display: block;
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -77,7 +80,9 @@ body{
   padding: 1%;
   padding-bottom: 4%;
   padding-right: 2%;
-  margin: 2%;
+  margin-right: 2%;
+  margin-top: 0.5%;
+  margin-left: 5%;
   display: block;
   object-fit: contain;
   transition: 0.3s;
@@ -109,34 +114,47 @@ body{
 } 
 .MFpic{
   margin-left: 2%;
-  margin-top: 2%;
-  margin-right: 5%;
-}
-.MFpic:hover{
-  margin-left: 2%;
-  margin-top: 2%;
+  margin-top: 0.5%;
   margin-right: 5%;
 }
 .MFpic img{
   border: 6px;
   border-style: solid;
-  border-color: #7c1932;
+  border-color: goldenrod;
   float: center;
   width: 105%;
   display: block;
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.MFpic img:hover{
-  border: 6px;
-  border-style: solid;
-  border-color: #7c1932;
-  float: center;
-  width: 105%;
-  display: block;
-  object-fit: contain;
-  box-shadow: 0 4px 8px 0 #7c1932, 0 6px 20px 0 #7c1932;
+.calendar_button{
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  border:#7c1932 solid 4px;
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
+.calendar_button p {
+  font-size: 4vw;
+}
+.calendar {
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  float: left;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  padding: 0px;
+  display: block;
+  width: 100%;
+  display: none;
+}
+
 </style>
 </head>
 <title>DCP</title>
@@ -151,16 +169,30 @@ body{
     <a href="../index.html"">samantha nyquist</a>
   </div>
 </div>
-<div class="project">
-  <p style="text-align: center; font-size: 4vw;">Sammy's Disney College Program</p>
+<div class="project" id="project_title">
+  <p style="text-align: center; font-size: 4vw;">Sammy's Disney College Program Experience</p>
 </div>
 <br>
-<div class="row">
+<div class="row" id="intro_info">
   <div class="project_pics">
     <img src="../profile.jpg">
-    <h6>What is the Disney College Program (DCP)?</h6>
+    <p>What is the Disney College Program (DCP)?</p>
   </div>
   <div class="MFpic">
     <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/630/354/90/media/disneyparksjapan-prod/disneyparksjapan_v0001/1/media/dlr/destinations/smugglers-run-interior-16x9.jpg">
   </div>
 </div>
+<div class="calendar_button" id = "calendar_button" onclick="calendar()">
+  <p>Calendar</p>
+</div>
+<div class="calendar">
+
+</div>
+
+<script>
+function calendar(){
+  document.getElementById("project_title").style.display = "none";
+  document.getElementById("intro_info").style.display = "none";
+  document.getElementById("calendar_button").style.display = "none";
+}
+</script>
