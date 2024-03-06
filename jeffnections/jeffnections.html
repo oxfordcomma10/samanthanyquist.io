@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    background-color: #f3dddf;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 2vw;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 2vw; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.paragraph{
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  margin: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+.paragraph a {
+  color: goldenrod;
+}
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: rgb(241, 218, 247);
+}
+.row{
+  display: flex;
+  padding: 0px;
+  margin-left: 25%;
+  margin-right: 25%;
+}  
+.picture{
+  margin-top: 4%;
+  margin-left : 3%;
+  width: 45%;
+  float: left;
+  border: goldenrod 4px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.picture img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.picture img:hover{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 #7c1932, 0 6px 20px 0 #7c1932;
+}
+.projects{
+  font-family: "Playfair Display";
+  font-size: 6vw;
+  float: left;
+  text-align: left;
+  margin-left: 3%;
+  margin-top: 4%;
+  padding: 0%;
+  width: 100%;
+  display: border-box;
+}
+.projects h2{
+  font-size: 4vw;
+}
+.projects a {
+  float: right;
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  font-size: 2vw;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.projects a:hover {
+  text-shadow: -.30px -.30px 0 #7c1932, 
+                .30px .30px #7c1932;
+    transition: 0.3s;
+}
+.project_pics{
+  background-color: rgb(247, 244, 244);
+  float: center;
+  width: 150px;
+  height: 75px;
+  padding: 1%;
+  margin: 4%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  display: block;
+  object-fit: contain;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(219, 216, 216), 0 6px 20px 0 rgb(219, 216, 216);
+}
+.project_pics:hover{
+  background-color: rgb(247, 244, 244);
+  float: center;
+  width: 150px;
+  height: 75px;
+  padding: 1%;
+  margin: 4%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  display: block;
+  object-fit: contain;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgb(236, 236, 236), 0 6px 20px 0 rgb(236, 236, 236);
+}
+.project_pics img{
+  width: 100%;
+  border: #7c1932 solid 4px;
+}
+.project_pics h6{
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  color: black;
+  text-align: left;
+  padding-bottom: 1px;
+  margin: 2px;
+  margin-top: 5px;
+}
+.project_pics p{
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: rgb(114, 112, 112);
+  text-align: center;
+  padding-top: 1%;
+  margin: 15px;
+}
+.project_pics a{
+  text-decoration: none;
+}
+.jeff{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.submit {
+  background-color: rgb(247, 244, 244);
+  border-style: solid;
+  border-color: rgb(236, 236, 236);
+  float: center;
+  width: 90px;
+  height: 50px;
+  padding: 1%;
+  margin: 4%;
+  margin-left: 30%;
+  margin-bottom: 2%;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.submit p{
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: rgb(114, 112, 112);
+  text-align: center;
+  padding-top: 1%;
+  margin: 15px;
+}
+.yellow {
+  background-color: yellow;
+  display: none;
+  color: black;
+  float: center;
+  width: 900px;
+  height: 75px;
+  padding: 1%;
+  margin: 2%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  object-fit: contain;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(219, 216, 216), 0 6px 20px 0 rgb(219, 216, 216); 
+}
+.yellow h2 {
+  font-family: "Playfair Display";
+  font-size: 1.50vw;
+  color: black;
+  text-align: center;
+  margin: 5px;  
+}
+.yellow p {
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+  margin: 5px;  
+}
+.green {
+  background-color: lightgreen;
+  display: none;
+  color: black;
+  float: center;
+  height: 75px;
+  width: 900px;
+  padding: 1%;
+  margin: 2%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  object-fit: contain;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(219, 216, 216), 0 6px 20px 0 rgb(219, 216, 216); 
+}
+.green h2 {
+  font-family: "Playfair Display";
+  font-size: 1.50vw;
+  color: black;
+  text-align: center;
+  margin: 5px;  
+}
+.green p {
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+  margin: 5px;   
+}
+.blue {
+  background-color: lightblue;
+  display: none;
+  color: black;
+  float: center;
+  height: 75px;
+  width: 900px;
+  padding: 1%;
+  margin: 2%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  object-fit: contain;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(219, 216, 216), 0 6px 20px 0 rgb(219, 216, 216); 
+}
+.blue h2 {
+  font-family: "Playfair Display";
+  font-size: 1.50vw;
+  color: black;
+  text-align: center;
+  margin: 5px; 
+}
+.blue p {
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+  margin: 5px;   
+}
+.purple {
+  background-color: rgb(244, 149, 244);
+  display: none;
+  color: black;
+  float: center;
+  height: 75px;
+  width: 900px;
+  padding: 1%;
+  margin: 2%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  object-fit: contain;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(219, 216, 216), 0 6px 20px 0 rgb(219, 216, 216); 
+}
+.purple h2 {
+  font-family: "Playfair Display";
+  font-size: 1.50vw;
+  color: black;
+  text-align: center;
+  margin: 5px;  
+}
+.purple p {
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: black;
+  text-align: center;
+  padding-top: 1%;
+  margin: 5px;    
+}
+.goodjob{
+  background-color: white;
+  display: none;
+  height: 100px;
+  width: 500px;
+  padding: 1%;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  object-fit: contain;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgb(182, 179, 179), 0 6px 20px 0 rgb(182, 179, 179);
+}
+.goodjob h1{
+    color: black;
+    float: center;
+    text-align: center;
+}
+</style>
+</head>
+<title>JEFFNECTIONS</title>
+<link rel="icon" type="image/png" href="../browser.png">
+<body>
+<div class="topnav">
+  <a href="contact.html">Contact</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+  <div class="logo">
+    <a href="index.html"">samantha nyquist</a>
+  </div>
+</div>
+
+<div class = "jeff">
+    <div class="row" id = row1>
+        <div class = "yellow" id = yellow>
+            <h2 id = "yellowh">JEFF</h2>
+            <p id = "yellowp">JEFF, JEFF, JEFF, JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff1>
+            <p id = "jeff1p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff2>
+            <p id = "jeff2p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff3>
+            <p id = "jeff3p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff4>
+            <p id = "jeff4p">JEFF</p>
+        </div>
+    </div>
+    <div class="row" id = row2>
+        <div class = "green" id = green>
+            <h2 id = "greenh">JEFF</h2>
+            <p id = "greenp">JEFF, JEFF, JEFF, JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff5>
+            <p id = "jeff5p">JEFF</p>
+        </div>
+        <div class = "project_pics"id = jeff6>
+            <p id = "jeff6p">JEFF</p>
+        </div>
+        <div class = "project_pics"id = jeff7>
+            <p id = "jeff7p">JEFF</p>
+        </div>
+        <div class = "project_pics"id = jeff8>
+            <p id = "jeff8p">JEFF</p>
+        </div>
+    </div>
+    <div class="row" id = row3>
+        <div class = "blue" id = blue>
+            <h2 id = "blueh">JEFF</h2>
+            <p id = "bluep">JEFF, JEFF, JEFF, JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff9>
+            <p id = "jeff9p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff10>
+            <p id = "jeff10p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff11>
+            <p id = "jeff11p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff12>
+            <p id = "jeff12p">JEFF</p>
+        </div>
+    </div>
+    <div class="row" id = row4>
+        <div class = "purple" id = purple>
+            <h2 id = "purpleh">JEFF</h2>
+            <p id = "purplep">JEFF, JEFF, JEFF, JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff13>
+            <p id = "jeff13p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff14>
+            <p id = "jeff14p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff15>
+            <p id = "jeff15p">JEFF</p>
+        </div>
+        <div class = "project_pics" id = jeff16>
+            <p id = "jeff16p">JEFF</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="submit" id = "submit">
+            <p>Submit</p>
+        </div>
+    </div>
+</div>
+<div class="goodjob" id = goodjob>
+    <h1 id = goodjobh>JEFF</h1>
+</div>
+
+
+<script>
+    let yellow_check = 0;
+    let green_check = 0;
+    let blue_check = 0;
+    let purple_check = 0;
+
+    document.getElementById("jeff1").addEventListener("click", function() {
+        jeff("jeff1","jeff1p");
+    });
+    document.getElementById("jeff2").addEventListener("click", function() {
+        jeff("jeff2","jeff2p");
+    });
+    document.getElementById("jeff3").addEventListener("click", function() {
+        jeff("jeff3","jeff3p");
+    });
+    document.getElementById("jeff4").addEventListener("click", function() {
+        jeff("jeff4","jeff4p");
+    });
+    document.getElementById("jeff5").addEventListener("click", function() {
+        jeff("jeff5","jeff5p");
+    });
+    document.getElementById("jeff6").addEventListener("click", function() {
+        jeff("jeff6","jeff6p");
+    });
+    document.getElementById("jeff7").addEventListener("click", function() {
+        jeff("jeff7","jeff7p");
+    });
+    document.getElementById("jeff8").addEventListener("click", function() {
+        jeff("jeff8","jeff8p");
+    });
+    document.getElementById("jeff9").addEventListener("click", function() {
+        jeff("jeff9","jeff9p");
+    });
+    document.getElementById("jeff10").addEventListener("click", function() {
+        jeff("jeff10","jeff10p");
+    });
+    document.getElementById("jeff11").addEventListener("click", function() {
+        jeff("jeff11","jeff11p");
+    });
+    document.getElementById("jeff12").addEventListener("click", function() {
+        jeff("jeff12","jeff12p");
+    });
+    document.getElementById("jeff13").addEventListener("click", function() {
+        jeff("jeff13","jeff13p");
+    });
+    document.getElementById("jeff14").addEventListener("click", function() {
+        jeff("jeff14","jeff14p");
+    });
+    document.getElementById("jeff15").addEventListener("click", function() {
+        jeff("jeff15","jeff15p");
+    });
+    document.getElementById("jeff16").addEventListener("click", function() {
+        jeff("jeff16","jeff16p");
+    });
+    document.getElementById("submit").addEventListener("click", function() {
+        submit();
+    });
+
+    function jeff(eleid,eleidp){
+        let count = 0;
+        const jefflist = ["jeff1","jeff2","jeff3","jeff4","jeff5","jeff6","jeff7","jeff8","jeff9","jeff10","jeff11","jeff12","jeff13","jeff14","jeff15","jeff16"];
+        
+        for (let jeffs in jefflist){
+            if(document.getElementById(jefflist[jeffs]).style.backgroundColor == "gray"){
+                count += 1;
+            }
+        }
+        if (document.getElementById(eleid).style.backgroundColor == "gray"){
+            document.getElementById(eleidp).style.color = "rgb(114, 112, 112)";
+            document.getElementById(eleid).style.backgroundColor = "rgb(247, 244, 244)";
+        }
+        else if(count == 4){
+            document.getElementById(eleidp).style.color = "rgb(114, 112, 112)";
+            document.getElementById(eleid).style.backgroundColor = "rgb(247, 244, 244)";
+        }
+        else{
+            document.getElementById(eleidp).style.color = "white";
+            document.getElementById(eleid).style.backgroundColor = "gray";
+        }
+    }
+    function goodjob(){
+       document.getElementById("yellow").style.display = "none";
+       document.getElementById("yellowh").style.display = "none";
+       document.getElementById("yellowp").style.display = "none";
+       document.getElementById("green").style.display = "none";
+       document.getElementById("greenh").style.display = "none";
+       document.getElementById("greenp").style.display = "none";
+       document.getElementById("blue").style.display = "none";
+       document.getElementById("blueh").style.display = "none";
+       document.getElementById("bluep").style.display = "none";
+       document.getElementById("purple").style.display = "none";
+       document.getElementById("purpleh").style.display = "none";
+       document.getElementById("purplep").style.display = "none";
+       document.getElementById("submit").style.display = "none";
+       document.getElementById("goodjob").style.display = "block";
+       document.getElementById("goodjobh").style.display = "block";
+    }
+
+    function submit(){
+        let count = 0;
+        const jefflist = ["jeff1","jeff2","jeff3","jeff4","jeff5","jeff6","jeff7","jeff8","jeff9","jeff10","jeff11","jeff12","jeff13","jeff14","jeff15","jeff16"];
+        const jefflistp = ["jeff1p","jeff2p","jeff3p","jeff4p","jeff5p","jeff6p","jeff7p","jeff8p","jeff9p","jeff10p","jeff11p","jeff12p","jeff13p","jeff14p","jeff15p","jeff16p"];
+
+        for (let jeffs in jefflist){
+            if(document.getElementById(jefflist[jeffs]).style.backgroundColor == "gray"){
+                count += 1;
+            }
+        }
+        if (count == 4){
+            if (yellow_check == 0){
+                document.getElementById("jeff1").style.display = "none";
+                document.getElementById("jeff2").style.display = "none";
+                document.getElementById("jeff3").style.display = "none";
+                document.getElementById("jeff4").style.display = "none";
+                document.getElementById("yellow").style.display = "block";
+                document.getElementById("yellowh").style.display = "block";
+                document.getElementById("yellowp").style.display = "block";
+                for (let jeffs in jefflist){
+                    if(document.getElementById(jefflist[jeffs]).style.backgroundColor == "gray"){
+                        document.getElementById(jefflistp[jeffs]).style.color = "rgb(114, 112, 112)";
+                        document.getElementById(jefflist[jeffs]).style.backgroundColor = "rgb(247, 244, 244)";
+                        count = 0;                        
+                    }
+                }
+                yellow_check = 1;
+            }
+            else if (green_check == 0){
+                document.getElementById("jeff5").style.display = "none";
+                document.getElementById("jeff6").style.display = "none";
+                document.getElementById("jeff7").style.display = "none";
+                document.getElementById("jeff8").style.display = "none";
+                document.getElementById("green").style.display = "block";
+                document.getElementById("greenh").style.display = "block";
+                document.getElementById("greenp").style.display = "block";
+                for (let jeffs in jefflist){
+                    if(document.getElementById(jefflist[jeffs]).style.backgroundColor == "gray"){
+                        document.getElementById(jefflistp[jeffs]).style.color = "rgb(114, 112, 112)";
+                        document.getElementById(jefflist[jeffs]).style.backgroundColor = "rgb(247, 244, 244)";
+                        count = 0;                       
+                    }
+                }
+                green_check = 1;
+            }
+            else if (blue_check == 0){
+                document.getElementById("jeff9").style.display = "none";
+                document.getElementById("jeff10").style.display = "none";
+                document.getElementById("jeff11").style.display = "none";
+                document.getElementById("jeff12").style.display = "none";
+                document.getElementById("blue").style.display = "block";
+                document.getElementById("blueh").style.display = "block";
+                document.getElementById("bluep").style.display = "block";
+                for (let jeffs in jefflist){
+                    if(document.getElementById(jefflist[jeffs]).style.backgroundColor == "gray"){
+                        document.getElementById(jefflistp[jeffs]).style.color = "rgb(114, 112, 112)";
+                        document.getElementById(jefflist[jeffs]).style.backgroundColor = "rgb(247, 244, 244)";
+                        count = 0;                      
+                    }
+                }
+                blue_check = 1;
+            }
+            else {
+                document.getElementById("jeff13").style.display = "none";
+                document.getElementById("jeff14").style.display = "none";
+                document.getElementById("jeff15").style.display = "none";
+                document.getElementById("jeff16").style.display = "none";
+                document.getElementById("purple").style.display = "block";
+                document.getElementById("purpleh").style.display = "block";
+                document.getElementById("purplep").style.display = "block";
+
+                for (let jeffs in jefflist){
+                    if(document.getElementById(jefflist[jeffs]).style.backgroundColor == "gray"){
+                        document.getElementById(jefflistp[jeffs]).style.color = "rgb(114, 112, 112)";
+                        document.getElementById(jefflist[jeffs]).style.backgroundColor = "rgb(247, 244, 244)";
+                        count = 0;                       
+                    }
+                }
+                goodjob();
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>
