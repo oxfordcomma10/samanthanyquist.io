@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    background-color: #f3dddf;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 2vw;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 2vw; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.paragraph{
+  font-family: "Playfair Display";
+  font-size: 1.75vw;
+  margin: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1%;
+}
+.paragraph a {
+  color: goldenrod;
+}
+
+.readme {
+  border: 6px;
+  border-style: solid;
+  border-color: #7c1932;
+  background-color: white;
+  float: left;
+  width: 70%;
+  height: 20%;
+  padding: 1%;
+  margin: 1%;
+  margin-left: 15%;
+  margin-top: 1px;
+  object-fit: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.readme table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.readme a{
+  color: goldenrod;
+}
+
+</style>
+</head>
+<title>Python Scripts for Google Cloud Tools</title>
+<link rel="icon" type="image/png" href="../browser.png">
+<div class="topnav">
+  <a href="../contact.html">Contact</a>
+  <a href="../projects.html">Projects</a>
+  <a href="../about.html">About</a>
+  <a href="../index.html">Home</a>
+  <div class="logo">
+    <a href="../index.html"">samantha nyquist</a>
+  </div>
+</div>
+<div class = "paragraph">
+  <p1>Have you ever wondered how to insert .csv or .txt files containing data to be inserted into Google BigQuery and/or Google Storage? If yes, this is 
+    the place for you!
+  <br><br>
+  On my <a href="https://github.com/oxfordcomma10/samanthanyquist.io/tree/main/google_cloud_examples" target="_blank">Github</a> page you will find all of
+  the files and a README that will walk you through the simple process of inserting data into Google BigQuery and Google Storage. 
+  <br><br><br>
+  Python Scripts for Google Cloud README:
+    </p1>
+</div>
+<div class = "readme">
+    <h1> Google Cloud Examples</h1>
+
+    <h2>Summary</h2>
+
+    <p>The Google Cloud Examples project demonstrates a program that takes <code>.csv</code> or <code>.txt</code> files, standarizes the contents in these files, uploads the content to Google Cloud Storage (GCS) and Google BigQuery (BQ), and then allows one to SQL query the BigQuery database, all in Python.</p>
+    
+    <h3>Further Information</h3>
+    
+    <p>What is <a href="https://cloud.google.com/storage" target="_blank">Google Cloud Storage</a>?</p>
+    <p>What is <a href=" https://cloud.google.com/bigquery" target="_blank">Google BigQuery</a>?</p>
+
+    <hr>
+    
+    <h2>How to Set Up the Program</h2>
+
+    <h3>Requirements</h3>
+
+    <p>The program is best used with a Linux operating system and is written in Python 3.</p>  
+
+    <h4>Packages</h4>
+
+    <ul>
+        <li>google-api-core==2.0.0</li>
+        <li>google-auth==2.0.1
+        <li>google-cloud-bigquery==2.24.1</li>
+        <li>google-cloud-core==2.0.0</li>
+        <li>google-cloud-storage==1.42.0</li>
+        <li>pycparser==2.20</li>
+        <li>pyparsing==2.4.7</li>
+    </ul>
+
+    <h4>Google Cloud Platform Access</h4>
+
+    <p>Must have an active GCS <a href="https://cloud.google.com/storage/docs/creating-buckets" target="_blank">bucket</a> and BQ <a href="https://cloud.google.com/bigquery/docs/resource-hierarchy" target="_blank">project</a> and dataset with proper IAM credentials.</p>
+
+    <hr>
+
+    <h2>Uploading Files to Google Cloud Storage</h2> 
+
+    <p>To simply upload files from a local directory to GCS, use <code>csv_to_storage.py</code>. The program will walk through each file in the directory and check if it is a `.csv` or `.txt` file and if it has already been uploaded to the GCS bucket. If it has not been uploaded and is either a <code>.csv</code> or <code>.txt</code> file, then the program will upload the file to the GCS bucket.</p>
+
+    <p>To run the program on a Linux command line with output:</p>
+
+    <pre><code>
+    $ python3 csv_to_storage.py -b [bucket ID] -r [directory]
+    Completed uploading files to Google Cloud Storage
+    </code></pre>
+
+    <hr>
+
+    <h2>Uploading Files to Google BigQuery and Google Cloud Storage</h2>
+
+    <p>To upload files from a local directory to GCS and BQ, use <code>csv_to_storage_and_bigquery.py</code>. The program uses <code>csv_to_storage.py</code> to upload the local <code>.csv</code> and <code>.txt</code> files to a GCS bucket. To omit this feature go to Only Upload to BigQuery. The other part of the program is uploading the contents of the files to a specified BQ project and dataset. First, a new table called <code>[project ID].[dataset ID].Units</code> is created in the project and dataset within BQ. The table schemas are </p> 
+
+    <pre><code>
+    bigquery.SchemaField("serial", "STRING", mode="NULLABLE")
+    bigquery.SchemaField("sim_id", "STRING", mode="NULLABLE")
+    bigquery.SchemaField("model", "STRING", mode="NULLABLE")
+    bigquery.SchemaField("date", "TIMESTAMP", mode="NULLABLE")
+    bigquery.SchemaField("filename", "STRING", mode="NULLABLE")
+    </code></pre>
+
+    <p>meaning that the newly created table will look similar to</p>
+
+    <table>
+        <tr>
+            <th> serial </th>
+            <th>sim_id </th>
+            <th> model </th>
+            <th> date </th>
+            <th> filename </th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+
+    <p>once the <code>[project ID].[dataset ID].Units</code> table is created.</p>  
+
+    <p>If a table does not need to be created, follow Uploading to a BigQuery Table That Already Exists.</p>  
+
+    <p>After table creation, the program pulls all files from the GCS bucket and queries each filename with the BQ table to check if the rows of the file already exist in the table. This is to prevent multiple entries of the same information. If the rows already exist then the next file is checked without adding more into the BQ <code>[project ID].[dataset ID].Units</code> table.</p>
+
+    <p>The new rows are then sent through <code>process_records.py</code> to normalize the rows to align with the BQ table schemas by adding the date of the file information and the filename. From there the normalized rows are inserted into the <code>[project ID].[dataset ID].Units</code> table.</p>
+
+    <p>To run the program on a Linux command line with output:</p>
+
+    <pre><code>
+    $ python3 csv_to_storage_and_bigquery.py -p [project ID] -b [bucket ID] -d [dataset ID] -r [directory]
+    Completed uploading files to Google Cloud Storage
+    Inserted files into [project ID].[dataset ID].Units
+    </code></pre>
+
+    <h3>Example Input and Output of Uploading Files to Google BigQuery and Google Cloud Storage</h3>
+
+    <p>From <code>example_input20230403.csv</code></p>
+
+    <table>
+        <tr>
+            <th>serial</th>
+            <th>sim_id</th>
+            <th>model</th>
+        </tr>
+        <tr>
+            <td> 1234567 </td>
+            <td> 3001234567 </td>
+            <td> 300 </td>
+        </tr>
+        <tr>
+            <td> 1234568 </td>
+            <td> 3001234568 </td>
+            <td> 300 </td>
+        </tr>
+        <tr>
+            <td> 8765432 </td>
+            <td> 4008765432 </td>
+            <td> 400 </td>
+        </tr>
+    </table>
+
+    <p>BQ <code>[project ID].[dataset ID].Units</code> table</p>
+
+    <table>
+        <tr>
+            <th>serial</th>
+            <th>sim_id</th>
+            <th>model</th>
+            <th>date</th>
+            <th>filename</th>
+        </tr>
+        <tr>
+            <td> 1234567 </td>
+            <td> 3001234567 </td>
+            <td> 300 </td>
+            <td> 2023-04-03 </td>
+            <td> /data/example_input20230403.csv </td>
+        </tr>
+        <tr>
+            <td> 1234568 </td>
+            <td> 3001234568 </td>
+            <td> 300 </td>
+            <td> 2023-04-03 </td>
+            <td> /data/example_input20230403.csv </td>
+        </tr>
+        <tr>
+            <td> 8765432 </td>
+            <td> 4008765432 </td>
+            <td> 400 </td>
+            <td> 2023-04-03 </td>
+            <td> /data/example_input20230403.csv </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Query BigQuery Table</h2>
+
+    <p>The script <code>query_through_python.py</code> queries through a given BQ table. BQ uses SQL to query through tables.</p>
+
+    <p>To run the program on Linux:</p>
+
+    <code>$ python3 query_through_python.py -q "[Full query statement]"</code>
+
+    <p>Once the program has finished running the system will print the result of the query.</p>
+
+    <h3>Example Query</h3>
+
+    <p>Using the example <code>[project ID].[dataset ID].Units</code> table from Upload to Google Bigquery Example.</p>
+
+    <p>Command line and result:</p>
+
+    <pre><code>
+    $ python3 query_through_python.py -q "SELECT count(*) FROM [project ID].[dataset ID].Units WHERE model='300'"
+    2
+    </code></pre>
+
+    <hr>
+
+    <h2>Additonal Information and Tips</h2>
+
+    <h3>Only Upload to BigQuery</h3>
+
+    <p>The script <code>csv_to_storage_and_bigquery.py</code> includes a line to upload a local directory's contents to a specified GCS bucket. To only use the current files in the GCS bucket and upload to the BQ table, remove the following lines:</p>
+
+    <code>csv_to_storage.main(kwargs)</code>
+
+    <p>and</p>  
+
+    <code>parser.add_argument('-r', '--directory', required=True, help="Directory with files")</code>
+
+    <p>It is recommended that these lines be commented out rather than removed in case there is a future use for the GCS upload feature.</p>
+
+    <code># csv_to_storage.main(kwargs)</code>
+
+    <p>and</p>
+
+    <code># parser.add_argument('-r', '--directory', required=True, help="Directory with files")</code>
+
+    <p>To run the program on a Linux command line with the output:</p>
+
+    <pre><code>
+    $ python3 csv_to_storage_and_bigquery.py -p [project ID] -b [bucket ID] -d [dataset ID]
+    Inserted files into [project ID].[dataset ID].Units
+    </code></pre>
+
+    <h3>Uploading to a BigQuery Table That Already Exists</h3>
+
+    <p>The script <code>csv_to_storage_and_bigquery.py</code> includes lines to create a table called <i>Units</i> in the specified project and dataset database. If the table already exists and only new content needs to be added, remove the following lines:</p>
+
+    <pre><code>
+    table_id = f"{project}.{dataset}.Units"
+    table = bigquery.Table(table_id, schema=schemas[0])
+    table = bq_client.create_table(table)
+    </code></pre>
+
+    <p>It is recommended that these lines be commented in case there is a future use for the table creation.</p>
+
+    <pre><code>
+    # table_id = f"{project}.{dataset}.Units"
+    # table = bigquery.Table(table_id, schema=schemas[0])
+    # table = bq_client.create_table(table)
+    </code></pre>
+
+    <hr>
+
+    <h2>Version</h2>
+
+    <p>1</p>
+</div>
+</body>
+</html>
