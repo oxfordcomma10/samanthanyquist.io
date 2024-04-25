@@ -66,12 +66,11 @@ body{
   border: 6px;
   border-style: solid;
   border-color: #7c1932;
-  float: left;
-  width: 40%;
   height: 20%;
   padding: 1%;
-  margin: 2%;
   margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
   margin-bottom: 5%;
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -84,6 +83,12 @@ body{
   padding-bottom: 1%;
   margin: 1%;
 }
+.contact_section img{
+  width: 20%;
+}
+.contact_section a{
+  padding-left: 8%;
+}
 .row{
   display: flex;
   padding: 0px;
@@ -93,6 +98,7 @@ body{
 
 <title>Contact</title>
 <link rel="icon" type="image/png" href="./browser.png">
+
 <body>
 <div class="topnav">
   <a href="contact.html">Contact</a>
@@ -106,19 +112,20 @@ body{
 
 <div class="row">
   <div class="contact">
-    <h1>Contact:
+    <h1>Contact Me:
     </h1>
   </div>
 </div>
-<div class="contact_section">
-  <h6>Email: <a style="color: goldenrod;">nyquistsammy@gmail.com</a></h6>
+<div class = "row">
+  <div class="contact_section">
+    <a href="nyquistsammy@gmail.com" target="_blank">
+      <img src="./email.png">
+    <a href="https://github.com/oxfordcomma10"  target="_blank">
+      <img src="./github.png">
+    <a href="https://www.linkedin.com/in/samantha-nyquist-3b3009141/"  target="_blank">
+      <img src="./linkedin.png">
+  </div>
 </div>
-
-<div class="contact_section">
-  <h6><a href="https://github.com/oxfordcomma10"style="color: goldenrod;">Github</a><br>
-  <a href="https://www.linkedin.com/in/samantha-nyquist-3b3009141/"style="color: goldenrod;">Linkedin</a></h6>
-</div>
-
 
 </body>
 </html>
