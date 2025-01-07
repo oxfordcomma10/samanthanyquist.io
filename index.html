@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{
@@ -132,8 +132,6 @@ body{
   width: 25%;
   padding: 2%;
   margin: 2%;
-  margin-left: 2%;
-  margin-bottom: 5%;
   display: block;
   object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -146,8 +144,6 @@ body{
   width: 25%;
   padding: 2%;
   margin: 2%;
-  margin-left: 2%;
-  margin-bottom: 5%;
   display: block;
   object-fit: contain;
   transition: 0.3s;
@@ -176,6 +172,71 @@ body{
 .project_pics a{
   text-decoration: none;
 }
+#gr_updates_widget{
+  background-color:#fff;
+  border: 6px;
+  border-style: solid;
+  border-color: #7c1932;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:500px;
+  height:565px;
+  margin: 2%;
+}
+#gr_updates_widget iframe{
+  color: black;
+  margin: 1%;
+}
+#gr_updates_widget p{
+  font-size:2vw;
+}
+#gr_footer img{
+  margin: 1%;
+  float:left;
+}
+#gr_updates_widget img{
+  border-style:none;
+}
+.gr_grid_container {
+  width: 100%;
+  height:565px;
+  float:right;
+  margin-top: 3%;
+}
+
+.gr_grid_book_container {
+  float: left;
+}
+.gr_grid_book_container a {
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  color: black;
+  text-align: left;
+  padding-top: 1%;
+  margin: 1%;
+  text-decoration: none;
+
+}
+.gr_grid_book_container :hover {
+  transition: 0.3s;
+  box-shadow: 0 0 20px 4px goldenrod;
+  z-index: 3000;
+  position: relative;
+}
+.gr_grid_book_container img{
+  width: 100px;
+  height: 160px;
+  overflow: hidden;
+}
+.gr_grid_branding{
+  color: black; 
+  text-decoration: none;
+  font-family: "Playfair Display";
+  font-size: 1.25vw;
+  clear: both;
+  float: right;
+  margin-right: 5%;
+}
+
 </style>
 </head>
 <title>Home - Samantha Nyquist</title>
@@ -200,7 +261,7 @@ body{
   <div class="name">
     <a href="./about.html">
       <h1>Samantha<br>Nyquist</h1>
-  	  <p>A newly graduated programmer just trying to find her place in the software world.</p>
+  	  <p>A recently graduated programmer just trying to find her place in the software world.</p>
     </a>
   </div>
 </div>
@@ -243,8 +304,58 @@ body{
     </a>
   </div>
 </div>
+
+<div class="row">
+  <div class="projects">
+    <h2>Recent Reads and Favorites:</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div id="gr_updates_widget">
+    <iframe sandbox id="the_iframe" src="https://goodreads.com/widgets/user_update_widget?height=500&num_updates=5&user=176879047&width=500" width="500" height="500" frameborder="0"></iframe>
+    <div id="gr_footer">
+      <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" /></a>
+    </div>
+  </div>
+  <div id="gr_grid_widget_1734721132">
+    <div class="gr_grid_container">
+      <div class="gr_grid_book_container"><a title="When the Moon Hatched (Moonfall, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/202507554-when-the-moon-hatched"><img alt="When the Moon Hatched" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440766l/202507554._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A ​Court of Silver Flames (A Court of Thorns and Roses, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/53138095-a-court-of-silver-flames"><img alt="A ​Court of Silver Flames" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440950l/53138095._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Kingdom of Ash (Throne of Glass, #7)" rel="nofollow" href="https://www.goodreads.com/book/show/61756733-kingdom-of-ash"><img alt="Kingdom of Ash" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658986292l/61756733._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Tower of Dawn (Throne of Glass, #6)" rel="nofollow" href="https://www.goodreads.com/book/show/76714487-tower-of-dawn"><img alt="Tower of Dawn" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673567264l/76714487._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Fourth Wing (The Empyrean, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/61431922-fourth-wing"><img alt="Fourth Wing" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701980900l/61431922._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="House of Earth and Blood (Crescent City, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/44778083-house-of-earth-and-blood"><img alt="House of Earth and Blood" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559142847l/44778083._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A Court of Wings and Ruin (A Court of Thorns and Roses, #3)" rel="nofollow" href="https://www.goodreads.com/book/show/50659472-a-court-of-wings-and-ruin"><img alt="A Court of Wings and Ruin" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585623092l/50659472._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A Light in the Flame (Flesh and Fire, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/172133046-a-light-in-the-flame"><img alt="A Light in the Flame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1685797258l/172133046._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Empire of Storms (Throne of Glass, #5)" rel="nofollow" href="https://www.goodreads.com/book/show/76713323-empire-of-storms"><img alt="Empire of Storms" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676979605l/76713323._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Glow of the Everflame (Kindred's Curse, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/124935969-glow-of-the-everflame"><img alt="Glow of the Everflame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680370864l/124935969._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Fate & Furies (The Legends of Thezmarr, #3)" rel="nofollow" href="https://www.goodreads.com/book/show/199057100-fate-furies"><img alt="Fate & Furies" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1705754449l/199057100._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Crown of Midnight (Throne of Glass, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/61756726-crown-of-midnight"><img alt="Crown of Midnight" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658985500l/61756726._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A Court of Mist and Fury (A Court of Thorns and Roses, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/50659468-a-court-of-mist-and-fury"><img alt="A Court of Mist and Fury" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620325671l/50659468._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Spark of the Everflame (Kindred's Curse, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/123471760-spark-of-the-everflame"><img alt="Spark of the Everflame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684550094l/123471760._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Throne of Glass (Throne of Glass, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/61756727-throne-of-glass"><img alt="Throne of Glass" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658985353l/61756727._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Divergent (Divergent, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/13335037-divergent"><img alt="Divergent" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618526890l/13335037._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="The Assassin's Blade" rel="nofollow" href="https://www.goodreads.com/book/show/61756728-the-assassin-s-blade"><img alt="The Assassin's Blade" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659072975l/61756728._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Catching Fire (The Hunger Games, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/6148028-catching-fire"><img alt="Catching Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722941l/6148028._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Quicksilver (Fae & Alchemy, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/212472603-quicksilver"><img alt="Quicksilver" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715709248l/212472603._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Heat of the Everflame (Kindred's Curse, #3)" rel="nofollow" href="https://www.goodreads.com/book/show/124936017-heat-of-the-everflame"><img alt="Heat of the Everflame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680371049l/124936017._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A Kingdom of Flesh and Fire (Blood and Ash, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/54319549-a-kingdom-of-flesh-and-fire"><img alt="A Kingdom of Flesh and Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440592l/54319549._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="The Hunger Games (The Hunger Games, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/2767052-the-hunger-games"><img alt="The Hunger Games" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A Fire in the Flesh (Flesh and Fire, #3)" rel="nofollow" href="https://www.goodreads.com/book/show/61150440-a-fire-in-the-flesh"><img alt="A Fire in the Flesh" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1681507578l/61150440._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="A Shadow in the Ember (Flesh and Fire, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/57282383-a-shadow-in-the-ember"><img alt="A Shadow in the Ember" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619448359l/57282383._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Queen of Shadows (Throne of Glass, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/61756732-queen-of-shadows"><img alt="Queen of Shadows" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658985219l/61756732._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Vows & Ruins (The Legends of Thezmarr, #2)" rel="nofollow" href="https://www.goodreads.com/book/show/123007281-vows-ruins"><img alt="Vows & Ruins" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1690190967l/123007281._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="The ​Crown of Gilded Bones (Blood and Ash, #3)" rel="nofollow" href="https://www.goodreads.com/book/show/55924835-the-crown-of-gilded-bones"><img alt="The ​Crown of Gilded Bones" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1606759533l/55924835._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Swordcrossed" rel="nofollow" href="https://www.goodreads.com/book/show/204309713-swordcrossed"><img alt="Swordcrossed" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734209782l/204309713._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="Blood & Steel (The Legends of Thezmarr, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/63905241-blood-steel"><img alt="Blood & Steel" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1671397787l/63905241._SX98_.jpg" /></a></div>
+      <div class="gr_grid_book_container"><a title="The War of Two Queens (Blood And Ash, #4)" rel="nofollow" href="https://www.goodreads.com/book/show/58526043-the-war-of-two-queens"><img alt="The War of Two Queens" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1656867681l/58526043._SX98_.jpg" /></a></div>   
+      <a class="gr_grid_branding" rel="nofollow" href="https://www.goodreads.com/user/show/176879047-sammy-nyquist">For more - follow me on Goodreads »</a>
+    </div>
+  </div>
+</div>
 <br>
 <br>
 
 </body>
-</html>
+</html>  

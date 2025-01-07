@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  background-color: #f3dddf;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 2vw;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 2vw; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7c1932;
+  overflow-x: hidden;
+  padding-top: 2%;
+  transition: 0.2s;
+}
+.sidenav button {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.30vw;
+  color: white;
+  display: block;
+  font-family: "Playfair Display";
+  background-color: #7c1932;
+  cursor: pointer;
+  text-shadow: none;
+  border: none;
+  outline: none;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: white;
+  margin-left: 9%;
+  margin-top: 5%;
+}
+.sidenav button:hover {
+  color: goldenrod;
+  text-shadow: -.30px -.30px 0 goldenrod, 
+                .30px .30px goldenrod;
+}
+.sidenav a:hover {
+  color: goldenrod;
+  text-shadow: -.30px -.30px 0 goldenrod, 
+                .30px .30px goldenrod;
+}
+.menu{
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.menu span:hover{
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+  transition: 0.3s;
+}
+.gr_custom_container_1734727427 {
+  background-color: transparent;
+  color: black;
+  margin-left: 15%;
+  margin-right: 15%;
+  object-fit: cover;
+  border: 3px solid goldenrod;
+  transition: 0.3s;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1%;
+  text-decoration: none;
+}
+.gr_custom_header_1734727427 {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 2vw;
+  margin: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+.gr_custom_each_container_1734727427 {
+  width: 100%;
+  clear: both;
+  font-family: "Playfair Display";
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #7c1932;
+  text-decoration: none;
+  color: #7c1932;
+}
+.gr_custom_each_container_1734727427 a{
+    text-decoration: none;
+}
+.gr_custom_book_container_1734727427 {
+  overflow: hidden;
+  height: 160px;
+  float: left;
+  margin-right: 1%;
+  width: 100px;
+}
+.gr_custom_author_1734727427 {
+  font-family: "Playfair Display";
+  font-size: 1vw;
+  text-decoration: none;
+}
+.gr_custom_rating_1734727427 {
+  float: right;
+}
+
+</style>
+</head>
+<title>Books!</title>
+<link rel="icon" type="image/png" href="../browser.png">
+<body>
+
+<div class="topnav" id="topnav">
+    <a href="../contact.html">Contact</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../about.html">About</a>
+    <a href="../index.html">Home</a>
+<div class="logo">
+    <a href="../index.html"">samantha nyquist</a>
+</div>
+</div>
+
+<div class="menu" id="menu">
+<span style="font-size: 1.5vw;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<div class="sidenav" id="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<button onclick="openList('books')">Books</button>
+</div>
+
+<h2 class="gr_custom_header_1734727427"> Recent Reads and Reviews:</h2>
+
+<div id="gr_custom_widget_1734727427" class="gr_custom_container_1734727427">
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+          <a title="Filthy Rich Fae (Filthy Rich Fae, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6623991308?utm_medium=api&amp;utm_source=custom_widget"><img alt="Filthy Rich Fae" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734057534l/222530168._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+          <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/6623991308?utm_medium=api&amp;utm_source=custom_widget">Filthy Rich Fae</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+          by <a rel="nofollow" href="https://www.goodreads.com/author/show/8056653.Geneva_Lee">Geneva Lee</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+          &quot;Worrying is expensive. It costs you the only thing you can't get back. Time.&quot; DAMN OKAY!!!!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+          <a title="The Veiled Kingdom (The Veiled Kingdom, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6715939781?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Veiled Kingdom" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1707837298l/204624472._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+          <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/6715939781?utm_medium=api&amp;utm_source=custom_widget">The Veiled Kingdom</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+          by <a rel="nofollow" href="https://www.goodreads.com/author/show/13311133.Holly_Renee">Holly Renee</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+          I don't think I blinked once
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+          <a title="Caged in Shadow (Of Dragons and Fae, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/7098714383?utm_medium=api&amp;utm_source=custom_widget"><img alt="Caged in Shadow" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1679425980l/123331466._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+          <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/7098714383?utm_medium=api&amp;utm_source=custom_widget">Caged in Shadow</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+          by <a rel="nofollow" href="https://www.goodreads.com/author/show/14552978.Jasmine_Walt">Jasmine Walt</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+          Great conclusion to this story!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+          <a title="Phantasma (Wicked Games, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6735626549?utm_medium=api&amp;utm_source=custom_widget"><img alt="Phantasma" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1724834219l/209813409._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+          <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/6735626549?utm_medium=api&amp;utm_source=custom_widget">Phantasma</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+          by <a rel="nofollow" href="https://www.goodreads.com/author/show/21767301.Kaylie_Smith">Kaylie Smith</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+          *looks up how to turn my boyfriend into a phantom*
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+          <a title="Forged in Frost (Of Dragons and Fae, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6724899635?utm_medium=api&amp;utm_source=custom_widget"><img alt="Forged in Frost" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674173134l/81069878._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+          <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/6724899635?utm_medium=api&amp;utm_source=custom_widget">Forged in Frost</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+          by <a rel="nofollow" href="https://www.goodreads.com/author/show/14552978.Jasmine_Walt">Jasmine Walt</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+          These old things are rude
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+          <a title="Slaying the Shadow Prince" rel="nofollow" href="https://www.goodreads.com/review/show/6773175007?utm_medium=api&amp;utm_source=custom_widget"><img alt="Slaying the Shadow Prince" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697034119l/199397537._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+          <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+          <a rel="nofollow" href="https://www.goodreads.com/review/show/6773175007?utm_medium=api&amp;utm_source=custom_widget">Slaying the Shadow Prince</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+          by <a rel="nofollow" href="https://www.goodreads.com/author/show/9898249.Helen_Scheuerer">Helen Scheuerer</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+          Hottest couple of all time
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Promised in Fire (Of Dragons and Fae #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6724899316?utm_medium=api&amp;utm_source=custom_widget"><img alt="Promised in Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1633114624l/59126920._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6724899316?utm_medium=api&amp;utm_source=custom_widget">Promised in Fire</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/14552978.Jasmine_Walt">Jasmine Walt</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I love Avatar the last airbender
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Elven Days of Christmas" rel="nofollow" href="https://www.goodreads.com/review/show/7093006787?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Elven Days of Christmas" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1703541786l/204344588._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/7093006787?utm_medium=api&amp;utm_source=custom_widget">The Elven Days of Christmas</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/19985669.A_K_Caggiano">A.K. Caggiano</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            STOP WAIT THIS WAS SO CUTE!!!!!! Perfect Christmas book.
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Tress of the Emerald Sea" rel="nofollow" href="https://www.goodreads.com/review/show/7077098475?utm_medium=api&amp;utm_source=custom_widget"><img alt="Tress of the Emerald Sea" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1672573561l/60556121._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/7077098475?utm_medium=api&amp;utm_source=custom_widget">Tress of the Emerald Sea</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/38550.Brandon_Sanderson">Brandon Sanderson</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Rat propaganda 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Quicksilver (Fae &amp; Alchemy, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6715940795?utm_medium=api&amp;utm_source=custom_widget"><img alt="Quicksilver" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715709248l/212472603._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6715940795?utm_medium=api&amp;utm_source=custom_widget">Quicksilver</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/7771953.Callie_Hart">Callie Hart</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            YESSSSSS!!!! LOVE LOVE LOVE LOVE LOVE
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Kingdom of Ash (Throne of Glass, #7)" rel="nofollow" href="https://www.goodreads.com/review/show/6381764929?utm_medium=api&amp;utm_source=custom_widget"><img alt="Kingdom of Ash" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658986292l/61756733._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764929?utm_medium=api&amp;utm_source=custom_widget">Kingdom of Ash</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Aelin: &quot;I'm not like other girls, I'm worse&quot;
+
+            *saves the world*
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Blood of Hercules (Villains of Lore, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/7030288047?utm_medium=api&amp;utm_source=custom_widget"><img alt="Blood of Hercules" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1721243412l/216595852._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/7030288047?utm_medium=api&amp;utm_source=custom_widget">Blood of Hercules</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/22238473.Jasmine_Mas">Jasmine Mas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            An average freshman year of college experience 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Born of Blood and Ash (Flesh and Fire, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6647568051?utm_medium=api&amp;utm_source=custom_widget"><img alt="Born of Blood and Ash" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1710354619l/196787830._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647568051?utm_medium=api&amp;utm_source=custom_widget">Born of Blood and Ash</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            The first 65% lowkey pissed me off but then it got pretty good
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Empire of Storms (Throne of Glass, #5)" rel="nofollow" href="https://www.goodreads.com/review/show/6381764863?utm_medium=api&amp;utm_source=custom_widget"><img alt="Empire of Storms" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676979605l/76713323._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764863?utm_medium=api&amp;utm_source=custom_widget">Empire of Storms</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Me when I force all of my friends to hang out at my birthday party
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Tower of Dawn (Throne of Glass, #6)" rel="nofollow" href="https://www.goodreads.com/review/show/6381764892?utm_medium=api&amp;utm_source=custom_widget"><img alt="Tower of Dawn" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673567264l/76714487._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764892?utm_medium=api&amp;utm_source=custom_widget">Tower of Dawn</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            CHAOL ON TOP FOREVER AND ALWAYS
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Piranesi" rel="nofollow" href="https://www.goodreads.com/review/show/6912776905?utm_medium=api&amp;utm_source=custom_widget"><img alt="Piranesi" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609095173l/50202953._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6912776905?utm_medium=api&amp;utm_source=custom_widget">Piranesi</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/8842.Susanna_Clarke">Susanna Clarke</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            The urge to run away from my problems and live in a house with statues
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Reckless (The Powerless Trilogy, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/7001652080?utm_medium=api&amp;utm_source=custom_widget"><img alt="Reckless" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1706294304l/188365460._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/7001652080?utm_medium=api&amp;utm_source=custom_widget">Reckless</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/21728475.Lauren_Roberts">Lauren  Roberts</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            It's brutal out there
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Brothers Hawthorne (The Inheritance Games, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6779032167?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Brothers Hawthorne" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1664817553l/62818819._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6779032167?utm_medium=api&amp;utm_source=custom_widget">The Brothers Hawthorne</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/164187.Jennifer_Lynn_Barnes">Jennifer Lynn Barnes</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Dang, okay!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Queen of Shadows (Throne of Glass, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6381764798?utm_medium=api&amp;utm_source=custom_widget"><img alt="Queen of Shadows" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658985219l/61756732._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764798?utm_medium=api&amp;utm_source=custom_widget">Queen of Shadows</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Give these poor kids a break!!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Heir of Fire (Throne of Glass, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6381764727?utm_medium=api&amp;utm_source=custom_widget"><img alt="Heir of Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659432596l/61756735._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764727?utm_medium=api&amp;utm_source=custom_widget">Heir of Fire</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Dorian is so babygirl
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Final Gambit (The Inheritance Games, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6779032081?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Final Gambit" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1634068812l/59312949._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6779032081?utm_medium=api&amp;utm_source=custom_widget">The Final Gambit</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/164187.Jennifer_Lynn_Barnes">Jennifer Lynn Barnes</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Girlboss!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Assassin's Blade" rel="nofollow" href="https://www.goodreads.com/review/show/6381764527?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Assassin's Blade" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659072975l/61756728._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764527?utm_medium=api&amp;utm_source=custom_widget">The Assassin's Blade</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I KNEW WHAT WAS GOING TO HAPPEN AND YET IT STILL HURT LIKE FUCKING HELL
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Crown of Midnight (Throne of Glass, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6381764680?utm_medium=api&amp;utm_source=custom_widget"><img alt="Crown of Midnight" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658985500l/61756726._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381764680?utm_medium=api&amp;utm_source=custom_widget">Crown of Midnight</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            AHHHH HOLY SHIT!!!!! SO GOOD
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Visions of Flesh and Blood: A Blood and Ash/Flesh and Fire Compendium (Blood and Ash, #5.5)" rel="nofollow" href="https://www.goodreads.com/review/show/6647568360?utm_medium=api&amp;utm_source=custom_widget"><img alt="Visions of Flesh and Blood: A Blood and Ash/Flesh and Fire Compendium" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697748501l/63844859._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647568360?utm_medium=api&amp;utm_source=custom_widget">Visions of Flesh and Blood: A Blood and Ash/Flesh and Fire Compendium</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Honestly super helpful for combining the two timelines and sorting everything out. I skimmed through most of the character summaries but if you haven't read the other books in a while, they could be very helpful. I liked this a lot!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Heat of the Everflame (Kindred's Curse, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6683891650?utm_medium=api&amp;utm_source=custom_widget"><img alt="Heat of the Everflame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680371049l/124936017._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6683891650?utm_medium=api&amp;utm_source=custom_widget">Heat of the Everflame</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/29858694.Penn_Cole">Penn Cole</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            HAHAHA WHAT (crying) DIEM!! WHAT DID YOU DO!!!!!! Holy shit. Emotional turmoil in 1000 pages. I think I need to sit in a corner and rock back and forth for a little
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Powerless (The Powerless Trilogy, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527893448?utm_medium=api&amp;utm_source=custom_widget"><img alt="Powerless" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1687711910l/153283393._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527893448?utm_medium=api&amp;utm_source=custom_widget">Powerless</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/21728475.Lauren_Roberts">Lauren  Roberts</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Ope!!! 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Soul of Ash and Blood (Blood and Ash, #5)" rel="nofollow" href="https://www.goodreads.com/review/show/6647577181?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Soul of Ash and Blood" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1677612497l/63847274._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647577181?utm_medium=api&amp;utm_source=custom_widget">A Soul of Ash and Blood</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            My man's man who is also my man (we all kiss)
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The War of Two Queens (Blood And Ash, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6647576653?utm_medium=api&amp;utm_source=custom_widget"><img alt="The War of Two Queens" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1656867681l/58526043._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647576653?utm_medium=api&amp;utm_source=custom_widget">The War of Two Queens</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Her mother may have girlbossed a little to close to the sun
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The ​Crown of Gilded Bones (Blood and Ash, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6647576487?utm_medium=api&amp;utm_source=custom_widget"><img alt="The ​Crown of Gilded Bones" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1606759533l/55924835._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647576487?utm_medium=api&amp;utm_source=custom_widget">The ​Crown of Gilded Bones</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I probably shouldn't have read the prequels first (it was an accident) because this book makes daddy nyktos and father nektas seem so grumpy!!! 
+
+    Love the last 10% of the book whiplash
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Swordcrossed" rel="nofollow" href="https://www.goodreads.com/review/show/6634568036?utm_medium=api&amp;utm_source=custom_widget"><img alt="Swordcrossed" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734209782l/204309713._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6634568036?utm_medium=api&amp;utm_source=custom_widget">Swordcrossed</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/7106498.Freya_Marske">Freya Marske</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I've never wanted to be a third this bad
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Kingdom of Flesh and Fire (Blood and Ash, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6632656298?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Kingdom of Flesh and Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440592l/54319549._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6632656298?utm_medium=api&amp;utm_source=custom_widget">A Kingdom of Flesh and Fire</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Demure -&gt; brat
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="From Blood and Ash (Blood and Ash, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527898595?utm_medium=api&amp;utm_source=custom_widget"><img alt="From Blood and Ash" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440654l/52831200._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527898595?utm_medium=api&amp;utm_source=custom_widget">From Blood and Ash</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Can't say I would've done anything differently 10/10
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Hawthorne Legacy (The Inheritance Games, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6779032037?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Hawthorne Legacy" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617809112l/56442293._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6779032037?utm_medium=api&amp;utm_source=custom_widget">The Hawthorne Legacy</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/164187.Jennifer_Lynn_Barnes">Jennifer Lynn Barnes</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            If I had a nickel for every time those boys liked the same girl at the same time I'd have two nickels, which isn't a lot but it's weird that it happened twice.
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Glow of the Everflame (Kindred's Curse, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6683891673?utm_medium=api&amp;utm_source=custom_widget"><img alt="Glow of the Everflame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680370864l/124935969._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6683891673?utm_medium=api&amp;utm_source=custom_widget">Glow of the Everflame</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/29858694.Penn_Cole">Penn Cole</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            AHHHHHHH!!!!! SO GREAT 10000/10
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Spark of the Everflame (Kindred's Curse, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527909431?utm_medium=api&amp;utm_source=custom_widget"><img alt="Spark of the Everflame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684550094l/123471760._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527909431?utm_medium=api&amp;utm_source=custom_widget">Spark of the Everflame</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/29858694.Penn_Cole">Penn Cole</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            OH. MY. GOD!?!?!! I AM OBSESSED!!!!!! STUNNED SPEECHLESS THE ENTIRE TIME!!!!!!!!!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Shadow &amp; Storms (The Legends of Thezmarr, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6715937828?utm_medium=api&amp;utm_source=custom_widget"><img alt="Shadow &amp; Storms" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715858589l/208301504._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6715937828?utm_medium=api&amp;utm_source=custom_widget">Shadow &amp; Storms</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/9898249.Helen_Scheuerer">Helen Scheuerer</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Love love love love! 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Two Twisted Crowns (The Shepherd King, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6527896707?utm_medium=api&amp;utm_source=custom_widget"><img alt="Two Twisted Crowns" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1700576166l/123009515._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527896707?utm_medium=api&amp;utm_source=custom_widget">Two Twisted Crowns</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/21163293.Rachel_Gillig">Rachel Gillig</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Elm my beloved &lt;3
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="One Dark Window (The Shepherd King, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527894788?utm_medium=api&amp;utm_source=custom_widget"><img alt="One Dark Window" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659109498l/59729041._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527894788?utm_medium=api&amp;utm_source=custom_widget">One Dark Window</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/21163293.Rachel_Gillig">Rachel Gillig</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Me kissing the monster in the room with us
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Fate &amp; Furies (The Legends of Thezmarr, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6715937727?utm_medium=api&amp;utm_source=custom_widget"><img alt="Fate &amp; Furies" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1705754449l/199057100._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6715937727?utm_medium=api&amp;utm_source=custom_widget">Fate &amp; Furies</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/9898249.Helen_Scheuerer">Helen Scheuerer</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            YESSSSS
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Vows &amp; Ruins (The Legends of Thezmarr, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6715937704?utm_medium=api&amp;utm_source=custom_widget"><img alt="Vows &amp; Ruins" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1690190967l/123007281._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6715937704?utm_medium=api&amp;utm_source=custom_widget">Vows &amp; Ruins</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/9898249.Helen_Scheuerer">Helen Scheuerer</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Do NOT read this book while sitting next to your mother
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Throne of Glass (Throne of Glass, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381738985?utm_medium=api&amp;utm_source=custom_widget"><img alt="Throne of Glass" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658985353l/61756727._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381738985?utm_medium=api&amp;utm_source=custom_widget">Throne of Glass</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I can already tell that this series is going to be my entire personality 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Blood &amp; Steel (The Legends of Thezmarr, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527910392?utm_medium=api&amp;utm_source=custom_widget"><img alt="Blood &amp; Steel" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1671397787l/63905241._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527910392?utm_medium=api&amp;utm_source=custom_widget">Blood &amp; Steel</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/9898249.Helen_Scheuerer">Helen Scheuerer</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            OH YEAH LET'S GO
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="When Among Crows" rel="nofollow" href="https://www.goodreads.com/review/show/6605629155?utm_medium=api&amp;utm_source=custom_widget"><img alt="When Among Crows" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1691522142l/195790597._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6605629155?utm_medium=api&amp;utm_source=custom_widget">When Among Crows</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4039811.Veronica_Roth">Veronica Roth</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            when in Chicago
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Inheritance Games (The Inheritance Games, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6562402604?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Inheritance Games" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587401545l/52501482._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562402604?utm_medium=api&amp;utm_source=custom_widget">The Inheritance Games</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/164187.Jennifer_Lynn_Barnes">Jennifer Lynn Barnes</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            What a fun mystery book! 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Iron Flame (The Empyrean, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6381766483?utm_medium=api&amp;utm_source=custom_widget"><img alt="Iron Flame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1706724269l/90202302._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381766483?utm_medium=api&amp;utm_source=custom_widget">Iron Flame</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/7539785.Rebecca_Yarros">Rebecca Yarros</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Murder on the Orient Express (Hercule Poirot, #10)" rel="nofollow" href="https://www.goodreads.com/review/show/6562400707?utm_medium=api&amp;utm_source=custom_widget"><img alt="Murder on the Orient Express" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1509641408l/16159007._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562400707?utm_medium=api&amp;utm_source=custom_widget">Murder on the Orient Express</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/123715.Agatha_Christie">Agatha Christie</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I love theater 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Silent Patient" rel="nofollow" href="https://www.goodreads.com/review/show/6562251885?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Silent Patient" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1668782119l/40097951._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562251885?utm_medium=api&amp;utm_source=custom_widget">The Silent Patient</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/17621440.Alex_Michaelides">Alex Michaelides</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Were you silent or were you silenced?
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Sharp Objects" rel="nofollow" href="https://www.goodreads.com/review/show/6562255654?utm_medium=api&amp;utm_source=custom_widget"><img alt="Sharp Objects" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475695315l/18045891._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562255654?utm_medium=api&amp;utm_source=custom_widget">Sharp Objects</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/2383.Gillian_Flynn">Gillian Flynn</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            This is why small towns scare me
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Fire in the Flesh (Flesh and Fire, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6647568025?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Fire in the Flesh" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1681507578l/61150440._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647568025?utm_medium=api&amp;utm_source=custom_widget">A Fire in the Flesh</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            It just keeps getting better &lt;3
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Verity" rel="nofollow" href="https://www.goodreads.com/review/show/6589726946?utm_medium=api&amp;utm_source=custom_widget"><img alt="Verity" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1634158558l/59344312._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="liked it"><img alt="liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6589726946?utm_medium=api&amp;utm_source=custom_widget">Verity</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/5430144.Colleen_Hoover">Colleen Hoover</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I think everyone sucks here
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Light in the Flame (Flesh and Fire, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6647567998?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Light in the Flame" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1685797258l/172133046._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6647567998?utm_medium=api&amp;utm_source=custom_widget">A Light in the Flame</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            AHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Night Circus" rel="nofollow" href="https://www.goodreads.com/review/show/6611224209?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Night Circus" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360570617l/11337018._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was ok"><img alt="it was ok" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6611224209?utm_medium=api&amp;utm_source=custom_widget">The Night Circus</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4370565.Erin_Morgenstern">Erin Morgenstern</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            My hopefulness for the story to get more interesting (it didn't) was the only fuel that kept me through until the end
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Shadow in the Ember (Flesh and Fire, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527918468?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Shadow in the Ember" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619448359l/57282383._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527918468?utm_medium=api&amp;utm_source=custom_widget">A Shadow in the Ember</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4476934.Jennifer_L_Armentrout">Jennifer L. Armentrout</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            I felt this at my core
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Handmaid’s Tale (The Handmaid's Tale, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6621455230?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Handmaid’s Tale" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578028274l/38447._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6621455230?utm_medium=api&amp;utm_source=custom_widget">The Handmaid’s Tale</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3472.Margaret_Atwood">Margaret Atwood</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            This is definitely a warning
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="When the Moon Hatched (Moonfall, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527908173?utm_medium=api&amp;utm_source=custom_widget"><img alt="When the Moon Hatched" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440766l/202507554._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527908173?utm_medium=api&amp;utm_source=custom_widget">When the Moon Hatched</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/21577247.Sarah_A_Parker">Sarah A. Parker</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            HELLO!? OMFG. I need the next book out yesterday. My mouth was agape the entire second half of the book. I am currently in shambles. I am obsessed. I cannot wait to see how the story continues. 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The 7 1/2 Deaths of Evelyn Hardcastle" rel="nofollow" href="https://www.goodreads.com/review/show/6562401159?utm_medium=api&amp;utm_source=custom_widget"><img alt="The 7 1/2 Deaths of Evelyn Hardcastle" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506896221l/36337550._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562401159?utm_medium=api&amp;utm_source=custom_widget">The 7 1/2 Deaths of Evelyn Hardcastle</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/17160667.Stuart_Turton">Stuart Turton</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            It was intriguing and very fun to uncover the mystery! There were lots of characters which made it hard to follow and slow at times. Seems like one of those books that's going to stick with me.
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Gone Girl" rel="nofollow" href="https://www.goodreads.com/review/show/6562252778?utm_medium=api&amp;utm_source=custom_widget"><img alt="Gone Girl" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554086139l/19288043._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562252778?utm_medium=api&amp;utm_source=custom_widget">Gone Girl</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/2383.Gillian_Flynn">Gillian Flynn</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Gorgeously horrifying 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="House of Earth and Blood (Crescent City, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381765621?utm_medium=api&amp;utm_source=custom_widget"><img alt="House of Earth and Blood" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559142847l/44778083._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381765621?utm_medium=api&amp;utm_source=custom_widget">House of Earth and Blood</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Chef's kiss
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Such a Bad Influence" rel="nofollow" href="https://www.goodreads.com/review/show/6562215542?utm_medium=api&amp;utm_source=custom_widget"><img alt="Such a Bad Influence" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1705960287l/198509143._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6562215542?utm_medium=api&amp;utm_source=custom_widget">Such a Bad Influence</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/43860865.Olivia_Muenter">Olivia Muenter</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            So relevant in modern day influencer culture!
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="It Ends with Us (It Ends with Us, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6527849770?utm_medium=api&amp;utm_source=custom_widget"><img alt="It Ends with Us" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1688011813l/27362503._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="liked it"><img alt="liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6527849770?utm_medium=api&amp;utm_source=custom_widget">It Ends with Us</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/5430144.Colleen_Hoover">Colleen Hoover</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            hmm... I still don't know how to feel.
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Ballad of Songbirds and Snakes (The Hunger Games, #0)" rel="nofollow" href="https://www.goodreads.com/review/show/6541408669?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Ballad of Songbirds and Snakes" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1593892032l/51901147._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="really liked it"><img alt="really liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6541408669?utm_medium=api&amp;utm_source=custom_widget">The Ballad of Songbirds and Snakes</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/153394.Suzanne_Collins">Suzanne Collins</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            A new perspective on mockingjays, I bet they are super annoying.
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Girl One: Murder (Maya Gray #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6523218644?utm_medium=api&amp;utm_source=custom_widget"><img alt="Girl One: Murder" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632320760l/59053828._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="liked it"><img alt="liked it" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6523218644?utm_medium=api&amp;utm_source=custom_widget">Girl One: Murder</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/5042870.Molly_Black">Molly Black</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Fourth Wing (The Empyrean, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381740084?utm_medium=api&amp;utm_source=custom_widget"><img alt="Fourth Wing" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701980900l/61431922._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381740084?utm_medium=api&amp;utm_source=custom_widget">Fourth Wing</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/7539785.Rebecca_Yarros">Rebecca Yarros</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Gagged 
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="If She Knew (Kate Wise, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6512776734?utm_medium=api&amp;utm_source=custom_widget"><img alt="If She Knew" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1568830704l/41559688._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was ok"><img alt="it was ok" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6512776734?utm_medium=api&amp;utm_source=custom_widget">If She Knew</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/14773558.Blake_Pierce">Blake Pierce</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Murder of Roger Ackroyd (Hercule Poirot, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6509865201?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Murder of Roger Ackroyd" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1389734015l/16328._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6509865201?utm_medium=api&amp;utm_source=custom_widget">The Murder of Roger Ackroyd</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/123715.Agatha_Christie">Agatha Christie</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Seven Husbands of Evelyn Hugo" rel="nofollow" href="https://www.goodreads.com/review/show/6381705723?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Seven Husbands of Evelyn Hugo" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1664458703l/32620332._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381705723?utm_medium=api&amp;utm_source=custom_widget">The Seven Husbands of Evelyn Hugo</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/6572605.Taylor_Jenkins_Reid">Taylor Jenkins Reid</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            It's like reverse &quot;Six&quot; the musical
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A ​Court of Silver Flames (A Court of Thorns and Roses, #4)" rel="nofollow" href="https://www.goodreads.com/review/show/6381762704?utm_medium=api&amp;utm_source=custom_widget"><img alt="A ​Court of Silver Flames" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734440950l/53138095._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381762704?utm_medium=api&amp;utm_source=custom_widget">A ​Court of Silver Flames</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Oldest daughter core
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Court of Frost and Starlight (A Court of Thorns and Roses, #3.5)" rel="nofollow" href="https://www.goodreads.com/review/show/6381763136?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Court of Frost and Starlight" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585622963l/50659471._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381763136?utm_medium=api&amp;utm_source=custom_widget">A Court of Frost and Starlight</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            All smiles
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Court of Wings and Ruin (A Court of Thorns and Roses, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6381750732?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Court of Wings and Ruin" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585623092l/50659472._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381750732?utm_medium=api&amp;utm_source=custom_widget">A Court of Wings and Ruin</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            Thrown around like a rock in a dryer. 10/10
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Court of Mist and Fury (A Court of Thorns and Roses, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6381745357?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Court of Mist and Fury" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620325671l/50659468._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381745357?utm_medium=api&amp;utm_source=custom_widget">A Court of Mist and Fury</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            OHHHH YEAHHHH
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Of Mice and Men" rel="nofollow" href="https://www.goodreads.com/review/show/6382110941?utm_medium=api&amp;utm_source=custom_widget"><img alt="Of Mice and Men" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511302904l/890._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6382110941?utm_medium=api&amp;utm_source=custom_widget">Of Mice and Men</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/585.John_Steinbeck">John Steinbeck</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Great Gatsby" rel="nofollow" href="https://www.goodreads.com/review/show/6381703981?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Great Gatsby" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381703981?utm_medium=api&amp;utm_source=custom_widget">The Great Gatsby</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3190.F_Scott_Fitzgerald">F. Scott Fitzgerald</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Holes (Holes, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6382084052?utm_medium=api&amp;utm_source=custom_widget"><img alt="Holes" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618269830l/38709._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6382084052?utm_medium=api&amp;utm_source=custom_widget">Holes</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/6569.Louis_Sachar">Louis Sachar</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Ender’s Game (Ender's Saga, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6382119997?utm_medium=api&amp;utm_source=custom_widget"><img alt="Ender’s Game" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408303130l/375802._SY160_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6382119997?utm_medium=api&amp;utm_source=custom_widget">Ender’s Game</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/589.Orson_Scott_Card">Orson Scott Card</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Hunger Games (The Hunger Games, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381703676?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Hunger Games" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381703676?utm_medium=api&amp;utm_source=custom_widget">The Hunger Games</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/153394.Suzanne_Collins">Suzanne Collins</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="To Kill a Mockingbird" rel="nofollow" href="https://www.goodreads.com/review/show/6381704398?utm_medium=api&amp;utm_source=custom_widget"><img alt="To Kill a Mockingbird" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381704398?utm_medium=api&amp;utm_source=custom_widget">To Kill a Mockingbird</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/1825.Harper_Lee">Harper Lee</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Paper Towns" rel="nofollow" href="https://www.goodreads.com/review/show/6381741508?utm_medium=api&amp;utm_source=custom_widget"><img alt="Paper Towns" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349013610l/6442769._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381741508?utm_medium=api&amp;utm_source=custom_widget">Paper Towns</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/1406384.John_Green">John Green</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Catching Fire (The Hunger Games, #2)" rel="nofollow" href="https://www.goodreads.com/review/show/6381742631?utm_medium=api&amp;utm_source=custom_widget"><img alt="Catching Fire" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722941l/6148028._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381742631?utm_medium=api&amp;utm_source=custom_widget">Catching Fire</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/153394.Suzanne_Collins">Suzanne Collins</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="The Maze Runner (The Maze Runner, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381740954?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Maze Runner" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375596592l/6186357._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381740954?utm_medium=api&amp;utm_source=custom_widget">The Maze Runner</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/348878.James_Dashner">James Dashner</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Mockingjay (The Hunger Games, #3)" rel="nofollow" href="https://www.goodreads.com/review/show/6381742556?utm_medium=api&amp;utm_source=custom_widget"><img alt="Mockingjay" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722918l/7260188._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381742556?utm_medium=api&amp;utm_source=custom_widget">Mockingjay</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/153394.Suzanne_Collins">Suzanne Collins</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Divergent (Divergent, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381740338?utm_medium=api&amp;utm_source=custom_widget"><img alt="Divergent" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618526890l/13335037._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381740338?utm_medium=api&amp;utm_source=custom_widget">Divergent</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/4039811.Veronica_Roth">Veronica Roth</a>
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="A Court of Thorns and Roses (A Court of Thorns and Roses, #1)" rel="nofollow" href="https://www.goodreads.com/review/show/6381708155?utm_medium=api&amp;utm_source=custom_widget"><img alt="A Court of Thorns and Roses" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620324329l/50659467._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate" title="it was amazing"><img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6381708155?utm_medium=api&amp;utm_source=custom_widget">A Court of Thorns and Roses</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/3433047.Sarah_J_Maas">Sarah J. Maas</a>
+        </div>
+        <div class="gr_custom_review_1734727427">
+            A book for the girlies that were teenagers and loved the Hunger Games and Divergent and are now getting back into reading as an adult
+        </div>
+    </div>
+    <div class="gr_custom_each_container_1734727427">
+        <div class="gr_custom_book_container_1734727427">
+            <a title="Uncivil Agreement: How Politics Became Our Identity" rel="nofollow" href="https://www.goodreads.com/review/show/6514929107?utm_medium=api&amp;utm_source=custom_widget"><img alt="Uncivil Agreement: How Politics Became Our Identity" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519630566l/36100653._SX98_.jpg" /></a>
+        </div>
+        <div class="gr_custom_rating_1734727427">
+            <span class=" staticStars notranslate"><img src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /></span>
+        </div>
+        <div class="gr_custom_title_1734727427">
+            <a rel="nofollow" href="https://www.goodreads.com/review/show/6514929107?utm_medium=api&amp;utm_source=custom_widget">Uncivil Agreement: How Politics Became Our Identity</a>
+        </div>
+        <div class="gr_custom_author_1734727427">
+            by <a rel="nofollow" href="https://www.goodreads.com/author/show/17117018.Lilliana_Mason">Lilliana Mason</a>
+        </div>
+    </div>
+</div>
+<script>
+
+function openNav() {
+    document.getElementById("sidenav").style.width = "10%";
+    document.getElementById("topnav").style.marginLeft = "10%";
+    document.getElementById("menu").style.marginLeft = "12%";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("topnav").style.marginLeft= "0";
+    document.getElementById("menu").style.marginLeft = "2%";
+}
+
+function openList(subject) {
+    var i, content;
+    content = document.getElementsByClassName("content");
+    for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+    }
+    document.getElementById(subject).style.display = "block";
+    closeNav()
+}
+
+</script>
+</body>
+</html>

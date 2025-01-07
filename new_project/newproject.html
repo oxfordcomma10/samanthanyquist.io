@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  background-color: #f3dddf;
+}
+.topnav {
+  font-family: "Playfair Display";
+  text-align: left;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 2vw;
+  text-shadow: -.30px -.30px 0 #f3dddf, 
+                .30px .30px #f3dddf;
+}
+.topnav a:hover {
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+    transition: 0.3s;
+}
+.topnav a.active {
+  font-weight: 200;
+}
+.logo {
+  float:left;
+  font-size: 2vw; 
+  border:3px;
+  border-style:solid;
+  border-color:#7c1932;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7c1932;
+  overflow-x: hidden;
+  padding-top: 2%;
+  transition: 0.2s;
+}
+.sidenav button {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.30vw;
+  color: white;
+  display: block;
+  font-family: "Playfair Display";
+  background-color: #7c1932;
+  cursor: pointer;
+  text-shadow: none;
+  border: none;
+  outline: none;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: white;
+  margin-left: 9%;
+  margin-top: 5%;
+}
+.sidenav button:hover {
+  color: goldenrod;
+  text-shadow: -.30px -.30px 0 goldenrod, 
+                .30px .30px goldenrod;
+}
+.sidenav a:hover {
+  color: goldenrod;
+  text-shadow: -.30px -.30px 0 goldenrod, 
+                .30px .30px goldenrod;
+}
+.menu{
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.menu span:hover{
+  text-shadow: -.30px -.30px 0 black, 
+                .30px .30px black;
+  transition: 0.3s;
+}
+.content{
+  object-fit: cover;
+  font-family: "Playfair Display";
+  font-size: 1vw;
+  float: left;
+  width: 75%;
+  padding: 1%;
+  margin: 5%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border: 3px solid goldenrod;
+  transition: 0.3s;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+</style>
+</head>
+<title>Lists of things I like</title>
+<link rel="icon" type="image/png" href="../browser.png">
+<body>
+<div class="topnav" id="topnav">
+  <a href="../contact.html">Contact</a>
+  <a href="../projects.html">Projects</a>
+  <a href="../about.html">About</a>
+  <a href="../index.html">Home</a>
+  <div class="logo">
+    <a href="../index.html"">samantha nyquist</a>
+  </div>
+</div>
+
+<div class="menu" id="menu">
+  <span style="font-size: 1.5vw;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<div class="sidenav" id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <button onclick="openList('musicals')">Musicals</button>
+  <button onclick="openList('moviemusicals')">Movie Musicals</button>
+  <button onclick="openList('books')">Books</button>
+</div>
+
+<div class="content" id="intropage">
+<p>This is my introduction page</p>
+</div>
+
+<div class="content" id="musicals" style="display: none;">
+  <p>Best Musicals</p>
+  <p>I have seen in person or watched via pro shot in my recent lifetime</p>
+  <ol>
+    <li>Hamilton</li>
+    <li>Anastasia</li>
+    <li>Newsies</li>
+    <li>The Lion King</li>
+    <li>Moulin Rouge!</li>
+    <li>Waitress</li>
+    <li>Six</li>
+    <li>Wicked</li>
+    <li>Tina</li>
+    <li>Legally Blonde</li>
+    <li>Mamma Mia</li>
+    <li>Mean Girls</li>
+    <li>A Christmas Carol</li>
+    <li>Grease</li>
+    <li>A Chorus Line</li>
+    <li>Oklahoma</li>
+  </ol>
+</div>
+
+<div class="content" id="moviemusicals" style="display: none;">  
+  <p>Best Movie Musicals</p>
+  <ol>
+    <li>Sound of Music</li>
+    <li>Wicked</li>
+    <li>Hairspray</li>
+    <li>Dreamgirls</li>
+    <li>Chicago</li>
+    <li>Mamma Mia!</li>
+    <li>Singin' in the Rain</li>
+    <li>Hello, Dolly!</li>
+    <li>Mary Poppins</li>
+    <li>White Christmas</li>
+    <li>High School Musical</li>
+    <li>Burlesque</li>
+    <li>Tick Tick... Boom!</li>
+    <li>Grease</li>
+    <li>Enchanted</li>
+    <li>The Wiz</li>
+    <li>Jersey Boys</li>
+    <li>Beauty and the Beast (2019)</li>
+    <li>Let it Shine</li>
+    <li>Les Miserables</li>
+    <li>In the Heights</li>
+    <li>Moulin Rouge</li>
+    <li>Teen Beach Movie</li>
+    <li>Sweeny Todd</li>
+    <li>The Greatest Showman</li>
+    <li>Cabaret</li>
+    <li>Into the Woods</li>
+    <li>Oklahoma!</li>
+    <li>The Wizard of Oz</li>
+    <li>Funny Girl</li>
+    <li>My Fair Lady</li>
+    <li>La La Land</li>
+  </ol>
+</div>
+
+<div class="content" id="books" style="display: none;">
+  <p>Favorite Books of 2024</p>
+  <ol>
+    <li>When the Moon Hatched by Sarah A. Parker</li>
+    <li>A Court of Silver Flames by Sarah J. Maas</li>
+    <li>Kingdom of Ash by Sarah J. Maas</li>
+    <li>Tower of Dawn by Sarah J. Maas</li>
+    <li>Fourth Wing by Rebecca Yarros</li>
+    <li>House of Earth and Blood by Sarah J. Maas</li>
+    <li>A Court of Wings and Ruin by Sarah J. Maas</li>
+    <li>A Light in the Flame by Jennifer L. Armentrout</li>
+    <li>Empire of Storms by Sarah J. Maas</li>
+    <li>Glow of the Everflame by Penn Cole</li>
+    <li>Fate & Furies by Helen Scheuerer</li>
+    <li>Crown of Midnight by Sarah J. Maas</li>
+    <li>A Court of Mist and Fury by Sarah J. Maas</li>
+    <li>Spark of the Everflame by Penn Cole</li>
+    <li>Throne of Glass by Sarah J. Maas</li>
+    <li>The Assassin's Blade by Sarah J. Maas</li>
+    <li>Heat of the Everflame by Sarah J. Maas</li>
+    <li>A Kingdom of Flesh and Fire by Jennifer L. Armentrout</li>
+    <li>A Fire in the Flesh by Jennifer L. Armentrout</li>
+    <li>A Shadow in the Ember by Jennifer L. Armentrout</li>
+  </ol>
+</div>
+
+<div class="content" id="myfavorites" style="display: none;">  
+  <p>My Favorites</p>
+  <ol>
+    <li>Colors: pink, black, and gold</li>
+    <li>Word in English: albeit</li>
+    <li></li>
+  </ol>
+</div>
+<script>
+function openNav() {
+  document.getElementById("sidenav").style.width = "10%";
+  document.getElementById("topnav").style.marginLeft = "10%";
+  document.getElementById("menu").style.marginLeft = "12%";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "0";
+  document.getElementById("topnav").style.marginLeft= "0";
+  document.getElementById("menu").style.marginLeft = "2%";
+}
+
+function openList(subject) {
+  var i, content;
+  content = document.getElementsByClassName("content");
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+  document.getElementById(subject).style.display = "block";
+  closeNav()
+}
+</script>
+</body>
+</html>
